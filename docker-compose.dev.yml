@@ -1,0 +1,33 @@
+version: '3'
+services:
+  next:
+    container_name: next
+    build:
+      context: next
+      dockerfile: .docker/dev.dockerfile
+    image: next:latest
+    restart: unless-stopped
+    env_file: ./next/.env
+    volumes:
+      #- node_modules_next:/usr/local/clg/next/node_modules
+      - ./next:/usr/local/clg/next
+    ports:
+      - '3000:3000'
+  strapi:
+    container_name: strapi
+    build:
+      context: strapi
+      dockerfile: .docker/dev.dockerfile
+    image: strapi:latest
+    restart: unless-stopped
+    env_file: ./strapi/.env
+    volumes:
+      #- node_modules_strapi:/usr/local/clg/strapi/node_modules
+      - ./strapi:/usr/local/clg/strapi
+      - strapi-data:/usr/local/clg/strapi/.tmp
+    ports:
+      - '1337:1337'
+volumes:
+  #node_modules_strapi:
+  strapi-data:
+  #node_modules_next:
