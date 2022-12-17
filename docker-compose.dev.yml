@@ -9,8 +9,8 @@ services:
     restart: unless-stopped
     env_file: ./next/.env
     volumes:
-      #- node_modules_next:/usr/local/clg/next/node_modules
-      - ./next:/usr/local/clg/next
+      - node_modules_next:/usr/local/clg/node_modules
+      - ./next:/usr/local/clg
     ports:
       - '3000:3000'
   strapi:
@@ -22,12 +22,12 @@ services:
     restart: unless-stopped
     env_file: ./strapi/.env
     volumes:
-      #- node_modules_strapi:/usr/local/clg/strapi/node_modules
-      - ./strapi:/usr/local/clg/strapi
+      - node_modules_strapi:/usr/local/clg/node_modules
+      - ./strapi:/usr/local/clg
       - strapi-data:/usr/local/clg/strapi/.tmp
     ports:
       - '1337:1337'
 volumes:
-  #node_modules_strapi:
+  node_modules_strapi:
   strapi-data:
-  #node_modules_next:
+  node_modules_next:
