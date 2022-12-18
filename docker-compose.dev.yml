@@ -1,33 +1,33 @@
-version: '3'
+version: '3.8'
 services:
-  next:
-    container_name: next
+  frontend:
+    container_name: frontend
     build:
-      context: next
+      context: frontend
       dockerfile: .docker/dev.dockerfile
-    image: next:latest
-    restart: unless-stopped
-    env_file: ./next/.env
+    image: frontend:latest
+    # restart: unless-stopped
+    env_file: ./frontend/.env
     volumes:
-      - node_modules_next:/usr/local/clg/node_modules
-      - ./next:/usr/local/clg
+      - node_modules_next:/usr/local/frontend/node_modules
+      - next_folder:/usr/local/frontend
     ports:
       - '3000:3000'
-  strapi:
-    container_name: strapi
+  backend:
+    container_name: backend
     build:
-      context: strapi
+      context: backend
       dockerfile: .docker/dev.dockerfile
-    image: strapi:latest
-    restart: unless-stopped
-    env_file: ./strapi/.env
+    image: backend:latest 
+    # restart: unless-stopped
+    env_file: ./backend/.env
     volumes:
-      - node_modules_strapi:/usr/local/clg/node_modules
-      - ./strapi:/usr/local/clg
-      - strapi-data:/usr/local/clg/strapi/.tmp
+      - strapi_data:/usr/local/backend/strapi/.tmp
+      - strapi_upload:/usr/local/backend/strapi/public/uploads
     ports:
       - '1337:1337'
 volumes:
-  node_modules_strapi:
-  strapi-data:
   node_modules_next:
+  next_folder:
+  strapi_data:
+  strapi_upload:

@@ -1,6 +1,6 @@
 FROM node:18-alpine
 RUN apk update && apk add build-base gcc autoconf automake zlib-dev libpng-dev vips-dev && rm -rf /var/cache/apk/* > /dev/null 2>&1
-WORKDIR /usr/local/clg
+WORKDIR /usr/local/backend
 COPY package*.json ./
 RUN npm install
 COPY ./ .
