@@ -15,7 +15,7 @@ export default function Home({ data }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch('http://localhost:1338/api/posts')
+  const res = await fetch('http://165.22.255.85:1338/api/posts')
   const data = await res.json()
 
   return {
