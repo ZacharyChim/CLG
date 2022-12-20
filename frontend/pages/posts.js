@@ -4,13 +4,9 @@ import Posts from '../components/Posts'
 import useSWR from 'swr'
 import { useState } from 'react'
 
-const PostList = ({ posts }) => {
-  const [pageIndex, setPageIndex] = useState(1)
-  const { data } = useSWR(
-    `${process.env.NEXT_PUBLIC_STRAPI_URL}/posts?pagination[page]=${pageIndex}&pagination[pageSize]=3`,
-    fetcher,
-    { fallbackData: posts }
-  )
+const PostList = ({ data }) => {
+  const posts = data.data
+
   return (
     <Layout>
       <h1 className='text-5xl md:text-6xl font-extrabold leading-tighter mb-4'>
@@ -18,47 +14,23 @@ const PostList = ({ posts }) => {
           Posts
         </span>
       </h1>
-      <Posts posts={data} />
-      <div className='space-x-2 space-y-2'>
-        <button
-          className={`md:p-2 rounded py-2 text-black text-white p-2 ${
-            pageIndex === 1 ? 'bg-gray-300' : 'bg-blue-400'
-          }`}
-          disabled={pageIndex === 1}
-          onClick={() => setPageIndex(pageIndex - 1)}
-        >
-          {' '}
-          Previous
-        </button>
-        <button
-          className={`md:p-2 rounded py-2 text-black text-white p-2 ${
-            pageIndex === (data && data.meta.pagination.pageCount)
-              ? 'bg-gray-300'
-              : 'bg-blue-400'
-          }`}
-          disabled={pageIndex === (data && data.meta.pagination.pageCount)}
-          onClick={() => setPageIndex(pageIndex + 1)}
-        >
-          Next
-        </button>
-        <span>{`${pageIndex} of ${
-          data && data.meta.pagination.pageCount
-        }`}</span>
-      </div>
+      {posts &&
+        posts.map((post) => (
+          <div key={post.id}>
+            <h2>{post.attributes.title}</h2>
+          </div>
+        ))}
     </Layout>
   )
 }
 
 export default PostList
 
-export async function getServerSideProps() {
-  const postsResponse = await fetcher(
-    `${process.env.NEXT_PUBLIC_STRAPI_URL}/posts?pagination[page]=1&pagination[pageSize]=3`
-  )
-  console.log(postsResponse)
+export async function getStaticProps() {
+  const res = await fetch('http://localhost:1337/api/posts')
+  const data = await res.json()
+
   return {
-    props: {
-      posts: postsResponse,
-    },
+    props: { data },
   }
 }

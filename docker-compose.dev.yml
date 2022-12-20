@@ -1,5 +1,18 @@
 version: '3.8'
 services:
+  backend:
+    container_name: backend
+    build:
+      context: backend
+      dockerfile: .docker/dev.dockerfile
+    image: backend:latest
+    # restart: unless-stopped
+    env_file: ./backend/.env
+    volumes:
+      - strapi_data:/usr/local/backend/strapi/.tmp
+      - strapi_upload:/usr/local/backend/strapi/public/uploads
+    ports:
+      - '1337:1337'
   frontend:
     container_name: frontend
     build:
@@ -13,19 +26,8 @@ services:
       - next_folder:/usr/local/frontend
     ports:
       - '3000:3000'
-  backend:
-    container_name: backend
-    build:
-      context: backend
-      dockerfile: .docker/dev.dockerfile
-    image: backend:latest 
-    # restart: unless-stopped
-    env_file: ./backend/.env
-    volumes:
-      - strapi_data:/usr/local/backend/strapi/.tmp
-      - strapi_upload:/usr/local/backend/strapi/public/uploads
-    ports:
-      - '1337:1337'
+    depends_on:
+      - 'backend'
 volumes:
   node_modules_next:
   next_folder:

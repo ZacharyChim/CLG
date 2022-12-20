@@ -8,4 +8,4 @@ COPY ./ .
 RUN npm install --arch=arm64 --platform=linux --libc=musl sharp
 RUN npm run build
 EXPOSE 1337
-CMD ["npm", "run", "develop"]
+CMD ["npm", "run", "dev"]
