@@ -12,7 +12,7 @@ services:
       - strapi_data:/usr/local/backend/strapi/.tmp
       - strapi_upload:/usr/local/backend/strapi/public/uploads
     ports:
-      - '1337:1337'
+      - '1338:1338'
   frontend:
     container_name: frontend
     build:

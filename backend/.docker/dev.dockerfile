@@ -4,8 +4,8 @@ WORKDIR /usr/local/backend
 COPY package*.json ./
 RUN npm install
 COPY ./ .
-# RUN npm install --ignore-scripts=false --foreground-scripts --verbose sharp
+RUN npm install --ignore-scripts=false --foreground-scripts --verbose sharp
 RUN npm install --arch=arm64 --platform=linux --libc=musl sharp
 RUN npm run build
-EXPOSE 1337
+EXPOSE 1338
 CMD ["npm", "run", "dev"]
