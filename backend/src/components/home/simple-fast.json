@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_home_simple_fasts",
+  "info": {
+    "displayName": "SimpleFast"
+  },
+  "options": {},
+  "attributes": {
+    "ImageTitle": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "Desc": {
+      "type": "text"
+    }
+  }
+}

@@ -21,9 +21,6 @@
     "excerpt": {
       "type": "string"
     },
-    "isPublished": {
-      "type": "boolean"
-    },
     "users_permissions_user": {
       "type": "relation",
       "relation": "manyToOne",
@@ -31,7 +28,8 @@
       "inversedBy": "posts"
     },
     "slug": {
-      "type": "string"
+      "type": "uid",
+      "targetField": "title"
     }
   }
 }
