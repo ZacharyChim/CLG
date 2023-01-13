@@ -1,7 +1,9 @@
+import React from 'react'
+
 export default function Head() {
   return (
     <>
-      <title>CLG Group</title>
+      <title>Blog - CLG Group</title>
     </>
   )
 }
