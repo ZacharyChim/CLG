@@ -42,10 +42,15 @@
       "repeatable": false,
       "component": "home.simple-fast"
     },
-    "SocialIcons": {
-      "type": "component",
-      "repeatable": true,
-      "component": "home.social"
+    "HomeHero": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

@@ -2,12 +2,66 @@
   "data": {
     "id": 1,
     "attributes": {
-      "HeroHeader": "CLG Group",
-      "HeroDesc": "Smart Accounting For Happy Life",
-      "createdAt": "2023-01-05T20:02:13.952Z",
-      "updatedAt": "2023-01-05T21:23:45.919Z",
-      "publishedAt": "2023-01-05T20:02:16.187Z",
-      "Statement": "By facing substantial change in society and the general environment, we are always passionate about finding solutions for different business difficulties, to help our clients to work smartly and easily every day.  We did it through our three main service scopes — cloud solutions, assurance, and advisory.  We are always doing our best to assist our clients with their challenging and tough business tasks and realize their largest aspirations in their business."
+      "copyright": "© 2022 CLG Group. All Rights Reserved. Auto-renewal Policy Terms &         Conditions Privacy Policy & Disclaimer Affiliates",
+      "createdAt": "2023-01-13T20:42:50.770Z",
+      "updatedAt": "2023-01-16T17:19:15.334Z",
+      "publishedAt": "2023-01-13T20:42:52.261Z",
+      "LogoWhite": {
+        "data": {
+          "id": 14,
+          "attributes": {
+            "name": "CLG-Logo-White.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 174,
+            "height": 64,
+            "formats": null,
+            "hash": "CLG_Logo_White_89dd21aafa",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 1.05,
+            "url": "/uploads/CLG_Logo_White_89dd21aafa.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-01-16T09:36:16.812Z",
+            "updatedAt": "2023-01-16T09:36:16.812Z"
+          }
+        }
+      },
+      "SocialIcons": [
+        { "id": 6, "Text": "Whatsapp : +852 9542-1138" },
+        { "id": 7, "Text": "Email : info@clgcpa.com" },
+        { "id": 8, "Text": "Tel : +852 3564-8665" },
+        { "id": 9, "Text": "Fax : +852 3464-0607" },
+        {
+          "id": 10,
+          "Text": "Room 2006, 20/F, Futura Plaza,  111-113 How Ming Street,  Kwun Tong, Hong Kong"
+        }
+      ],
+      "arrow": {
+        "data": {
+          "id": 16,
+          "attributes": {
+            "name": "arrow.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 10,
+            "height": 11,
+            "formats": null,
+            "hash": "arrow_c1f55c7544",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 0.2,
+            "url": "/uploads/arrow_c1f55c7544.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-01-16T17:19:10.364Z",
+            "updatedAt": "2023-01-16T17:19:10.364Z"
+          }
+        }
+      }
     }
   },
   "meta": {}

@@ -1,16 +1,24 @@
+import { v4 } from 'uuid'
 import Image from 'next/image'
 import Link from 'next/link'
-import { toUnicode } from 'punycode'
-import { MenuItem } from '../types.d'
 
 const fetchMenu = async () => {
-  const res = await fetch(`http://localhost:1338/api/navigation/render/2`, {
+  const res = await fetch(`${process.env.STRAPI_API_URL}/navigation/render/2`, {
     next: { revalidate: 60 },
   })
 
   const menu = await res.json()
-  // console.log(menu)
+
   return menu
+}
+
+const fetchLogo = async () => {
+  const logo = await fetch(
+    `${process.env.STRAPI_API_URL}/top-menu?populate=%2A`
+  )
+  const logoJSON = await logo.json()
+
+  return logoJSON.data.attributes.SiteLogo.data.attributes.url
 }
 
 // type PageProps = {
@@ -20,14 +28,15 @@ const fetchMenu = async () => {
 async function Header() {
   const menu = await fetchMenu()
   const parentMenu = menu.filter((item) => item.parent === null)
+  const logoURL = await fetchLogo()
   return (
     <>
       <header>
-        <nav className='relative container mx-auto p-6'>
+        <nav className='relative container mx-auto p-5'>
           <div className='flex items-center justify-between'>
             <div className='pt-2'>
               <Image
-                src='http://localhost:1338/uploads/logo_87234c5476.png'
+                src={`${process.env.STRAPI_URL}${logoURL}`}
                 alt='CLG Group Logo'
                 width={80}
                 height={80}
@@ -37,7 +46,7 @@ async function Header() {
               {parentMenu.map((item) => (
                 <Link
                   href='#'
-                  key='{item.id}'
+                  key={v4()}
                   className='hover:text-darkGrayishBlue'
                 >
                   {item.title}
