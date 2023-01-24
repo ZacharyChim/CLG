@@ -2,6 +2,8 @@ import Link from 'next/link'
 import Header from './Header'
 import Footer from './Footer'
 import '../styles/globals.css'
+import Hero from './Hero'
+import Main from './Main'
 
 export default function RootLayout({
   // Layouts must accept a children prop.
@@ -18,6 +20,10 @@ export default function RootLayout({
       <body>
         {/* @ts-ignore */}
         <Header />
+        {/* @ts-ignore */}
+        <Hero />
+        {/* @ts-ignore */}
+        <Main />
         {children}
         {/* @ts-ignore */}
         <Footer />

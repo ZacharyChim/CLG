@@ -3,9 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const fetchMenu = async () => {
-  const res = await fetch(`${process.env.STRAPI_API_URL}/navigation/render/2`, {
-    next: { revalidate: 60 },
-  })
+  const res = await fetch(`${process.env.STRAPI_API_URL}/navigation/render/2`)
 
   const menu = await res.json()
 

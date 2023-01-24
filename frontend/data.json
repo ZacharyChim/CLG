@@ -2,63 +2,179 @@
   "data": {
     "id": 1,
     "attributes": {
-      "copyright": "© 2022 CLG Group. All Rights Reserved. Auto-renewal Policy Terms &         Conditions Privacy Policy & Disclaimer Affiliates",
-      "createdAt": "2023-01-13T20:42:50.770Z",
-      "updatedAt": "2023-01-16T17:19:15.334Z",
-      "publishedAt": "2023-01-13T20:42:52.261Z",
-      "LogoWhite": {
-        "data": {
-          "id": 14,
-          "attributes": {
-            "name": "CLG-Logo-White.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 174,
-            "height": 64,
-            "formats": null,
-            "hash": "CLG_Logo_White_89dd21aafa",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 1.05,
-            "url": "/uploads/CLG_Logo_White_89dd21aafa.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-16T09:36:16.812Z",
-            "updatedAt": "2023-01-16T09:36:16.812Z"
+      "HeroHeader": "CLG Group",
+      "HeroDesc": "Smart Accounting For Happy Life",
+      "createdAt": "2023-01-05T20:02:13.952Z",
+      "updatedAt": "2023-01-24T11:57:49.827Z",
+      "publishedAt": "2023-01-05T20:02:16.187Z",
+      "Statement": "By facing substantial change in society and the general environment, we are always passionate about finding solutions for different business difficulties, to help our clients to work smartly and easily every day.  We did it through our three main service scopes — cloud solutions, assurance, and advisory.  We are always doing our best to assist our clients with their challenging and tough business tasks and realize their largest aspirations in their business.",
+      "ImageDescLeft": {
+        "id": 1,
+        "Desc": "We offer a hands-on approach with an understanding of your value chain.  We help simplify everyday business tasks with cloud solutions.",
+        "ImageTitle": {
+          "data": {
+            "id": 4,
+            "attributes": {
+              "name": "keep_it_simple.png",
+              "alternativeText": null,
+              "caption": null,
+              "width": 331,
+              "height": 43,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_keep_it_simple.png",
+                  "hash": "thumbnail_keep_it_simple_842be1583b",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 245,
+                  "height": 32,
+                  "size": 7.73,
+                  "url": "/uploads/thumbnail_keep_it_simple_842be1583b.png"
+                }
+              },
+              "hash": "keep_it_simple_842be1583b",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 1.35,
+              "url": "/uploads/keep_it_simple_842be1583b.png",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2023-01-05T20:00:28.644Z",
+              "updatedAt": "2023-01-05T20:00:28.644Z"
+            }
+          }
+        },
+        "Image": {
+          "data": {
+            "id": 2,
+            "attributes": {
+              "name": "ImageDescLeft.png",
+              "alternativeText": null,
+              "caption": null,
+              "width": 535,
+              "height": 504,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_ImageDescLeft.png",
+                  "hash": "thumbnail_Image_Desc_Left_50cf68b53c",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 166,
+                  "height": 156,
+                  "size": 57.15,
+                  "url": "/uploads/thumbnail_Image_Desc_Left_50cf68b53c.png"
+                },
+                "small": {
+                  "name": "small_ImageDescLeft.png",
+                  "hash": "small_Image_Desc_Left_50cf68b53c",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 500,
+                  "height": 471,
+                  "size": 390,
+                  "url": "/uploads/small_Image_Desc_Left_50cf68b53c.png"
+                }
+              },
+              "hash": "Image_Desc_Left_50cf68b53c",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 107.06,
+              "url": "/uploads/Image_Desc_Left_50cf68b53c.png",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2023-01-05T19:56:46.678Z",
+              "updatedAt": "2023-01-05T20:00:49.708Z"
+            }
           }
         }
       },
-      "SocialIcons": [
-        { "id": 6, "Text": "Whatsapp : +852 9542-1138" },
-        { "id": 7, "Text": "Email : info@clgcpa.com" },
-        { "id": 8, "Text": "Tel : +852 3564-8665" },
-        { "id": 9, "Text": "Fax : +852 3464-0607" },
-        {
-          "id": 10,
-          "Text": "Room 2006, 20/F, Futura Plaza,  111-113 How Ming Street,  Kwun Tong, Hong Kong"
-        }
-      ],
-      "arrow": {
-        "data": {
-          "id": 16,
-          "attributes": {
-            "name": "arrow.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 10,
-            "height": 11,
-            "formats": null,
-            "hash": "arrow_c1f55c7544",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 0.2,
-            "url": "/uploads/arrow_c1f55c7544.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-16T17:19:10.364Z",
-            "updatedAt": "2023-01-16T17:19:10.364Z"
+      "ImageDescRight": {
+        "id": 2,
+        "Desc": "Let us take you to the complex accounting, finance and taxes world.  You then focus on what matters most, growing the business faster together.",
+        "ImageTitle": {
+          "data": {
+            "id": 5,
+            "attributes": {
+              "name": "glow_it_fast.png",
+              "alternativeText": null,
+              "caption": null,
+              "width": 309,
+              "height": 45,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_glow_it_fast.png",
+                  "hash": "thumbnail_glow_it_fast_3da9aa1fd4",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 245,
+                  "height": 36,
+                  "size": 8.42,
+                  "url": "/uploads/thumbnail_glow_it_fast_3da9aa1fd4.png"
+                }
+              },
+              "hash": "glow_it_fast_3da9aa1fd4",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 1.7,
+              "url": "/uploads/glow_it_fast_3da9aa1fd4.png",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2023-01-05T20:01:36.955Z",
+              "updatedAt": "2023-01-05T20:01:36.955Z"
+            }
+          }
+        },
+        "Image": {
+          "data": {
+            "id": 3,
+            "attributes": {
+              "name": "ImageDescRight.png",
+              "alternativeText": null,
+              "caption": null,
+              "width": 553,
+              "height": 504,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_ImageDescRight.png",
+                  "hash": "thumbnail_Image_Desc_Right_4f03e34733",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 171,
+                  "height": 156,
+                  "size": 65.97,
+                  "url": "/uploads/thumbnail_Image_Desc_Right_4f03e34733.png"
+                },
+                "small": {
+                  "name": "small_ImageDescRight.png",
+                  "hash": "small_Image_Desc_Right_4f03e34733",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 500,
+                  "height": 456,
+                  "size": 436.84,
+                  "url": "/uploads/small_Image_Desc_Right_4f03e34733.png"
+                }
+              },
+              "hash": "Image_Desc_Right_4f03e34733",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 109.32,
+              "url": "/uploads/Image_Desc_Right_4f03e34733.png",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2023-01-05T19:56:55.889Z",
+              "updatedAt": "2023-01-24T15:58:26.016Z"
+            }
           }
         }
       }

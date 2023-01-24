@@ -5,12 +5,9 @@ import React from 'react'
 import { isTemplateExpression } from 'typescript'
 
 const fetchFooter = async () => {
-  const res = await fetch(`${process.env.STRAPI_API_URL}/footer?populate=%2A`, {
-    next: { revalidate: 60 },
-  })
+  const res = await fetch(`${process.env.STRAPI_API_URL}/footer?populate=%2A`)
 
   const footer = await res.json()
-  // console.log(copy.data.attributes.copyright)
   return footer.data.attributes
 }
 
@@ -29,7 +26,6 @@ const fetchLinks = async () => {
   })
 
   const links = await res.json()
-  // console.log(menu)
   return links
 }
 
@@ -38,7 +34,15 @@ async function Footer() {
   const copyright = footer.copyright
   const arrow = process.env.STRAPI_URL + footer.arrow.data.attributes.url
   const allLinks = await fetchLinks()
-  const links = allLinks.filter((item) => item.parent === null)
+  const linkWithParent = allLinks.filter((item) => item.parent !== null)
+  const linkAboutUS = linkWithParent.filter((item) => item.parent.id === 4)
+  const linkAudit = linkWithParent.filter((item) => item.parent.id === 8)
+  const linkAdvisory = linkWithParent.filter((item) => item.parent.id === 9)
+  const linkFunding = linkWithParent.filter((item) => item.parent.id === 10)
+  const linkIncorporation = linkWithParent.filter(
+    (item) => item.parent.id === 19
+  )
+  const linkCloud = linkWithParent.filter((item) => item.parent.id === 20)
   const logoURL = footer.LogoWhite.data.attributes.url
   const social = await fetchSocial()
   const icons = social.map((icon) => ({
@@ -46,7 +50,6 @@ async function Footer() {
     iconURL: icon.Icon.data.attributes.url,
   }))
 
-  console.log(icons)
   return (
     <footer className='bg-brightBlue'>
       <div className='max-w-screen-xl px-4 py-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8'>
@@ -92,367 +95,172 @@ async function Footer() {
 
           <div className='grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4'>
             <div>
-              <p className='font-bold text-grayishWhite pb-4'>Home</p>
-              <p className='font-bold text-grayishWhite pb-4'>Blog</p>
-              <p className='font-bold text-grayishWhite pb-4'>Contact Us</p>
-              <p className='font-bold text-grayishWhite pb-1'>About Us</p>
+              <p className='font-bold text-grayishWhite pb-4'>
+                <Link href={allLinks[0].externalPath}>{allLinks[0].title}</Link>
+              </p>
+              <p className='font-bold text-grayishWhite pb-4'>
+                <Link href={allLinks[1].externalPath}>{allLinks[1].title}</Link>
+              </p>
+              <p className='font-bold text-grayishWhite pb-4'>
+                <Link href={allLinks[2].externalPath}>{allLinks[2].title}</Link>
+              </p>
+              <p className='font-bold text-grayishWhite pb-1'>
+                <Link href={allLinks[3].path}>{allLinks[3].title}</Link>
+              </p>
 
               <nav aria-label='Footer Navigation - Services' className='my-2'>
-                <ul className='space-y-3 text-sm'>
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>About CLG</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>Out Events</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>Case Studies</span>
-                    </a>
-                  </li>
+                <ul className='space-y-3 text-sm mb-4'>
+                  {linkAboutUS.map((item) => (
+                    <li key={v4()}>
+                      <a
+                        href={item.externalPath}
+                        className='flex items-center text-grayishWhite transition hover:opacity-75'
+                      >
+                        <span>
+                          <Image
+                            src={arrow}
+                            alt='arrow'
+                            width={11}
+                            height={11}
+                          />
+                        </span>
+                        <span className='ml-2'>{item.title}</span>
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </nav>
             </div>
 
             <div>
-              <p className='font-medium text-grayishWhite'>Audit & Assurance</p>
+              <p className='font-bold text-grayishWhite'>{allLinks[7].title}</p>
 
               <nav aria-label='Footer Navigation - Company' className='mt-6'>
                 <ul className='space-y-3 text-sm mb-4'>
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>Accounting & Bookkeeping</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>Audit Assurance</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>Hong Kong Taxation</span>
-                    </a>
-                  </li>
+                  {linkAudit.map((item) => (
+                    <li key={v4()}>
+                      <a
+                        href={item.externalPath}
+                        className='flex items-center text-grayishWhite transition hover:opacity-75'
+                      >
+                        <span>
+                          <Image
+                            src={arrow}
+                            alt='arrow'
+                            width={11}
+                            height={11}
+                          />
+                        </span>
+                        <span className='ml-2'>{item.title}</span>
+                      </a>
+                    </li>
+                  ))}
                 </ul>
 
-                <p className='font-medium text-grayishWhite mb-3'>Advisory</p>
-                <ul className='space-y-3 text-sm mb-4'>
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>Company Secretary</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>Payroll Outsourcing Service</span>
-                    </a>
-                  </li>
-                </ul>
-
-                <p className='font-medium text-grayishWhite mb-3'>
-                  Funding Audit
+                <p className='font-bold text-grayishWhite mb-3'>
+                  {allLinks[11].title}
                 </p>
                 <ul className='space-y-3 text-sm mb-4'>
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>BUD</span>
-                    </a>
-                  </li>
+                  {linkAdvisory.map((item) => (
+                    <li key={v4()}>
+                      <a
+                        href={item.externalPath}
+                        className='flex items-center text-grayishWhite transition hover:opacity-75'
+                      >
+                        <span>
+                          <Image
+                            src={arrow}
+                            alt='arrow'
+                            width={11}
+                            height={11}
+                          />
+                        </span>
+                        <span className='ml-2'>{item.title}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
 
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>TVP</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>Others</span>
-                    </a>
-                  </li>
+                <p className='font-bold text-grayishWhite mb-3'>
+                  {allLinks[14].title}
+                </p>
+                <ul className='space-y-3 text-sm mb-4'>
+                  {linkFunding.map((item) => (
+                    <li key={v4()}>
+                      <a
+                        href={item.externalPath}
+                        className='flex items-center text-grayishWhite transition hover:opacity-75'
+                      >
+                        <span>
+                          <Image
+                            src={arrow}
+                            alt='arrow'
+                            width={11}
+                            height={11}
+                          />
+                        </span>
+                        <span className='ml-2'>{item.title}</span>
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </nav>
             </div>
 
             <div>
-              <p className='font-medium text-grayishWhite mb-2'>
-                Incorporation
+              <p className='font-bold text-grayishWhite mb-2'>
+                {allLinks[18].title}
               </p>
 
               <nav aria-label='Footer Navigation - Company' className='mt-6'>
                 <ul className='space-y-3 text-sm mb-4'>
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>Hong Kong</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>Non-Government Organization</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>Singapore</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>Malaysia</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>British</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>BVI</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>Caymen Island</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>Seychelles</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>Anguilla</span>
-                    </a>
-                  </li>
+                  {linkIncorporation.map((item) => (
+                    <li key={v4()}>
+                      <a
+                        href={item.externalPath}
+                        className='flex items-center text-grayishWhite transition hover:opacity-75'
+                      >
+                        <span>
+                          <Image
+                            src={arrow}
+                            alt='arrow'
+                            width={11}
+                            height={11}
+                          />
+                        </span>
+                        <span className='ml-2'>{item.title}</span>
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </nav>
             </div>
 
             <div>
-              <p className='font-medium text-grayishWhite'>Cloud Solutions</p>
+              <p className='font-bold text-grayishWhite'>
+                {allLinks[28].title}
+              </p>
 
               <nav aria-label='Footer Navigation - Legal' className='mt-6'>
-                <ul className='space-y-4 text-sm'>
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>Accounting Solution</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>HRM Solution</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>POS Solution</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>F&B POS Solution</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>Digital Marketing Solution</span>
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>Receipt Filing Solution</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href='#'
-                      className='flex items-center text-grayishWhite transition hover:opacity-75'
-                    >
-                      <span>
-                        <Image src={arrow} alt='arrow' width={11} height={11} />
-                      </span>
-                      <span className='ml-2'>Online Shop</span>
-                    </a>
-                  </li>
+                <ul className='space-y-3 text-sm mb-4'>
+                  {linkCloud.map((item) => (
+                    <li key={v4()}>
+                      <a
+                        href={item.externalPath}
+                        className='flex items-center text-grayishWhite transition hover:opacity-75'
+                      >
+                        <span>
+                          <Image
+                            src={arrow}
+                            alt='arrow'
+                            width={11}
+                            height={11}
+                          />
+                        </span>
+                        <span className='ml-2'>{item.title}</span>
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </nav>
             </div>
