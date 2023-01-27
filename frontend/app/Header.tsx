@@ -30,7 +30,7 @@ async function Header() {
   return (
     <>
       <header>
-        <nav className='relative container mx-auto p-5'>
+        <nav className='relative container mx-auto p-5 max-w-5xl'>
           <div className='flex items-center justify-between'>
             <div className='pt-2'>
               <Image

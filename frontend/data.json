@@ -5,176 +5,118 @@
       "HeroHeader": "CLG Group",
       "HeroDesc": "Smart Accounting For Happy Life",
       "createdAt": "2023-01-05T20:02:13.952Z",
-      "updatedAt": "2023-01-24T11:57:49.827Z",
+      "updatedAt": "2023-01-25T05:05:56.651Z",
       "publishedAt": "2023-01-05T20:02:16.187Z",
       "Statement": "By facing substantial change in society and the general environment, we are always passionate about finding solutions for different business difficulties, to help our clients to work smartly and easily every day.  We did it through our three main service scopes — cloud solutions, assurance, and advisory.  We are always doing our best to assist our clients with their challenging and tough business tasks and realize their largest aspirations in their business.",
-      "ImageDescLeft": {
-        "id": 1,
-        "Desc": "We offer a hands-on approach with an understanding of your value chain.  We help simplify everyday business tasks with cloud solutions.",
-        "ImageTitle": {
-          "data": {
-            "id": 4,
-            "attributes": {
-              "name": "keep_it_simple.png",
-              "alternativeText": null,
-              "caption": null,
-              "width": 331,
-              "height": 43,
-              "formats": {
-                "thumbnail": {
-                  "name": "thumbnail_keep_it_simple.png",
-                  "hash": "thumbnail_keep_it_simple_842be1583b",
-                  "ext": ".png",
-                  "mime": "image/png",
-                  "path": null,
-                  "width": 245,
-                  "height": 32,
-                  "size": 7.73,
-                  "url": "/uploads/thumbnail_keep_it_simple_842be1583b.png"
-                }
-              },
-              "hash": "keep_it_simple_842be1583b",
-              "ext": ".png",
-              "mime": "image/png",
-              "size": 1.35,
-              "url": "/uploads/keep_it_simple_842be1583b.png",
-              "previewUrl": null,
-              "provider": "local",
-              "provider_metadata": null,
-              "createdAt": "2023-01-05T20:00:28.644Z",
-              "updatedAt": "2023-01-05T20:00:28.644Z"
-            }
-          }
-        },
-        "Image": {
-          "data": {
-            "id": 2,
-            "attributes": {
-              "name": "ImageDescLeft.png",
-              "alternativeText": null,
-              "caption": null,
-              "width": 535,
-              "height": 504,
-              "formats": {
-                "thumbnail": {
-                  "name": "thumbnail_ImageDescLeft.png",
-                  "hash": "thumbnail_Image_Desc_Left_50cf68b53c",
-                  "ext": ".png",
-                  "mime": "image/png",
-                  "path": null,
-                  "width": 166,
-                  "height": 156,
-                  "size": 57.15,
-                  "url": "/uploads/thumbnail_Image_Desc_Left_50cf68b53c.png"
-                },
-                "small": {
-                  "name": "small_ImageDescLeft.png",
-                  "hash": "small_Image_Desc_Left_50cf68b53c",
-                  "ext": ".png",
-                  "mime": "image/png",
-                  "path": null,
-                  "width": 500,
-                  "height": 471,
-                  "size": 390,
-                  "url": "/uploads/small_Image_Desc_Left_50cf68b53c.png"
-                }
-              },
-              "hash": "Image_Desc_Left_50cf68b53c",
-              "ext": ".png",
-              "mime": "image/png",
-              "size": 107.06,
-              "url": "/uploads/Image_Desc_Left_50cf68b53c.png",
-              "previewUrl": null,
-              "provider": "local",
-              "provider_metadata": null,
-              "createdAt": "2023-01-05T19:56:46.678Z",
-              "updatedAt": "2023-01-05T20:00:49.708Z"
-            }
+      "experienceNumber": "10+",
+      "experienceText": "YEARS OF EXPERIENCE",
+      "clientNumber": "500+",
+      "clientText": "CLIENTS",
+      "awardTitle": "WINNER",
+      "awardText": "FOR XERO AWARDS 2020",
+      "awardDesc": "Hong Kong Emerging Accounting Partner of the Year",
+      "experience": {
+        "data": {
+          "id": 20,
+          "attributes": {
+            "name": "experience.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 240,
+            "height": 252,
+            "formats": {
+              "thumbnail": {
+                "name": "thumbnail_experience.png",
+                "hash": "thumbnail_experience_6ce301c5a0",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 149,
+                "height": 156,
+                "size": 39.54,
+                "url": "/uploads/thumbnail_experience_6ce301c5a0.png"
+              }
+            },
+            "hash": "experience_6ce301c5a0",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 13.66,
+            "url": "/uploads/experience_6ce301c5a0.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-01-25T05:04:00.623Z",
+            "updatedAt": "2023-01-25T05:04:00.623Z"
           }
         }
       },
-      "ImageDescRight": {
-        "id": 2,
-        "Desc": "Let us take you to the complex accounting, finance and taxes world.  You then focus on what matters most, growing the business faster together.",
-        "ImageTitle": {
-          "data": {
-            "id": 5,
-            "attributes": {
-              "name": "glow_it_fast.png",
-              "alternativeText": null,
-              "caption": null,
-              "width": 309,
-              "height": 45,
-              "formats": {
-                "thumbnail": {
-                  "name": "thumbnail_glow_it_fast.png",
-                  "hash": "thumbnail_glow_it_fast_3da9aa1fd4",
-                  "ext": ".png",
-                  "mime": "image/png",
-                  "path": null,
-                  "width": 245,
-                  "height": 36,
-                  "size": 8.42,
-                  "url": "/uploads/thumbnail_glow_it_fast_3da9aa1fd4.png"
-                }
-              },
-              "hash": "glow_it_fast_3da9aa1fd4",
-              "ext": ".png",
-              "mime": "image/png",
-              "size": 1.7,
-              "url": "/uploads/glow_it_fast_3da9aa1fd4.png",
-              "previewUrl": null,
-              "provider": "local",
-              "provider_metadata": null,
-              "createdAt": "2023-01-05T20:01:36.955Z",
-              "updatedAt": "2023-01-05T20:01:36.955Z"
-            }
+      "client": {
+        "data": {
+          "id": 21,
+          "attributes": {
+            "name": "clients.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 293,
+            "height": 224,
+            "formats": {
+              "thumbnail": {
+                "name": "thumbnail_clients.png",
+                "hash": "thumbnail_clients_12135f4a09",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 204,
+                "height": 156,
+                "size": 33.11,
+                "url": "/uploads/thumbnail_clients_12135f4a09.png"
+              }
+            },
+            "hash": "clients_12135f4a09",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 7.82,
+            "url": "/uploads/clients_12135f4a09.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-01-25T05:04:28.340Z",
+            "updatedAt": "2023-01-25T05:04:28.340Z"
           }
-        },
-        "Image": {
-          "data": {
-            "id": 3,
-            "attributes": {
-              "name": "ImageDescRight.png",
-              "alternativeText": null,
-              "caption": null,
-              "width": 553,
-              "height": 504,
-              "formats": {
-                "thumbnail": {
-                  "name": "thumbnail_ImageDescRight.png",
-                  "hash": "thumbnail_Image_Desc_Right_4f03e34733",
-                  "ext": ".png",
-                  "mime": "image/png",
-                  "path": null,
-                  "width": 171,
-                  "height": 156,
-                  "size": 65.97,
-                  "url": "/uploads/thumbnail_Image_Desc_Right_4f03e34733.png"
-                },
-                "small": {
-                  "name": "small_ImageDescRight.png",
-                  "hash": "small_Image_Desc_Right_4f03e34733",
-                  "ext": ".png",
-                  "mime": "image/png",
-                  "path": null,
-                  "width": 500,
-                  "height": 456,
-                  "size": 436.84,
-                  "url": "/uploads/small_Image_Desc_Right_4f03e34733.png"
-                }
-              },
-              "hash": "Image_Desc_Right_4f03e34733",
-              "ext": ".png",
-              "mime": "image/png",
-              "size": 109.32,
-              "url": "/uploads/Image_Desc_Right_4f03e34733.png",
-              "previewUrl": null,
-              "provider": "local",
-              "provider_metadata": null,
-              "createdAt": "2023-01-05T19:56:55.889Z",
-              "updatedAt": "2023-01-24T15:58:26.016Z"
-            }
+        }
+      },
+      "award": {
+        "data": {
+          "id": 22,
+          "attributes": {
+            "name": "winner.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 352,
+            "height": 333,
+            "formats": {
+              "thumbnail": {
+                "name": "thumbnail_winner.png",
+                "hash": "thumbnail_winner_cfffb96c4b",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 165,
+                "height": 156,
+                "size": 38.68,
+                "url": "/uploads/thumbnail_winner_cfffb96c4b.png"
+              }
+            },
+            "hash": "winner_cfffb96c4b",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 15.29,
+            "url": "/uploads/winner_cfffb96c4b.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-01-25T05:04:57.988Z",
+            "updatedAt": "2023-01-25T05:04:57.988Z"
           }
         }
       }

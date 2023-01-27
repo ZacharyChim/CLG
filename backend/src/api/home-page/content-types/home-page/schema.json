@@ -76,6 +76,17 @@
       ]
     },
     "comma": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "experience": {
       "allowedTypes": [
         "images",
         "files",
@@ -84,6 +95,47 @@
       ],
       "type": "media",
       "multiple": false
+    },
+    "experienceNumber": {
+      "type": "string"
+    },
+    "experienceText": {
+      "type": "string"
+    },
+    "client": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "clientNumber": {
+      "type": "string"
+    },
+    "clientText": {
+      "type": "string"
+    },
+    "award": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "awardTitle": {
+      "type": "string"
+    },
+    "awardText": {
+      "type": "string"
+    },
+    "awardDesc": {
+      "type": "string"
     }
   }
 }

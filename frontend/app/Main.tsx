@@ -19,32 +19,54 @@ const fetchDesc = async () => {
   return resData
 }
 
+const fetchNumber = async () => {
+  const res = await fetch(
+    `${process.env.STRAPI_API_URL}/home-page?populate[0]=experience&populate[1]=client&populate[2]=award`
+  )
+
+  const resData = await res.json()
+  return resData.data.attributes
+}
+
 export default async function Main() {
   const res = await fetchData()
   const data = res.data.attributes
 
-  const comma = data.comma.data.attributes.url
-  const commaURL = process.env.STRAPI_URL + comma
+  const commaURL = process.env.STRAPI_URL + data.comma.data.attributes.url
 
   const desc = await fetchDesc()
-  const descLeft = desc.data.attributes.ImageDescLeft.Image.data.attributes.url
-  const descLeftURL = process.env.STRAPI_URL + descLeft
-  const descLeftTitle =
+  const descLeftURL =
+    process.env.STRAPI_URL +
+    desc.data.attributes.ImageDescLeft.Image.data.attributes.url
+
+  const descLeftTitleURL =
+    process.env.STRAPI_URL +
     desc.data.attributes.ImageDescLeft.ImageTitle.data.attributes.url
-  const descLeftTitleURL = process.env.STRAPI_URL + descLeftTitle
 
-  const descRight =
+  const descRightURL =
+    process.env.STRAPI_URL +
     desc.data.attributes.ImageDescRight.Image.data.attributes.url
-  const descRightURL = process.env.STRAPI_URL + descRight
-  const descRightTitle =
+
+  const descRightTitleURL =
+    process.env.STRAPI_URL +
     desc.data.attributes.ImageDescRight.ImageTitle.data.attributes.url
-  const descRightTitleURL = process.env.STRAPI_URL + descRightTitle
 
-  const xero = data.xero.data.attributes.url
-  const xeroURL = process.env.STRAPI_URL + xero
+  const number = await fetchNumber()
+  const expURL = process.env.STRAPI_URL + number.experience.data.attributes.url
+  const expNumber = number.experienceNumber
+  const expText = number.experienceText
+  const clientURL = process.env.STRAPI_URL + number.client.data.attributes.url
+  const clientNumber = number.clientNumber
+  const clientText = number.clientText
+  const awardURL = process.env.STRAPI_URL + number.award.data.attributes.url
+  const awardTitle = number.awardTitle
+  const awardText = number.awardText
+  const awardDesc = number.awardDesc
 
-  const xeroSilver = data.xeroSilver.data.attributes.url
-  const xeroSilverURL = process.env.STRAPI_URL + xeroSilver
+  const xeroURL = process.env.STRAPI_URL + data.xero.data.attributes.url
+
+  const xeroSilverURL =
+    process.env.STRAPI_URL + data.xeroSilver.data.attributes.url
   return (
     <>
       <section
@@ -69,7 +91,7 @@ export default async function Main() {
       </section>
 
       <section id='simple'>
-        <div className='container flex flex-col px-10 mx-auto mt-10 space-y-12 items-center md:space-y-0 md:flex-row'>
+        <div className='container flex flex-col max-w-5xl px-10 mx-auto mt-10 space-y-12 items-center md:space-y-0 md:flex-row'>
           <div className='container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row md:w-1/2'>
             <Image
               src={descLeftURL}
@@ -92,7 +114,7 @@ export default async function Main() {
             </p>
           </div>
         </div>
-        <div className='container flex flex-col-reverse px-10 mx-auto mt-10 space-y-12 items-center md:space-y-0 md:flex-row'>
+        <div className='container flex flex-col-reverse max-w-5xl px-10 mx-auto mt-10 space-y-12 items-center md:space-y-0 md:flex-row'>
           <div className='container flex flex-col px-4 mt-10 mx-auto space-y-8 md:space-y-0 md:w-1/2'>
             <Image
               src={descRightTitleURL}
@@ -118,8 +140,44 @@ export default async function Main() {
         </div>
       </section>
 
+      <section id='numbers' className='bg-veryLightBlue'>
+        <div className='max-w-5xl px-5 mx-auto mt-32 text-center'>
+          <div className='flex flex-col mt-24 py-20 md:flex-row md:space-x-14'>
+            <div className='flex flex-col items-center p-8 space-y-2 rounded-lg h-30 md:w-1/3'>
+              <Image src={expURL} alt={expText} width='240' height='300' />
+              <h5 className='text-4xl font-bold text-veryDarkBlue pt-6'>
+                {expNumber}
+              </h5>
+              <p className='text-xl'>{expText}</p>
+            </div>
+
+            <div className='flex flex-col items-center p-8 space-y-2 rounded-lg h-30 md:w-1/3'>
+              <Image
+                src={clientURL}
+                alt={clientText}
+                width='293'
+                height='300'
+              />
+              <h5 className='text-4xl font-bold text-veryDarkBlue pt-6'>
+                {clientNumber}
+              </h5>
+              <p className='text-xl'>{clientText}</p>
+            </div>
+
+            <div className='flex flex-col items-center p-8 space-y-2 rounded-lg h-30 md:w-1/3'>
+              <Image src={awardURL} alt={awardText} width='269' height='300' />
+              <h5 className='text-4xl font-bold text-veryDarkBlue pt-6'>
+                {awardTitle}
+              </h5>
+              <p className='text-xl'>{awardText}</p>
+              <p className='text-lg text-darkBlue'>{awardDesc}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id='partner'>
-        <div className='container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row'>
+        <div className='container max-w-4xl flex flex-col px-4 mx-auto my-40 md:flex-row'>
           <div className='flex flex-col space-y-12 items-center md:w-1/2'>
             <Image src={xeroURL} alt='Xero' width='256' height='123' />
           </div>
