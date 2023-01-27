@@ -67,6 +67,55 @@ export default async function Main() {
 
   const xeroSilverURL =
     process.env.STRAPI_URL + data.xeroSilver.data.attributes.url
+
+  const serviceTitle = data.serviceTitle
+  const incorporation = data.incorporation
+  const secretary = data.secretary
+  const accounting = data.accounting
+  const taxation = data.taxation
+  const auditing = data.auditing
+  const funding = data.funding
+  const cloud = data.cloud
+  const solution = data.solution
+
+  const incorporationURL =
+    process.env.STRAPI_URL + data.incorporationImage.data.attributes.url
+  const secretaryURL =
+    process.env.STRAPI_URL + data.secretaryImage.data.attributes.url
+  const accountingURL =
+    process.env.STRAPI_URL + data.accountingImage.data.attributes.url
+  const taxationURL =
+    process.env.STRAPI_URL + data.taxationImage.data.attributes.url
+  const auditingURL =
+    process.env.STRAPI_URL + data.auditingImage.data.attributes.url
+  const fundingURL =
+    process.env.STRAPI_URL + data.fundingImage.data.attributes.url
+  const cloudURL = process.env.STRAPI_URL + data.cloudImage.data.attributes.url
+  const solutionURL =
+    process.env.STRAPI_URL + data.solutionImage.data.attributes.url
+
+  const partnership = data.partnership
+
+  const workstemURL =
+    process.env.STRAPI_URL + data.workstemLogo.data.attributes.url
+  const hubdocURL = process.env.STRAPI_URL + data.hubdocLogo.data.attributes.url
+  const xeroLogoURL = process.env.STRAPI_URL + data.xeroLogo.data.attributes.url
+  const mshopURL = process.env.STRAPI_URL + data.mshopLogo.data.attributes.url
+  const gingersoftURL =
+    process.env.STRAPI_URL + data.gingersoftLogo.data.attributes.url
+  const eats365URL =
+    process.env.STRAPI_URL + data.eats365Logo.data.attributes.url
+  const foodmarkethubURL =
+    process.env.STRAPI_URL + data.foodmarkethubLogo.data.attributes.url
+  const yoovURL = process.env.STRAPI_URL + data.yoovLogo.data.attributes.url
+  const dkdooURL = process.env.STRAPI_URL + data.dkdooLogo.data.attributes.url
+  const kpayURL = process.env.STRAPI_URL + data.kpayLogo.data.attributes.url
+  const eberURL = process.env.STRAPI_URL + data.eberLogo.data.attributes.url
+
+  const contactTitle = data.contactTitle
+  const contactSubtitle = data.contactSubtitle
+  const contactText = data.contactText
+
   return (
     <>
       <section
@@ -143,7 +192,7 @@ export default async function Main() {
       <section id='numbers' className='bg-veryLightBlue'>
         <div className='max-w-5xl px-5 mx-auto mt-32 text-center'>
           <div className='flex flex-col mt-24 py-20 md:flex-row md:space-x-14'>
-            <div className='flex flex-col items-center p-8 space-y-2 rounded-lg h-30 md:w-1/3'>
+            <div className='flex flex-col items-center p-8 space-y-2 h-30 md:w-1/3'>
               <Image src={expURL} alt={expText} width='240' height='300' />
               <h5 className='text-4xl font-bold text-veryDarkBlue pt-6'>
                 {expNumber}
@@ -151,7 +200,7 @@ export default async function Main() {
               <p className='text-xl'>{expText}</p>
             </div>
 
-            <div className='flex flex-col items-center p-8 space-y-2 rounded-lg h-30 md:w-1/3'>
+            <div className='flex flex-col items-center p-8 space-y-2 h-30 md:w-1/3'>
               <Image
                 src={clientURL}
                 alt={clientText}
@@ -164,7 +213,7 @@ export default async function Main() {
               <p className='text-xl'>{clientText}</p>
             </div>
 
-            <div className='flex flex-col items-center p-8 space-y-2 rounded-lg h-30 md:w-1/3'>
+            <div className='flex flex-col items-center p-8 space-y-2 h-30 md:w-1/3'>
               <Image src={awardURL} alt={awardText} width='269' height='300' />
               <h5 className='text-4xl font-bold text-veryDarkBlue pt-6'>
                 {awardTitle}
@@ -176,9 +225,9 @@ export default async function Main() {
         </div>
       </section>
 
-      <section id='partner'>
+      <section id='xero'>
         <div className='container max-w-4xl flex flex-col px-4 mx-auto my-40 md:flex-row'>
-          <div className='flex flex-col space-y-12 items-center md:w-1/2'>
+          <div className='flex flex-col space-y-12 mb-10 items-center md:w-1/2'>
             <Image src={xeroURL} alt='Xero' width='256' height='123' />
           </div>
           <div className='flex flex-col space-y-8 md:w-1/2'>
@@ -199,6 +248,165 @@ export default async function Main() {
               consists of Xero-certified advisors, guiding our clients to
               transform their business with solid experiences and knowledge.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section id='services' className='bg-deepBlue'>
+        <div className='max-w-4xl px-5 mx-auto py-20 text-center'>
+          <h2 className='text-4xl font-bold text-white mb-10 mt-10 '>
+            {serviceTitle}
+          </h2>
+
+          <div className='flex flex-col md:flex-row md:space-x-4'>
+            <div className='flex flex-col items-center p-6 space-y-2 md:w-1/4'>
+              <Image
+                src={incorporationURL}
+                alt={incorporation}
+                width='216'
+                height='216'
+              />
+              <h5 className='text-md text-white pt-6'>{incorporation}</h5>
+            </div>
+
+            <div className='flex flex-col items-center p-6 space-y-2 md:w-1/4'>
+              <Image
+                src={secretaryURL}
+                alt={secretary}
+                width='216'
+                height='216'
+              />
+              <h5 className='text-md text-white pt-6'>{secretary}</h5>
+            </div>
+
+            <div className='flex flex-col items-center p-6 space-y-2 md:w-1/4'>
+              <Image
+                src={accountingURL}
+                alt={accounting}
+                width='216'
+                height='216'
+              />
+              <h5 className='text-md text-white pt-6'>{accounting}</h5>
+            </div>
+
+            <div className='flex flex-col items-center p-6 space-y-2 md:w-1/4'>
+              <Image
+                src={taxationURL}
+                alt={taxation}
+                width='216'
+                height='216'
+              />
+              <h5 className='text-md text-white pt-6'>{taxation}</h5>
+            </div>
+          </div>
+
+          <div className='flex flex-col md:flex-row md:space-x-4'>
+            <div className='flex flex-col items-center p-6 space-y-2 md:w-1/4'>
+              <Image
+                src={auditingURL}
+                alt={auditing}
+                width='216'
+                height='216'
+              />
+              <h5 className='text-md text-white pt-6'>{auditing}</h5>
+            </div>
+
+            <div className='flex flex-col items-center p-6 space-y-2 md:w-1/4'>
+              <Image src={fundingURL} alt={funding} width='216' height='216' />
+              <h5 className='text-md text-white pt-6'>{funding}</h5>
+            </div>
+
+            <div className='flex flex-col items-center p-6 space-y-2 md:w-1/4'>
+              <Image src={cloudURL} alt={cloud} width='216' height='216' />
+              <h5 className='text-md text-white pt-6'>{cloud}</h5>
+            </div>
+
+            <div className='flex flex-col items-center p-6 space-y-2 md:w-1/4'>
+              <Image
+                src={solutionURL}
+                alt={solution}
+                width='216'
+                height='216'
+              />
+              <h5 className='text-md text-white pt-6'>{solution}</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id='partnership' className='bg-white'>
+        <div className='max-w-4xl mx-auto py-20 text-center'>
+          <h2 className='text-4xl font-bold text-darkBlue mb-10 mt-10 '>
+            {partnership}
+          </h2>
+
+          <div className='flex flex-col items-center md:flex-row md:space-x-0'>
+            <div className='flex flex-col items-center justify-center space-y-2 md:w-1/4'>
+              <Image src={workstemURL} alt='' width='300' height='47' />
+            </div>
+
+            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/4'>
+              <Image src={hubdocURL} alt='' width='185' height='57' />
+            </div>
+
+            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/4'>
+              <Image src={xeroLogoURL} alt='' width='100' height='100' />
+            </div>
+
+            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/4'>
+              <Image src={mshopURL} alt='' width='291' height='80' />
+            </div>
+          </div>
+
+          <div className='flex flex-col md:flex-row md:space-x-4'>
+            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/3'>
+              <Image src={gingersoftURL} alt='' width='300' height='79' />
+            </div>
+
+            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/3'>
+              <Image src={eats365URL} alt='' width='300' height='150' />
+            </div>
+
+            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/3'>
+              <Image src={foodmarkethubURL} alt='' width='300' height='124' />
+            </div>
+          </div>
+
+          <div className='flex flex-col md:flex-row md:space-x-4'>
+            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/4'>
+              <Image src={yoovURL} alt='' width='281' height='100' />
+            </div>
+
+            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/4'>
+              <Image src={dkdooURL} alt='' width='300' height='79' />
+            </div>
+
+            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/4'>
+              <Image src={kpayURL} alt='' width='300' height='150' />
+            </div>
+
+            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/4'>
+              <Image src={eberURL} alt='' width='300' height='150' />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id='contact' className='bg-white'>
+        <div className='max-w-3xl mx-auto py-20 text-center'>
+          <h2 className='text-4xl font-bold text-darkBlue mt-10'>
+            {contactTitle}
+          </h2>
+          <h2 className='text-4xl font-bold text-darkBlue mb-10'>
+            {contactSubtitle}
+          </h2>
+
+          <div className='flex flex-col items-center justify-center'>
+            <div className='flex flex-col items-center justify-center mb-20 mx-5 bg-contactBg bg-cover'>
+              <p className='text-lg text-left text-darkBlue mt-40 mb-20 ml-20 mr-5 md:mr-10'>
+                {contactText}
+              </p>
+            </div>
           </div>
         </div>
       </section>

@@ -5,7 +5,7 @@
       "HeroHeader": "CLG Group",
       "HeroDesc": "Smart Accounting For Happy Life",
       "createdAt": "2023-01-05T20:02:13.952Z",
-      "updatedAt": "2023-01-25T05:05:56.651Z",
+      "updatedAt": "2023-01-27T15:21:38.284Z",
       "publishedAt": "2023-01-05T20:02:16.187Z",
       "Statement": "By facing substantial change in society and the general environment, we are always passionate about finding solutions for different business difficulties, to help our clients to work smartly and easily every day.  We did it through our three main service scopes — cloud solutions, assurance, and advisory.  We are always doing our best to assist our clients with their challenging and tough business tasks and realize their largest aspirations in their business.",
       "experienceNumber": "10+",
@@ -15,6 +15,221 @@
       "awardTitle": "WINNER",
       "awardText": "FOR XERO AWARDS 2020",
       "awardDesc": "Hong Kong Emerging Accounting Partner of the Year",
+      "serviceTitle": "Our Service",
+      "incorporation": "Incorporation",
+      "secretary": "Company Secretary",
+      "accounting": "Accounting",
+      "taxation": "Taxation",
+      "auditing": "Auditing",
+      "funding": "Funding Audi",
+      "cloud": "Cloud Accounting",
+      "solution": "Cloud Solutions",
+      "HeroIcon": {
+        "data": [
+          {
+            "id": 1,
+            "attributes": {
+              "name": "get_started.png",
+              "alternativeText": null,
+              "caption": null,
+              "width": 285,
+              "height": 327,
+              "formats": {
+                "thumbnail": {
+                  "name": "thumbnail_get_started.png",
+                  "hash": "thumbnail_get_started_b7a82a32f3",
+                  "ext": ".png",
+                  "mime": "image/png",
+                  "path": null,
+                  "width": 136,
+                  "height": 156,
+                  "size": 30.58,
+                  "url": "/uploads/thumbnail_get_started_b7a82a32f3.png"
+                }
+              },
+              "hash": "get_started_b7a82a32f3",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 10.39,
+              "url": "/uploads/get_started_b7a82a32f3.png",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2023-01-05T19:46:18.370Z",
+              "updatedAt": "2023-01-23T02:43:52.312Z"
+            }
+          }
+        ]
+      },
+      "ImageDescLeft": {
+        "id": 1,
+        "Desc": "We offer a hands-on approach with an understanding of your value chain.  We help simplify everyday business tasks with cloud solutions."
+      },
+      "ImageDescRight": {
+        "id": 2,
+        "Desc": "Let us take you to the complex accounting, finance and taxes world.  You then focus on what matters most, growing the business faster together."
+      },
+      "HomeHero": {
+        "data": {
+          "id": 15,
+          "attributes": {
+            "name": "home-hero.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 1200,
+            "height": 686,
+            "formats": {
+              "thumbnail": {
+                "name": "thumbnail_home-hero.png",
+                "hash": "thumbnail_home_hero_89b6a100d1",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 245,
+                "height": 140,
+                "size": 37.16,
+                "url": "/uploads/thumbnail_home_hero_89b6a100d1.png"
+              },
+              "small": {
+                "name": "small_home-hero.png",
+                "hash": "small_home_hero_89b6a100d1",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 500,
+                "height": 286,
+                "size": 93.16,
+                "url": "/uploads/small_home_hero_89b6a100d1.png"
+              },
+              "medium": {
+                "name": "medium_home-hero.png",
+                "hash": "medium_home_hero_89b6a100d1",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 750,
+                "height": 429,
+                "size": 160.26,
+                "url": "/uploads/medium_home_hero_89b6a100d1.png"
+              },
+              "large": {
+                "name": "large_home-hero.png",
+                "hash": "large_home_hero_89b6a100d1",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 1000,
+                "height": 572,
+                "size": 237.26,
+                "url": "/uploads/large_home_hero_89b6a100d1.png"
+              }
+            },
+            "hash": "home_hero_89b6a100d1",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 51.97,
+            "url": "/uploads/home_hero_89b6a100d1.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-01-16T16:42:59.186Z",
+            "updatedAt": "2023-01-16T16:42:59.186Z"
+          }
+        }
+      },
+      "xero": {
+        "data": {
+          "id": 17,
+          "attributes": {
+            "name": "xero.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 465,
+            "height": 224,
+            "formats": {
+              "thumbnail": {
+                "name": "thumbnail_xero.png",
+                "hash": "thumbnail_xero_8c3528f0a8",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 245,
+                "height": 118,
+                "size": 17.64,
+                "url": "/uploads/thumbnail_xero_8c3528f0a8.png"
+              }
+            },
+            "hash": "xero_8c3528f0a8",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 6.65,
+            "url": "/uploads/xero_8c3528f0a8.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-01-24T06:53:46.791Z",
+            "updatedAt": "2023-01-24T06:53:46.791Z"
+          }
+        }
+      },
+      "xeroSilver": {
+        "data": {
+          "id": 18,
+          "attributes": {
+            "name": "xero-silver-partner.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 471,
+            "height": 41,
+            "formats": {
+              "thumbnail": {
+                "name": "thumbnail_xero-silver-partner.png",
+                "hash": "thumbnail_xero_silver_partner_c1fd8d1066",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 245,
+                "height": 21,
+                "size": 9.02,
+                "url": "/uploads/thumbnail_xero_silver_partner_c1fd8d1066.png"
+              }
+            },
+            "hash": "xero_silver_partner_c1fd8d1066",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 2.62,
+            "url": "/uploads/xero_silver_partner_c1fd8d1066.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-01-24T09:59:51.394Z",
+            "updatedAt": "2023-01-24T09:59:51.394Z"
+          }
+        }
+      },
+      "comma": {
+        "data": {
+          "id": 19,
+          "attributes": {
+            "name": "comma.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 70,
+            "height": 51,
+            "formats": {},
+            "hash": "comma_fa98b4b91a",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 0.94,
+            "url": "/uploads/comma_fa98b4b91a.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-01-24T10:26:13.770Z",
+            "updatedAt": "2023-01-24T11:57:48.451Z"
+          }
+        }
+      },
       "experience": {
         "data": {
           "id": 20,
@@ -23,7 +238,7 @@
             "alternativeText": null,
             "caption": null,
             "width": 240,
-            "height": 252,
+            "height": 300,
             "formats": {
               "thumbnail": {
                 "name": "thumbnail_experience.png",
@@ -31,22 +246,22 @@
                 "ext": ".png",
                 "mime": "image/png",
                 "path": null,
-                "width": 149,
+                "width": 125,
                 "height": 156,
-                "size": 39.54,
+                "size": 25.7,
                 "url": "/uploads/thumbnail_experience_6ce301c5a0.png"
               }
             },
             "hash": "experience_6ce301c5a0",
             "ext": ".png",
             "mime": "image/png",
-            "size": 13.66,
+            "size": 13.79,
             "url": "/uploads/experience_6ce301c5a0.png",
             "previewUrl": null,
             "provider": "local",
             "provider_metadata": null,
             "createdAt": "2023-01-25T05:04:00.623Z",
-            "updatedAt": "2023-01-25T05:04:00.623Z"
+            "updatedAt": "2023-01-27T06:19:58.805Z"
           }
         }
       },
@@ -57,8 +272,8 @@
             "name": "clients.png",
             "alternativeText": null,
             "caption": null,
-            "width": 293,
-            "height": 224,
+            "width": 240,
+            "height": 300,
             "formats": {
               "thumbnail": {
                 "name": "thumbnail_clients.png",
@@ -66,22 +281,22 @@
                 "ext": ".png",
                 "mime": "image/png",
                 "path": null,
-                "width": 204,
+                "width": 125,
                 "height": 156,
-                "size": 33.11,
+                "size": 19.35,
                 "url": "/uploads/thumbnail_clients_12135f4a09.png"
               }
             },
             "hash": "clients_12135f4a09",
             "ext": ".png",
             "mime": "image/png",
-            "size": 7.82,
+            "size": 7.93,
             "url": "/uploads/clients_12135f4a09.png",
             "previewUrl": null,
             "provider": "local",
             "provider_metadata": null,
             "createdAt": "2023-01-25T05:04:28.340Z",
-            "updatedAt": "2023-01-25T05:04:28.340Z"
+            "updatedAt": "2023-01-27T06:13:51.234Z"
           }
         }
       },
@@ -92,8 +307,8 @@
             "name": "winner.png",
             "alternativeText": null,
             "caption": null,
-            "width": 352,
-            "height": 333,
+            "width": 269,
+            "height": 300,
             "formats": {
               "thumbnail": {
                 "name": "thumbnail_winner.png",
@@ -101,22 +316,302 @@
                 "ext": ".png",
                 "mime": "image/png",
                 "path": null,
-                "width": 165,
+                "width": 140,
                 "height": 156,
-                "size": 38.68,
+                "size": 29.25,
                 "url": "/uploads/thumbnail_winner_cfffb96c4b.png"
               }
             },
             "hash": "winner_cfffb96c4b",
             "ext": ".png",
             "mime": "image/png",
-            "size": 15.29,
+            "size": 12.69,
             "url": "/uploads/winner_cfffb96c4b.png",
             "previewUrl": null,
             "provider": "local",
             "provider_metadata": null,
             "createdAt": "2023-01-25T05:04:57.988Z",
-            "updatedAt": "2023-01-25T05:04:57.988Z"
+            "updatedAt": "2023-01-27T05:58:19.518Z"
+          }
+        }
+      },
+      "incorporationImage": {
+        "data": {
+          "id": 23,
+          "attributes": {
+            "name": "incorporation.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 216,
+            "height": 222,
+            "formats": {
+              "thumbnail": {
+                "name": "thumbnail_incorporation.png",
+                "hash": "thumbnail_incorporation_3694cce40a",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 152,
+                "height": 156,
+                "size": 28.78,
+                "url": "/uploads/thumbnail_incorporation_3694cce40a.png"
+              }
+            },
+            "hash": "incorporation_3694cce40a",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 8.09,
+            "url": "/uploads/incorporation_3694cce40a.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-01-27T15:14:13.641Z",
+            "updatedAt": "2023-01-27T15:14:13.641Z"
+          }
+        }
+      },
+      "secretaryImage": {
+        "data": {
+          "id": 29,
+          "attributes": {
+            "name": "secretary.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 216,
+            "height": 216,
+            "formats": {
+              "thumbnail": {
+                "name": "thumbnail_secretary.png",
+                "hash": "thumbnail_secretary_99431bd05e",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 156,
+                "height": 156,
+                "size": 28.65,
+                "url": "/uploads/thumbnail_secretary_99431bd05e.png"
+              }
+            },
+            "hash": "secretary_99431bd05e",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 7.69,
+            "url": "/uploads/secretary_99431bd05e.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-01-27T15:19:06.582Z",
+            "updatedAt": "2023-01-27T15:19:06.582Z"
+          }
+        }
+      },
+      "accountingImage": {
+        "data": {
+          "id": 30,
+          "attributes": {
+            "name": "accounting.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 229,
+            "height": 216,
+            "formats": {
+              "thumbnail": {
+                "name": "thumbnail_accounting.png",
+                "hash": "thumbnail_accounting_f387265b7a",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 165,
+                "height": 156,
+                "size": 36.58,
+                "url": "/uploads/thumbnail_accounting_f387265b7a.png"
+              }
+            },
+            "hash": "accounting_f387265b7a",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 9.81,
+            "url": "/uploads/accounting_f387265b7a.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-01-27T15:20:07.373Z",
+            "updatedAt": "2023-01-27T15:20:07.373Z"
+          }
+        }
+      },
+      "taxationImage": {
+        "data": {
+          "id": 31,
+          "attributes": {
+            "name": "taxation.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 246,
+            "height": 216,
+            "formats": {
+              "thumbnail": {
+                "name": "thumbnail_taxation.png",
+                "hash": "thumbnail_taxation_beb15ad578",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 178,
+                "height": 156,
+                "size": 34.92,
+                "url": "/uploads/thumbnail_taxation_beb15ad578.png"
+              }
+            },
+            "hash": "taxation_beb15ad578",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 9.2,
+            "url": "/uploads/taxation_beb15ad578.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-01-27T15:20:28.840Z",
+            "updatedAt": "2023-01-27T15:20:28.840Z"
+          }
+        }
+      },
+      "auditingImage": {
+        "data": {
+          "id": 32,
+          "attributes": {
+            "name": "auditing.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 257,
+            "height": 220,
+            "formats": {
+              "thumbnail": {
+                "name": "thumbnail_auditing.png",
+                "hash": "thumbnail_auditing_473aafd2a4",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 182,
+                "height": 156,
+                "size": 36.28,
+                "url": "/uploads/thumbnail_auditing_473aafd2a4.png"
+              }
+            },
+            "hash": "auditing_473aafd2a4",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 9.68,
+            "url": "/uploads/auditing_473aafd2a4.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-01-27T15:20:49.333Z",
+            "updatedAt": "2023-01-27T15:20:49.333Z"
+          }
+        }
+      },
+      "fundingImage": {
+        "data": {
+          "id": 27,
+          "attributes": {
+            "name": "funding.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 278,
+            "height": 243,
+            "formats": {
+              "thumbnail": {
+                "name": "thumbnail_funding.png",
+                "hash": "thumbnail_funding_56be51a4d9",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 178,
+                "height": 156,
+                "size": 45.97,
+                "url": "/uploads/thumbnail_funding_56be51a4d9.png"
+              }
+            },
+            "hash": "funding_56be51a4d9",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 15.82,
+            "url": "/uploads/funding_56be51a4d9.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-01-27T15:15:32.598Z",
+            "updatedAt": "2023-01-27T15:15:32.598Z"
+          }
+        }
+      },
+      "cloudImage": {
+        "data": {
+          "id": 28,
+          "attributes": {
+            "name": "cloud.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 258,
+            "height": 225,
+            "formats": {
+              "thumbnail": {
+                "name": "thumbnail_cloud.png",
+                "hash": "thumbnail_cloud_d8c05a401a",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 179,
+                "height": 156,
+                "size": 43.44,
+                "url": "/uploads/thumbnail_cloud_d8c05a401a.png"
+              }
+            },
+            "hash": "cloud_d8c05a401a",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 14.25,
+            "url": "/uploads/cloud_d8c05a401a.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-01-27T15:15:56.656Z",
+            "updatedAt": "2023-01-27T15:15:56.656Z"
+          }
+        }
+      },
+      "solutionImage": {
+        "data": {
+          "id": 33,
+          "attributes": {
+            "name": "solution.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 216,
+            "height": 258,
+            "formats": {
+              "thumbnail": {
+                "name": "thumbnail_solution.png",
+                "hash": "thumbnail_solution_d4c6577aed",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 131,
+                "height": 156,
+                "size": 30.84,
+                "url": "/uploads/thumbnail_solution_d4c6577aed.png"
+              }
+            },
+            "hash": "solution_d4c6577aed",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 10.39,
+            "url": "/uploads/solution_d4c6577aed.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-01-27T15:21:36.292Z",
+            "updatedAt": "2023-01-27T15:21:36.292Z"
           }
         }
       }
