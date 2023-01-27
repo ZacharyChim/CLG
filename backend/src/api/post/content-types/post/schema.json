@@ -30,6 +30,16 @@
     "slug": {
       "type": "uid",
       "targetField": "title"
+    },
+    "featuredImage": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

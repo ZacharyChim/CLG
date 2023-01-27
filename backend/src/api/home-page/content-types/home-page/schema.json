@@ -425,14 +425,27 @@
       "type": "text"
     },
     "contactBg": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images",
         "files",
         "videos",
         "audios"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
+    },
+    "xeroTitle": {
+      "type": "string"
+    },
+    "xeroText": {
+      "type": "text"
+    },
+    "caseTitle": {
+      "type": "string"
+    },
+    "caseDesc": {
+      "type": "string"
     }
   }
 }

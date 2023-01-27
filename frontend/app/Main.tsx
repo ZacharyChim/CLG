@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 const fetchData = async () => {
   const res = await fetch(
@@ -8,6 +9,15 @@ const fetchData = async () => {
 
   const resData = await res.json()
   return resData
+}
+
+const fetchPost = async (id: number) => {
+  const res = await fetch(
+    `${process.env.STRAPI_API_URL}/posts/${id}?populate=%2A`
+  )
+
+  const resData = await res.json()
+  return resData.data.attributes
 }
 
 const fetchDesc = async () => {
@@ -31,6 +41,16 @@ const fetchNumber = async () => {
 export default async function Main() {
   const res = await fetchData()
   const data = res.data.attributes
+
+  const post3 = await fetchPost(3)
+  const post3URL =
+    process.env.STRAPI_URL + post3.featuredImage.data.attributes.url
+  const post4 = await fetchPost(4)
+  const post4URL =
+    process.env.STRAPI_URL + post4.featuredImage.data.attributes.url
+  const post5 = await fetchPost(5)
+  const post5URL =
+    process.env.STRAPI_URL + post5.featuredImage.data.attributes.url
 
   const commaURL = process.env.STRAPI_URL + data.comma.data.attributes.url
 
@@ -68,6 +88,9 @@ export default async function Main() {
   const xeroSilverURL =
     process.env.STRAPI_URL + data.xeroSilver.data.attributes.url
 
+  const xeroTitle = data.xeroTitle
+  const xeroText = data.xeroText
+
   const serviceTitle = data.serviceTitle
   const incorporation = data.incorporation
   const secretary = data.secretary
@@ -95,6 +118,7 @@ export default async function Main() {
     process.env.STRAPI_URL + data.solutionImage.data.attributes.url
 
   const partnership = data.partnership
+  const partnershipDesc = data.partnershipDesc
 
   const workstemURL =
     process.env.STRAPI_URL + data.workstemLogo.data.attributes.url
@@ -111,6 +135,9 @@ export default async function Main() {
   const dkdooURL = process.env.STRAPI_URL + data.dkdooLogo.data.attributes.url
   const kpayURL = process.env.STRAPI_URL + data.kpayLogo.data.attributes.url
   const eberURL = process.env.STRAPI_URL + data.eberLogo.data.attributes.url
+
+  const caseTitle = data.caseTitle
+  const caseDesc = data.caseDesc
 
   const contactTitle = data.contactTitle
   const contactSubtitle = data.contactSubtitle
@@ -237,17 +264,8 @@ export default async function Main() {
               width='471'
               height='41'
             />
-            <h3 className='text-brightBlue text-xl font-bold'>
-              Emerging Accounting Partner Of The Year - HONG KONG
-            </h3>
-            <p>
-              By combining innovation and technology, CLG Group has become the
-              partner of the cloud-based accounting software Xero. We believe
-              that the use of technology greatly improves the efficiency and
-              effectiveness of streamlining business processes. Our Team
-              consists of Xero-certified advisors, guiding our clients to
-              transform their business with solid experiences and knowledge.
-            </p>
+            <h3 className='text-brightBlue text-xl font-bold'>{xeroTitle}</h3>
+            <p className='text-darkBrown'>{xeroText}</p>
           </div>
         </div>
       </section>
@@ -339,6 +357,7 @@ export default async function Main() {
           <h2 className='text-4xl font-bold text-darkBlue mb-10 mt-10 '>
             {partnership}
           </h2>
+          <p className='text-lg text-darkBrown mb-10'>{partnershipDesc}</p>
 
           <div className='flex flex-col items-center md:flex-row md:space-x-0'>
             <div className='flex flex-col items-center justify-center space-y-2 md:w-1/4'>
@@ -387,6 +406,92 @@ export default async function Main() {
 
             <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/4'>
               <Image src={eberURL} alt='' width='300' height='150' />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id='case' className='bg-veryLightBlue'>
+        <div className='max-w-5xl px-5 mx-auto pt-32 pb-20 text-center'>
+          <h2 className='text-4xl font-bold text-darkBlue mb-10 mt-10 '>
+            {caseTitle}
+          </h2>
+          <p className='text-lg text-darkBrown mb-10'>{caseDesc}</p>
+
+          <div className='flex flex-col pb-20 space-y-12 md:flex-row md:space-x-14'>
+            <div className='flex flex-col items-center mt-12 space-y-2 md:w-1/3'>
+              <article className='overflow-hidden w-96 bg-white border border-gray-100 shadow-sm md:w-auto'>
+                <Image
+                  alt={post3.title}
+                  src={post3URL}
+                  width={post3.featuredImage.data.attributes.width}
+                  height={post3.featuredImage.data.attributes.height}
+                  className='h-56 w-full object-cover'
+                />
+
+                <div className='text-left p-4 sm:p-6'>
+                  <Link href='#'>
+                    <h3 className='text-md text-darkBrown'>{post3.title}</h3>
+                  </Link>
+
+                  <Link
+                    href='#'
+                    className='group mt-4 inline-flex gap-1 text-sm font-medium text-blue-600'
+                  >
+                    DETAILS
+                  </Link>
+                </div>
+              </article>
+            </div>
+
+            <div className='flex flex-col items-center space-y-2 md:w-1/3'>
+              <article className='overflow-hidden w-96 bg-white border border-gray-100 shadow-sm md:w-auto'>
+                <Image
+                  alt={post4.title}
+                  src={post4URL}
+                  width={post4.featuredImage.data.attributes.width}
+                  height={post4.featuredImage.data.attributes.height}
+                  className='h-56 w-full object-cover'
+                />
+
+                <div className='text-left p-4 sm:p-6'>
+                  <Link href='#'>
+                    <h3 className='text-md  text-darkBrown'>{post4.title}</h3>
+                  </Link>
+
+                  <Link
+                    href='#'
+                    className='group mt-4 inline-flex gap-1 text-sm font-medium text-blue-600'
+                  >
+                    DETAILS
+                  </Link>
+                </div>
+              </article>
+            </div>
+
+            <div className='flex flex-col items-center space-y-2 md:w-1/3'>
+              <article className='overflow-hidden w-96 bg-white border border-gray-100 shadow-sm md:w-auto'>
+                <Image
+                  alt={post5.title}
+                  src={post5URL}
+                  width={post5.featuredImage.data.attributes.width}
+                  height={post5.featuredImage.data.attributes.height}
+                  className='h-56 w-full object-cover'
+                />
+
+                <div className='text-left p-4 sm:p-6'>
+                  <Link href='#'>
+                    <h3 className='text-md text-darkBrown'>{post5.title}</h3>
+                  </Link>
+
+                  <Link
+                    href='#'
+                    className='group mt-4 inline-flex gap-1 text-sm font-medium text-blue-600'
+                  >
+                    DETAILS
+                  </Link>
+                </div>
+              </article>
             </div>
           </div>
         </div>
