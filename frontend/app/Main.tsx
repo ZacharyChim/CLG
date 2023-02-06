@@ -507,12 +507,21 @@ export default async function Main() {
           </h2>
 
           <div className='flex flex-col items-center justify-center'>
-            <div className='flex flex-col items-center justify-center mb-20 mx-5 bg-contactBg bg-cover'>
-              <p className='text-lg text-left text-darkBlue mt-40 mb-20 ml-20 mr-5 md:mr-10'>
+            <div className='flex flex-col items-center justify-center mb-20 mx-5 bg-contactBg bg-cover pb-20 md:flex-row'>
+              <p className='text-lg text-left text-darkBlue mt-48 ml-20 mr-1 mb-2'>
                 {contactText}
               </p>
+              <Link
+                className='inline-block rounded-full bg-white w-2/5 place-self-end mr-2 py-2 px-4 text-md font-bold text-darkBlue hover:bg-darkBlue hover:text-white md:mb-8'
+                href='#'
+              >
+                CONTACT US
+              </Link>
             </div>
           </div>
+          <Link className='inline-block' href='#'>
+            <Image src='/backToTop.png' alt='' width='50' height='50' />
+          </Link>
         </div>
       </section>
     </>

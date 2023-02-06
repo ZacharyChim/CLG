@@ -26,10 +26,11 @@ module.exports = {
         veryPaleRed: 'hsl(13, 100%, 96%)',
         veryLightGray: 'hsl(0, 0%, 98%)',
         grayishWhite: '#c4faff',
-        darkBrown: '#3f3f3f'
+        darkBrown: '#3f3f3f',
       },
       backgroundImage: {
         contactBg: "url('/contactBg.png')",
+        footerCurve: "url('/footer-curve.png')",
       },
     },
   },
