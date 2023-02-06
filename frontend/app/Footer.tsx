@@ -2,7 +2,7 @@ import { v4 } from 'uuid'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { isTemplateExpression } from 'typescript'
+import footerCurve from '../public/footer-curve.png'
 
 const fetchFooter = async () => {
   const res = await fetch(`${process.env.STRAPI_API_URL}/footer?populate=%2A`)
@@ -51,7 +51,10 @@ async function Footer() {
   }))
 
   return (
-    <footer className='bg-brightBlue'>
+    <footer className='bg-oceanBlue '>
+      <div className='bg-white w-full h-full'>
+        <Image src={footerCurve} alt='' />
+      </div>
       <div className='max-w-5xl px-4 py-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8'>
         <div className='grid grid-cols-1 gap-8 lg:grid-cols-3'>
           <div className='border-r'>

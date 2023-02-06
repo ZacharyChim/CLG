@@ -1,6 +1,12 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import BackToTop from './BackToTop'
+
+import contactTop from '../public/contact-top.png'
+import caseTop from '../public/case-top.png'
+import partnershipTop from '../public/partnership-top.png'
+import serviceTop from '../public/service-top.png'
 
 const fetchData = async () => {
   const res = await fetch(
@@ -166,7 +172,10 @@ export default async function Main() {
         </span>
       </section>
 
-      <section id='simple'>
+      <section
+        id='simple'
+        className='bg-curveLine bg-contain bg-no-repeat bg-center mb-10 md:bg-top'
+      >
         <div className='container flex flex-col max-w-5xl px-10 mx-auto mt-10 space-y-12 items-center md:space-y-0 md:flex-row'>
           <div className='container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row md:w-1/2'>
             <Image
@@ -217,8 +226,9 @@ export default async function Main() {
       </section>
 
       <section id='numbers' className='bg-veryLightBlue'>
-        <div className='max-w-5xl px-5 mx-auto mt-32 text-center'>
-          <div className='flex flex-col mt-24 py-20 md:flex-row md:space-x-14'>
+        <Image src={caseTop} alt='' />
+        <div className='max-w-5xl px-5 mx-auto text-center'>
+          <div className='flex flex-col py-20 md:flex-row md:space-x-14'>
             <div className='flex flex-col items-center p-8 space-y-2 h-30 md:w-1/3'>
               <Image src={expURL} alt={expText} width='240' height='300' />
               <h5 className='text-4xl font-bold text-veryDarkBlue pt-6'>
@@ -252,10 +262,11 @@ export default async function Main() {
         </div>
       </section>
 
-      <section id='xero'>
-        <div className='container max-w-4xl flex flex-col px-4 mx-auto my-40 md:flex-row'>
+      <section id='xero' className='bg-lineBg bg-no-repeat bg-cover bg-center'>
+        <Image src={contactTop} alt='' />
+        <div className='container max-w-4xl flex flex-col px-4 mx-auto py-40 md:flex-row'>
           <div className='flex flex-col space-y-12 mb-10 items-center md:w-1/2'>
-            <Image src={xeroURL} alt='Xero' width='256' height='123' />
+            <Image src={xeroURL} alt='' width='256' height='123' />
           </div>
           <div className='flex flex-col space-y-8 md:w-1/2'>
             <Image
@@ -268,6 +279,7 @@ export default async function Main() {
             <p className='text-darkBrown'>{xeroText}</p>
           </div>
         </div>
+        <Image src={serviceTop} alt='' />
       </section>
 
       <section id='services' className='bg-deepBlue'>
@@ -353,6 +365,7 @@ export default async function Main() {
       </section>
 
       <section id='partnership' className='bg-white'>
+        <Image src={partnershipTop} alt='' />
         <div className='max-w-4xl mx-auto py-20 text-center'>
           <h2 className='text-4xl font-bold text-darkBlue mb-10 mt-10 '>
             {partnership}
@@ -412,6 +425,7 @@ export default async function Main() {
       </section>
 
       <section id='case' className='bg-veryLightBlue'>
+        <Image src={caseTop} alt='' />
         <div className='max-w-5xl px-5 mx-auto pt-32 pb-20 text-center'>
           <h2 className='text-4xl font-bold text-darkBlue mb-10 mt-10 '>
             {caseTitle}
@@ -498,7 +512,8 @@ export default async function Main() {
       </section>
 
       <section id='contact' className='bg-white'>
-        <div className='max-w-3xl mx-auto py-20 text-center'>
+        <Image src={contactTop} alt='' />
+        <div className='max-w-3xl mx-auto py-10 text-center'>
           <h2 className='text-4xl font-bold text-darkBlue mt-10'>
             {contactTitle}
           </h2>
@@ -519,9 +534,7 @@ export default async function Main() {
               </Link>
             </div>
           </div>
-          <Link className='inline-block' href='#'>
-            <Image src='/backToTop.png' alt='' width='50' height='50' />
-          </Link>
+          <BackToTop />
         </div>
       </section>
     </>

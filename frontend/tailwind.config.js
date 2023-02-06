@@ -21,6 +21,7 @@ module.exports = {
         darkGrayishBlue: 'hsl(227, 12%, 61%)',
         brightBlue: '#00b7e3',
         deepBlue: '#0da3e8',
+        oceanBlue: '#0da4e7',
         veryLightBlue: '#e9f8ff',
         veryDarkBlue: '#030333',
         veryPaleRed: 'hsl(13, 100%, 96%)',
@@ -30,7 +31,8 @@ module.exports = {
       },
       backgroundImage: {
         contactBg: "url('/contactBg.png')",
-        footerCurve: "url('/footer-curve.png')",
+        curveLine: "url('/curve-line.png')",
+        lineBg: "url('/line-bg.png')",
       },
     },
   },
