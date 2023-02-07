@@ -141,6 +141,10 @@ export default async function Main() {
   const dkdooURL = process.env.STRAPI_URL + data.dkdooLogo.data.attributes.url
   const kpayURL = process.env.STRAPI_URL + data.kpayLogo.data.attributes.url
   const eberURL = process.env.STRAPI_URL + data.eberLogo.data.attributes.url
+  const hikeURL = process.env.STRAPI_URL + data.hikeLogo.data.attributes.url
+  const boutirURL = process.env.STRAPI_URL + data.boutirLogo.data.attributes.url
+  const postifyURL =
+    process.env.STRAPI_URL + data.postifyLogo.data.attributes.url
 
   const caseTitle = data.caseTitle
   const caseDesc = data.caseDesc
@@ -158,7 +162,7 @@ export default async function Main() {
         <h3 className='w-96 text-center text-darkBlue font-bold text-4xl mb-4'>
           SMART ACCOUNTING FOR THE HAPPY LIFE
         </h3>
-        <p className='leading-10 text-center my-6'>
+        <p className='leading-10 text-justify my-6'>
           By facing substantial change in society and the general environment,
           we are always passionate about finding solutions for different
           business difficulties, to help our clients to work smartly and easily
@@ -372,53 +376,67 @@ export default async function Main() {
           </h2>
           <p className='text-lg text-darkBrown mb-10'>{partnershipDesc}</p>
 
-          <div className='flex flex-col items-center md:flex-row md:space-x-0'>
-            <div className='flex flex-col items-center justify-center space-y-2 md:w-1/4'>
+          <div className='flex flex-col items-center justify-center md:flex-row md:space-x-0'>
+            <div className='flex flex-col justify-center space-y-2 md:w-1/4'>
               <Image src={workstemURL} alt='' width='300' height='47' />
             </div>
 
-            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/4'>
+            <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
               <Image src={hubdocURL} alt='' width='185' height='57' />
             </div>
 
-            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/4'>
+            <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
               <Image src={xeroLogoURL} alt='' width='100' height='100' />
             </div>
 
-            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/4'>
+            <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
               <Image src={mshopURL} alt='' width='291' height='80' />
             </div>
           </div>
 
-          <div className='flex flex-col md:flex-row md:space-x-4'>
-            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/3'>
+          <div className='flex flex-col items-center justify-center md:flex-row md:space-x-4'>
+            <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/3'>
               <Image src={gingersoftURL} alt='' width='300' height='79' />
             </div>
 
-            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/3'>
+            <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/3'>
               <Image src={eats365URL} alt='' width='300' height='150' />
             </div>
 
-            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/3'>
+            <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/3'>
               <Image src={foodmarkethubURL} alt='' width='300' height='124' />
             </div>
           </div>
 
-          <div className='flex flex-col md:flex-row md:space-x-4'>
-            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/4'>
+          <div className='flex flex-col items-center justify-center md:flex-row md:space-x-4'>
+            <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
               <Image src={yoovURL} alt='' width='281' height='100' />
             </div>
 
-            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/4'>
+            <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
               <Image src={dkdooURL} alt='' width='300' height='79' />
             </div>
 
-            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/4'>
+            <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
               <Image src={kpayURL} alt='' width='300' height='150' />
             </div>
 
-            <div className='flex flex-col items-center justify-center p-6 space-y-2 md:w-1/4'>
+            <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
               <Image src={eberURL} alt='' width='300' height='150' />
+            </div>
+          </div>
+
+          <div className='flex flex-col items-center justify-center md:flex-row md:space-x-4'>
+            <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
+              <Image src={hikeURL} alt='' width='281' height='100' />
+            </div>
+
+            <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
+              <Image src={boutirURL} alt='' width='300' height='79' />
+            </div>
+
+            <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
+              <Image src={postifyURL} alt='' width='300' height='150' />
             </div>
           </div>
         </div>
@@ -513,7 +531,7 @@ export default async function Main() {
 
       <section id='contact' className='bg-white'>
         <Image src={contactTop} alt='' />
-        <div className='max-w-3xl mx-auto py-10 text-center'>
+        <div className='max-w-3xl mx-auto pt-10 text-center'>
           <h2 className='text-4xl font-bold text-darkBlue mt-10'>
             {contactTitle}
           </h2>

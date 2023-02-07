@@ -57,7 +57,7 @@ async function Footer() {
       </div>
       <div className='max-w-5xl px-4 py-16 mx-auto space-y-8 sm:px-6 lg:space-y-16 lg:px-8'>
         <div className='grid grid-cols-1 gap-8 lg:grid-cols-3'>
-          <div className='border-r'>
+          <div className='md:border-r'>
             <div className='px-4 py-8'>
               <Image
                 src={`${process.env.STRAPI_URL}${logoURL}`}
@@ -119,7 +119,7 @@ async function Footer() {
                         href={item.externalPath}
                         className='flex items-center text-grayishWhite transition hover:opacity-75'
                       >
-                        <span>
+                        <span className='min-w-[11px]'>
                           <Image
                             src={arrow}
                             alt='arrow'
@@ -146,12 +146,13 @@ async function Footer() {
                         href={item.externalPath}
                         className='flex items-center text-grayishWhite transition hover:opacity-75'
                       >
-                        <span>
+                        <span className='min-w-[11px]'>
                           <Image
                             src={arrow}
                             alt='arrow'
                             width={11}
                             height={11}
+                            sizes='11'
                           />
                         </span>
                         <span className='ml-2'>{item.title}</span>
@@ -170,7 +171,7 @@ async function Footer() {
                         href={item.externalPath}
                         className='flex items-center text-grayishWhite transition hover:opacity-75'
                       >
-                        <span>
+                        <span className='min-w-[11px]'>
                           <Image
                             src={arrow}
                             alt='arrow'
@@ -194,7 +195,7 @@ async function Footer() {
                         href={item.externalPath}
                         className='flex items-center text-grayishWhite transition hover:opacity-75'
                       >
-                        <span>
+                        <span className='min-w-[11px]'>
                           <Image
                             src={arrow}
                             alt='arrow'
@@ -223,7 +224,7 @@ async function Footer() {
                         href={item.externalPath}
                         className='flex items-center text-grayishWhite transition hover:opacity-75'
                       >
-                        <span>
+                        <span className='min-w-[11px]'>
                           <Image
                             src={arrow}
                             alt='arrow'
@@ -252,7 +253,7 @@ async function Footer() {
                         href={item.externalPath}
                         className='flex items-center text-grayishWhite transition hover:opacity-75'
                       >
-                        <span>
+                        <span className='min-w-[11px]'>
                           <Image
                             src={arrow}
                             alt='arrow'

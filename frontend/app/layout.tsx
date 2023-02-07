@@ -18,10 +18,12 @@ export default function RootLayout({
         <title>CLG Group</title>
       </head>
       <body>
-        {/* @ts-ignore */}
-        <Header />
-        {/* @ts-ignore */}
-        <Hero />
+        <div className='bg-heroBg bg-cover bg-top'>
+          {/* @ts-ignore */}
+          <Header />
+          {/* @ts-ignore */}
+          <Hero />
+        </div>
         {/* @ts-ignore */}
         <Main />
         {children}

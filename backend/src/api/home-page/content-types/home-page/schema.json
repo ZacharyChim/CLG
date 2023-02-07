@@ -294,7 +294,7 @@
         "audios"
       ]
     },
-    "dextLogo": {
+    "hikeLogo": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -305,7 +305,7 @@
         "audios"
       ]
     },
-    "mindbodyLogo": {
+    "boutirLogo": {
       "type": "media",
       "multiple": false,
       "required": false,
@@ -327,7 +327,7 @@
         "audios"
       ]
     },
-    "unleashedLogo": {
+    "postifyLogo": {
       "type": "media",
       "multiple": false,
       "required": false,
