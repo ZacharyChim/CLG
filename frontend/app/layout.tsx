@@ -2,8 +2,6 @@ import Link from 'next/link'
 import Header from './Header'
 import Footer from './Footer'
 import '../styles/globals.css'
-import Hero from './Hero'
-import Main from './Main'
 
 export default function RootLayout({
   // Layouts must accept a children prop.
@@ -18,14 +16,9 @@ export default function RootLayout({
         <title>CLG Group</title>
       </head>
       <body>
-        <div className='bg-heroBg bg-cover bg-top'>
-          {/* @ts-ignore */}
-          <Header />
-          {/* @ts-ignore */}
-          <Hero />
-        </div>
         {/* @ts-ignore */}
-        <Main />
+        <Header />
+
         {children}
         {/* @ts-ignore */}
         <Footer />

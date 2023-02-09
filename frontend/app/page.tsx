@@ -1,5 +1,16 @@
-import Image from 'next/image'
+import Main from './Main'
+import Hero from './Hero'
 
 export default function Home() {
-  return <></>
+  return (
+    <>
+      <div className='bg-heroBg bg-cover bg-top bg-no-repeat'>
+        {/* @ts-ignore */}
+        <Hero />
+      </div>
+
+      {/* @ts-ignore */}
+      <Main />
+    </>
+  )
 }

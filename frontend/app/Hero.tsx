@@ -16,7 +16,7 @@ export default async function Hero() {
 
   return (
     <section id='hero'>
-      <div className='container flex flex-col max-w-5xl md:flex-row items-center mx-auto mt-10   md:space-x-4'>
+      <div className='container flex flex-col max-w-5xl md:flex-row items-center mx-auto py-12   md:space-x-4'>
         <div className='flex flex-col md:mt-20 space-y-0 mx-4 md:w-1/3'>
           <div>
             <h1 className='text-4xl text-darkBlue font-bold text-center my-4 md:text-4xl md:text-left'>
