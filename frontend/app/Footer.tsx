@@ -36,7 +36,7 @@ async function Footer() {
   const arrow = process.env.STRAPI_URL + footer.arrow.data.attributes.url
   const allLinks = await fetchLinks()
   const linkWithParent = allLinks.filter((item) => item.parent !== null)
-  const linkAboutUS = linkWithParent.filter((item) => item.parent.id === 4)
+  // const linkAboutUS = linkWithParent.filter((item) => item.parent.id === 4)
   const linkAudit = linkWithParent.filter((item) => item.parent.id === 8)
   const linkAdvisory = linkWithParent.filter((item) => item.parent.id === 9)
   const linkFunding = linkWithParent.filter((item) => item.parent.id === 10)
@@ -156,7 +156,7 @@ async function Footer() {
 
               <div>
                 <p className='font-bold text-grayishWhite'>
-                  {allLinks[7].title}
+                  {allLinks[4].title}
                 </p>
 
                 <nav className='mt-2'>
@@ -183,7 +183,7 @@ async function Footer() {
                   </ul>
 
                   <p className='font-bold text-grayishWhite mb-3'>
-                    {allLinks[11].title}
+                    {allLinks[8].title}
                   </p>
                   <ul className='space-y-3 text-sm mb-4'>
                     {linkAdvisory.map((item) => (
@@ -208,7 +208,7 @@ async function Footer() {
                   </ul>
 
                   <p className='font-bold text-grayishWhite mb-3'>
-                    {allLinks[14].title}
+                    {allLinks[11].title}
                   </p>
                   <ul className='space-y-3 text-sm mb-4'>
                     {linkFunding.map((item) => (
@@ -236,7 +236,7 @@ async function Footer() {
 
               <div>
                 <p className='font-bold text-grayishWhite mb-2'>
-                  {allLinks[18].title}
+                  {allLinks[15].title}
                 </p>
 
                 <nav className='mt-2'>
@@ -266,7 +266,7 @@ async function Footer() {
 
               <div>
                 <p className='font-bold text-grayishWhite'>
-                  {allLinks[28].title}
+                  {allLinks[25].title}
                 </p>
 
                 <nav className='mt-2'>
