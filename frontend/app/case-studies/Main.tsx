@@ -24,7 +24,7 @@ export default async function Main() {
 
   return (
     <section id='case' className='flex flex-col mx-auto items-center max-w-5xl'>
-      <div className='px-5 mx-auto pt-20 pb-20 text-center'>
+      <div className='px-5 mx-auto pb-20 text-center'>
         <h2 className='text-2xl font-bold text-darkBlue'>All</h2>
         <div className='flex flex-col space-y-12 md:flex-row md:space-x-8'>
           <div className='flex flex-col items-center mt-12 space-y-2 bg-veryLightBlue md:w-1/3'>
