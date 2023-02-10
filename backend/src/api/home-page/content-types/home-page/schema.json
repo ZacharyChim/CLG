@@ -446,6 +446,18 @@
     },
     "caseDesc": {
       "type": "string"
+    },
+    "main_slogan": {
+      "type": "string"
+    },
+    "sub_slogan": {
+      "type": "string"
+    },
+    "intro_title": {
+      "type": "string"
+    },
+    "intro_text": {
+      "type": "text"
     }
   }
 }

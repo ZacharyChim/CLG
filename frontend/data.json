@@ -1,46 +1,54 @@
 {
   "data": {
-    "id": 3,
+    "id": 1,
     "attributes": {
-      "title": "Three advantages of using xero cloud accounting system",
-      "content": "Three advantages of using xero cloud accounting system",
-      "excerpt": "Three advantages of using xero cloud accounting system",
-      "createdAt": "2023-01-27T20:27:37.361Z",
-      "updatedAt": "2023-01-27T20:27:37.361Z",
-      "publishedAt": null,
-      "slug": "three-advantages-of-using-xero-cloud-accounting-system",
-      "featuredImage": {
+      "main_slogan": "SUCCESSFUL CASES",
+      "createdAt": "2023-02-10T04:00:23.215Z",
+      "updatedAt": "2023-02-10T04:12:13.541Z",
+      "publishedAt": "2023-02-10T04:02:14.106Z",
+      "hero_image": {
         "data": {
-          "id": 46,
+          "id": 52,
           "attributes": {
-            "name": "article1.png",
+            "name": "hero-image.png",
             "alternativeText": null,
             "caption": null,
-            "width": 472,
-            "height": 354,
+            "width": 556,
+            "height": 507,
             "formats": {
               "thumbnail": {
-                "name": "thumbnail_article1.png",
-                "hash": "thumbnail_article1_d69f415ee0",
+                "name": "thumbnail_hero-image.png",
+                "hash": "thumbnail_hero_image_c30498e28d",
                 "ext": ".png",
                 "mime": "image/png",
                 "path": null,
-                "width": 208,
+                "width": 171,
                 "height": 156,
-                "size": 94.62,
-                "url": "/uploads/thumbnail_article1_d69f415ee0.png"
+                "size": 52.11,
+                "url": "/uploads/thumbnail_hero_image_c30498e28d.png"
+              },
+              "small": {
+                "name": "small_hero-image.png",
+                "hash": "small_hero_image_c30498e28d",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 500,
+                "height": 456,
+                "size": 309.08,
+                "url": "/uploads/small_hero_image_c30498e28d.png"
               }
             },
-            "hash": "article1_d69f415ee0",
+            "hash": "hero_image_c30498e28d",
             "ext": ".png",
             "mime": "image/png",
-            "size": 95.05,
-            "url": "/uploads/article1_d69f415ee0.png",
+            "size": 80.87,
+            "url": "/uploads/hero_image_c30498e28d.png",
             "previewUrl": null,
             "provider": "local",
             "provider_metadata": null,
-            "createdAt": "2023-01-27T20:27:30.636Z",
-            "updatedAt": "2023-01-27T20:27:30.636Z"
+            "createdAt": "2023-02-10T04:12:08.877Z",
+            "updatedAt": "2023-02-10T04:12:08.877Z"
           }
         }
       }

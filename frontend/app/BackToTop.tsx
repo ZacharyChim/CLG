@@ -11,8 +11,16 @@ export default function BackToTop() {
   }
 
   return (
-    <button className='inline-block' onClick={scrollToTop}>
-      <Image src='/backToTop.png' alt='' width='50' height='50' />
-    </button>
+    <div className='flex flex-col items-center'>
+      <button className='inline-block' onClick={scrollToTop}>
+        <Image
+          src='/backToTop.png'
+          alt=''
+          width='50'
+          height='50'
+          quality='90'
+        />
+      </button>
+    </div>
   )
 }

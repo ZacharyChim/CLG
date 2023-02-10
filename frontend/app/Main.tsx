@@ -1,7 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import BackToTop from './BackToTop'
 
 import contactTop from '../public/contact-top.png'
 import caseTop from '../public/case-top.png'
@@ -152,6 +151,8 @@ export default async function Main() {
   const contactTitle = data.contactTitle
   const contactSubtitle = data.contactSubtitle
   const contactText = data.contactText
+  const introTitle = data.intro_title
+  const introText = data.intro_text
 
   return (
     <>
@@ -160,17 +161,9 @@ export default async function Main() {
         className='flex flex-col max-w-2xl px-5 mx-auto mt-12 text-center items-center'
       >
         <h3 className='w-96 text-center text-darkBlue font-bold text-4xl mb-4'>
-          SMART ACCOUNTING FOR THE HAPPY LIFE
+          {introTitle}
         </h3>
-        <p className='leading-10 text-justify my-6'>
-          By facing substantial change in society and the general environment,
-          we are always passionate about finding solutions for different
-          business difficulties, to help our clients to work smartly and easily
-          every day. We did it through our three main service scopes — cloud
-          solutions, assurance, and advisory. We are always doing our best to
-          assist our clients with their challenging and tough business tasks and
-          realize their largest aspirations in their business.
-        </p>
+        <p className='leading-10 text-justify my-6'>{introText}</p>
         <span className='w-12 my-5'>
           <Image src={commaURL} alt='comma' width='70' height='51' />
         </span>
@@ -552,7 +545,7 @@ export default async function Main() {
               </Link>
             </div>
           </div>
-          <BackToTop />
+          
         </div>
       </section>
     </>

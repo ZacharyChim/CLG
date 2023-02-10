@@ -10,20 +10,34 @@ const fetchHeroImages = async () => {
   return resData.data.attributes.HeroIcon.data[0].attributes.url
 }
 
+const fetchData = async () => {
+  const res = await fetch(
+    `${process.env.STRAPI_API_URL}/home-page?populate=%2A`
+  )
+
+  const resData = await res.json()
+  return resData
+}
+
 export default async function Hero() {
   const getStarted = await fetchHeroImages()
   const getStartedURL = process.env.STRAPI_URL + getStarted
 
+  const res = await fetchData()
+  const data = res.data.attributes
+  const mainSlogan = data.main_slogan
+  const subSlogan = data.sub_slogan
+
   return (
-    <section id='hero'>
+    <section id='hero' className='bg-heroBg bg-cover bg-top bg-no-repeat'>
       <div className='container flex flex-col max-w-5xl md:flex-row items-center mx-auto py-12   md:space-x-4'>
         <div className='flex flex-col md:mt-20 space-y-0 mx-4 md:w-1/3'>
           <div>
             <h1 className='text-4xl text-darkBlue font-bold text-center my-4 md:text-4xl md:text-left'>
-              CLG GROUP
+              {mainSlogan}
             </h1>
             <h2 className='text-4xl text-veryDarkBlue font-bold text-center md:text-4xl md:text-left'>
-              YOUR TAX EXPERT
+              {subSlogan}
             </h2>
           </div>
           <div className='px-36 py-10 md:mt-10 md:pr-32 md:px-0 md:pt-32'>
