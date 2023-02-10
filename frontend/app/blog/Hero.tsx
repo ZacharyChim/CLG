@@ -41,8 +41,8 @@ export default async function Hero() {
           <Image
             src={heroImage}
             alt=''
-            width={568}
-            height={507}
+            width={560}
+            height={521}
             className='md:mb-32'
             quality='90'
           />
