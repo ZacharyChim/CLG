@@ -12,6 +12,7 @@ export default factories.createCoreController(
 
       const entity = await strapi.db.query("api::case.case").findOne({
         where: { slug: id },
+        populate: ["featuredImage"],
       });
       const sanitizedEntity = await this.sanitizeOutput(entity, ctx);
 
