@@ -15,9 +15,6 @@
     "title": {
       "type": "string"
     },
-    "slug": {
-      "type": "uid"
-    },
     "content": {
       "type": "richtext"
     },
@@ -40,6 +37,11 @@
     },
     "Category": {
       "type": "string"
+    },
+    "slug": {
+      "type": "string",
+      "required": true,
+      "unique": true
     }
   }
 }
