@@ -16,13 +16,25 @@ const fetchData = async () => {
   return resData
 }
 
-const fetchPost = async (id: number) => {
-  const res = await fetch(
-    `${process.env.STRAPI_API_URL}/posts/${id}?populate=%2A`
-  )
+const fetchCase = async () => {
+  const res = await fetch(`${process.env.STRAPI_API_URL}/cases?populate=%2A`)
 
   const resData = await res.json()
-  return resData.data.attributes
+  return resData.data
+}
+
+const trimTitle = (str: string, limit = 55) => {
+  let newTitle: string[] = []
+  if (str.length >= limit) {
+    str.split(' ').reduce((acc, cur) => {
+      if (acc + cur.length <= limit) {
+        newTitle.push(cur)
+      }
+      return acc + cur.length
+    }, 0)
+    return `${newTitle.join(' ')} ...`
+  }
+  return str
 }
 
 const fetchDesc = async () => {
@@ -47,15 +59,8 @@ export default async function Main() {
   const res = await fetchData()
   const data = res.data.attributes
 
-  const post3 = await fetchPost(3)
-  const post3URL =
-    process.env.STRAPI_URL + post3.featuredImage.data.attributes.url
-  const post4 = await fetchPost(4)
-  const post4URL =
-    process.env.STRAPI_URL + post4.featuredImage.data.attributes.url
-  const post5 = await fetchPost(5)
-  const post5URL =
-    process.env.STRAPI_URL + post5.featuredImage.data.attributes.url
+  const allCases = await fetchCase()
+  const newCases = allCases.filter((item) => item.id < 4)
 
   const commaURL = process.env.STRAPI_URL + data.comma.data.attributes.url
 
@@ -444,32 +449,41 @@ export default async function Main() {
           <p className='text-lg text-darkBrown mb-10'>{caseDesc}</p>
 
           <div className='flex flex-col pb-20 space-y-12 md:flex-row md:space-x-14'>
-            <div className='flex flex-col items-center mt-12 space-y-2 md:w-1/3'>
-              <article className='overflow-hidden w-96 bg-white border border-gray-100 shadow-sm md:w-auto'>
-                <Image
-                  alt={post3.title}
-                  src={post3URL}
-                  width={post3.featuredImage.data.attributes.width}
-                  height={post3.featuredImage.data.attributes.height}
-                  className='h-56 w-full object-cover'
-                />
+            {newCases.map((item) => (
+              <div className='flex flex-col items-center mt-12 space-y-2 md:w-1/3'>
+                <article className='overflow-hidden w-96 bg-white border border-gray-100 shadow-sm md:w-auto'>
+                  <Image
+                    alt={item.attributes.title}
+                    src={
+                      process.env.STRAPI_URL +
+                      item.attributes.featuredImage.data.attributes.url
+                    }
+                    width={item.attributes.featuredImage.data.attributes.width}
+                    height={
+                      item.attributes.featuredImage.data.attributes.height
+                    }
+                    className='h-56 w-full object-cover'
+                  />
 
-                <div className='text-left p-4 sm:p-6'>
-                  <Link href='#'>
-                    <h3 className='text-md text-darkBrown'>{post3.title}</h3>
-                  </Link>
+                  <div className='text-left p-4 sm:p-6'>
+                    <Link href='#'>
+                      <h3 className='text-md text-darkBrown'>
+                        {trimTitle(item.attributes.title)}
+                      </h3>
+                    </Link>
 
-                  <Link
-                    href='#'
-                    className='group mt-4 inline-flex gap-1 text-sm font-medium text-blue-600'
-                  >
-                    DETAILS
-                  </Link>
-                </div>
-              </article>
-            </div>
+                    <Link
+                      href='#'
+                      className='group mt-4 inline-flex gap-1 text-sm font-medium text-blue-600'
+                    >
+                      DETAILS
+                    </Link>
+                  </div>
+                </article>
+              </div>
+            ))}
 
-            <div className='flex flex-col items-center space-y-2 md:w-1/3'>
+            {/* <div className='flex flex-col items-center space-y-2 md:w-1/3'>
               <article className='overflow-hidden w-96 bg-white border border-gray-100 shadow-sm md:w-auto'>
                 <Image
                   alt={post4.title}
@@ -517,7 +531,7 @@ export default async function Main() {
                   </Link>
                 </div>
               </article>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -545,7 +559,6 @@ export default async function Main() {
               </Link>
             </div>
           </div>
-          
         </div>
       </section>
     </>
