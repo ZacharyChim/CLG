@@ -1,6 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { v4 } from 'uuid'
+import { trimTitle } from '../lib/utils'
 
 import contactTop from '../public/contact-top.png'
 import caseTop from '../public/case-top.png'
@@ -16,25 +18,11 @@ const fetchData = async () => {
   return resData
 }
 
-const fetchCase = async () => {
+const fetchCases = async () => {
   const res = await fetch(`${process.env.STRAPI_API_URL}/cases?populate=%2A`)
 
   const resData = await res.json()
   return resData.data
-}
-
-const trimTitle = (str: string, limit = 55) => {
-  let newTitle: string[] = []
-  if (str.length >= limit) {
-    str.split(' ').reduce((acc, cur) => {
-      if (acc + cur.length <= limit) {
-        newTitle.push(cur)
-      }
-      return acc + cur.length
-    }, 0)
-    return `${newTitle.join(' ')} ...`
-  }
-  return str
 }
 
 const fetchDesc = async () => {
@@ -59,7 +47,7 @@ export default async function Main() {
   const res = await fetchData()
   const data = res.data.attributes
 
-  const allCases = await fetchCase()
+  const allCases = await fetchCases()
   const newCases = allCases.filter((item) => item.id < 4)
 
   const commaURL = process.env.STRAPI_URL + data.comma.data.attributes.url
@@ -450,7 +438,10 @@ export default async function Main() {
 
           <div className='flex flex-col pb-20 space-y-12 md:flex-row md:space-x-14'>
             {newCases.map((item) => (
-              <div className='flex flex-col items-center mt-12 space-y-2 md:w-1/3'>
+              <div
+                key={v4()}
+                className='flex flex-col items-center mt-12 space-y-2 md:w-1/3'
+              >
                 <article className='overflow-hidden w-96 bg-white border border-gray-100 shadow-sm md:w-auto'>
                   <Image
                     alt={item.attributes.title}
@@ -466,14 +457,20 @@ export default async function Main() {
                   />
 
                   <div className='text-left p-4 sm:p-6'>
-                    <Link href='#'>
+                    <Link
+                      href={
+                        process.env.SITE_URL + '/cases/' + item.attributes.slug
+                      }
+                    >
                       <h3 className='text-md text-darkBrown'>
                         {trimTitle(item.attributes.title)}
                       </h3>
                     </Link>
 
                     <Link
-                      href='#'
+                      href={
+                        process.env.SITE_URL + '/cases/' + item.attributes.slug
+                      }
                       className='group mt-4 inline-flex gap-1 text-sm font-medium text-blue-600'
                     >
                       DETAILS

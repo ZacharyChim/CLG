@@ -2,30 +2,17 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { v4 } from 'uuid'
+import { trimTitle } from '../../lib/utils'
 
-const fetchCase = async () => {
+const fetchCases = async () => {
   const res = await fetch(`${process.env.STRAPI_API_URL}/cases?populate=%2A`)
 
   const resData = await res.json()
   return resData.data
 }
 
-const trimTitle = (str: string, limit = 55) => {
-  let newTitle: string[] = []
-  if (str.length >= limit) {
-    str.split(' ').reduce((acc, cur) => {
-      if (acc + cur.length <= limit) {
-        newTitle.push(cur)
-      }
-      return acc + cur.length
-    }, 0)
-    return `${newTitle.join(' ')} ...`
-  }
-  return str
-}
-
 export default async function Main() {
-  const allCases = await fetchCase()
+  const allCases = await fetchCases()
 
   return (
     <section id='case' className='flex flex-col mx-auto items-center max-w-5xl'>
@@ -50,14 +37,20 @@ export default async function Main() {
                 />
 
                 <div className='text-left px-4 py-2'>
-                  <Link href='#'>
+                  <Link
+                    href={
+                      process.env.SITE_URL + '/cases/' + item.attributes.slug
+                    }
+                  >
                     <h3 className='text-sm text-darkBrown'>
                       {trimTitle(item.attributes.title)}
                     </h3>
                   </Link>
 
                   <Link
-                    href='#'
+                    href={
+                      process.env.SITE_URL + '/cases/' + item.attributes.slug
+                    }
                     className='group mt-2 inline-flex gap-1 text-sm font-medium text-oceanBlue'
                   >
                     DETAILS

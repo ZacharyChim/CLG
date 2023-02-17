@@ -59,8 +59,8 @@ async function Footer() {
           <Image src={footerCurve} alt='' />
         </div>
         <div className='max-w-6xl px-4 py-16 mx-auto space-y-8 lg:space-y-16 lg:px-8'>
-          <div className='grid grid-cols-1 gap-4 lg:grid-cols-4'>
-            <div className='md:border-r'>
+          <div className='grid grid-cols-1 gap-4 mx-auto lg:grid-cols-4'>
+            <div className='mx-auto md:border-r'>
               <div className='px-4 py-8'>
                 <Image
                   src={`${process.env.STRAPI_URL}${logoURL}`}
@@ -68,6 +68,7 @@ async function Footer() {
                   width={174}
                   height={64}
                   quality='100'
+                  className='mx-auto '
                 />
               </div>
               <ul>
@@ -106,7 +107,7 @@ async function Footer() {
           </div>
         </div> */}
 
-            <div className='grid grid-cols-1 gap-4 text-sm lg:col-span-3 lg:grid-cols-4'>
+            <div className='mx-auto grid grid-cols-1 gap-4 text-sm lg:col-span-3 lg:grid-cols-4'>
               <div>
                 <p className='font-bold text-grayishWhite pl-6 pb-4'>
                   <Link href={allLinks[0].externalPath}>

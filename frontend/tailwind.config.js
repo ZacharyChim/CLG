@@ -34,6 +34,7 @@ module.exports = {
         curveLine: "url('/curve-line.png')",
         lineBg: "url('/line-bg.png')",
         heroBg: "url('/heroBg.png')",
+        textBg: "url('/text-bg.png')",
       },
     },
   },
