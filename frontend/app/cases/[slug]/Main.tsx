@@ -25,11 +25,7 @@ type PageProps = {
 export default async function Main(props: PageProps) {
   const caseObj = await fetchCase(props.slug)
   const content = richTextReducer(caseObj.content)
-  const options = {
-    month: 'long',
-    day: 'long',
-    year: 'numeric',
-  }
+
   const publishedAt = new Date(caseObj.publishedAt)
   const monthNames = [
     'JANUARY',

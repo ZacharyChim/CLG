@@ -1,4 +1,6 @@
 import React from 'react'
+import Main from './Main'
+import Hero from '../Hero'
 
 type PageProps = {
   params: {
@@ -7,5 +9,10 @@ type PageProps = {
 }
 
 export default function Post({ params: { slug } }: PageProps) {
-  return <div>Single post page: {slug}</div>
+  return <>
+  {/* @ts-ignore */}
+  <Hero />
+  {/* @ts-ignore */}
+  <Main slug={slug} />
+</>
 }

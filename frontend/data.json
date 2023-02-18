@@ -1,49 +1,14 @@
 {
   "data": {
-    "id": 3,
+    "id": 6,
     "attributes": {
-      "title": "Anti-epidemic Fund 5.0 – Beauty and Massage Parlors",
-      "createdAt": "2023-02-13T15:25:35.730Z",
-      "updatedAt": "2023-02-15T16:30:03.746Z",
-      "publishedAt": "2023-02-13T15:25:58.632Z",
-      "slug": "anti-epidemic",
-      "content": "Anti-epidemic Fund 5.0 – Beauty and Massage Parlors\n\nAnti-epidemic Fund 5.0 – Beauty and Massage Parlors\n\nAnti-epidemic Fund 5.0 – Beauty and Massage Parlors",
-      "Category": "Accounting System",
-      "featuredImage": {
-        "data": {
-          "id": 48,
-          "attributes": {
-            "name": "article3.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 382,
-            "height": 255,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_article3.png",
-                "hash": "thumbnail_article3_bfaf932aac",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 234,
-                "height": 156,
-                "size": 87.89,
-                "url": "/uploads/thumbnail_article3_bfaf932aac.png"
-              }
-            },
-            "hash": "article3_bfaf932aac",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 47.64,
-            "url": "/uploads/article3_bfaf932aac.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-27T20:29:01.855Z",
-            "updatedAt": "2023-01-27T20:29:01.855Z"
-          }
-        }
-      }
+      "title": "Compare Three Cloud Accounting Systems – Choose the Best Accounting Software for You",
+      "content": "Compare Three Cloud Accounting Systems – Choose the Best Accounting Software for You\n\nCompare Three Cloud Accounting Systems – Choose the Best Accounting Software for You\n\nCompare Three Cloud Accounting Systems – Choose the Best Accounting Software for You",
+      "excerpt": "Compare Three Cloud Accounting Systems",
+      "createdAt": "2023-02-13T15:55:13.005Z",
+      "updatedAt": "2023-02-13T15:55:15.403Z",
+      "publishedAt": "2023-02-13T15:55:15.402Z",
+      "slug": "compare-three-cloud-accounting-systems-choose-the-best-accounting-software-for-you"
     }
   },
   "meta": {}
