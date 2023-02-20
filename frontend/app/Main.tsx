@@ -39,34 +39,65 @@ export default async function Main() {
   const descLeftURL =
     process.env.STRAPI_URL +
     desc.data.attributes.ImageDescLeft.Image.data.attributes.url
+  const descLeftWidth =
+    desc.data.attributes.ImageDescLeft.Image.data.attributes.width
+  const descLeftHeight =
+    desc.data.attributes.ImageDescLeft.Image.data.attributes.height
 
   const descLeftTitleURL =
     process.env.STRAPI_URL +
     desc.data.attributes.ImageDescLeft.ImageTitle.data.attributes.url
-
-  const descRightURL =
-    process.env.STRAPI_URL +
-    desc.data.attributes.ImageDescRight.Image.data.attributes.url
+  const descLeftTitleWidth =
+    desc.data.attributes.ImageDescLeft.ImageTitle.data.attributes.width
+  const descLeftTitleHeight =
+    desc.data.attributes.ImageDescLeft.ImageTitle.data.attributes.height
 
   const descRightTitleURL =
     process.env.STRAPI_URL +
     desc.data.attributes.ImageDescRight.ImageTitle.data.attributes.url
+  const descRightTitleWidth =
+    desc.data.attributes.ImageDescRight.ImageTitle.data.attributes.width
+  const descRightTitleHeight =
+    desc.data.attributes.ImageDescRight.ImageTitle.data.attributes.height
+
+  const descRightURL =
+    process.env.STRAPI_URL +
+    desc.data.attributes.ImageDescRight.Image.data.attributes.url
+  const descRightWidth =
+    desc.data.attributes.ImageDescRight.Image.data.attributes.width
+  const descRightHeight =
+    desc.data.attributes.ImageDescRight.Image.data.attributes.height
 
   const expURL = process.env.STRAPI_URL + data.experience.data.attributes.url
+  const expWidth = data.experience.data.attributes.width
+  const expHeight = data.experience.data.attributes.height
+
   const expNumber = data.experienceNumber
   const expText = data.experienceText
+
   const clientURL = process.env.STRAPI_URL + data.client.data.attributes.url
+  const clientWidth = data.client.data.attributes.width
+  const clientHeight = data.client.data.attributes.height
+
   const clientNumber = data.clientNumber
   const clientText = data.clientText
+
   const awardURL = process.env.STRAPI_URL + data.award.data.attributes.url
+  const awardWidth = data.award.data.attributes.width
+  const awardHeight = data.award.data.attributes.height
+
   const awardTitle = data.awardTitle
   const awardText = data.awardText
   const awardDesc = data.awardDesc
 
   const xeroURL = process.env.STRAPI_URL + data.xero.data.attributes.url
+  const xeroWidth = data.xero.data.attributes.width
+  const xeroHeight = data.xero.data.attributes.height
 
   const xeroSilverURL =
     process.env.STRAPI_URL + data.xeroSilver.data.attributes.url
+  const xeroSilverWidth = data.xeroSilver.data.attributes.width
+  const xeroSilverHeight = data.xeroSilver.data.attributes.height
 
   const xeroTitle = data.xeroTitle
   const xeroText = data.xeroText
@@ -83,42 +114,106 @@ export default async function Main() {
 
   const incorporationURL =
     process.env.STRAPI_URL + data.incorporationImage.data.attributes.url
+  const incorporationWidth = data.incorporationImage.data.attributes.width
+  const incorporationHeight = data.incorporationImage.data.attributes.height
+
   const secretaryURL =
     process.env.STRAPI_URL + data.secretaryImage.data.attributes.url
+  const secretaryWidth = data.secretaryImage.data.attributes.width
+  const secretaryHeight = data.secretaryImage.data.attributes.height
+
   const accountingURL =
     process.env.STRAPI_URL + data.accountingImage.data.attributes.url
+  const accountingWidth = data.accountingImage.data.attributes.width
+  const accountingHeight = data.accountingImage.data.attributes.height
+
   const taxationURL =
     process.env.STRAPI_URL + data.taxationImage.data.attributes.url
+  const taxationWidth = data.taxationImage.data.attributes.width
+  const taxationHeight = data.taxationImage.data.attributes.height
+
   const auditingURL =
     process.env.STRAPI_URL + data.auditingImage.data.attributes.url
+  const auditingWidth = data.auditingImage.data.attributes.width
+  const auditingHeight = data.auditingImage.data.attributes.height
+
   const fundingURL =
     process.env.STRAPI_URL + data.fundingImage.data.attributes.url
+  const fundingWidth = data.fundingImage.data.attributes.width
+  const fundingHeight = data.fundingImage.data.attributes.height
+
   const cloudURL = process.env.STRAPI_URL + data.cloudImage.data.attributes.url
+  const cloudWidth = data.cloudImage.data.attributes.width
+  const cloudHeight = data.cloudImage.data.attributes.height
+
   const solutionURL =
     process.env.STRAPI_URL + data.solutionImage.data.attributes.url
+  const solutionWidth = data.solutionImage.data.attributes.width
+  const solutionHeight = data.solutionImage.data.attributes.height
 
   const partnership = data.partnership
   const partnershipDesc = data.partnershipDesc
 
   const workstemURL =
     process.env.STRAPI_URL + data.workstemLogo.data.attributes.url
+  const workstemWidth = data.workstemLogo.data.attributes.width
+  const workstemHeight = data.workstemLogo.data.attributes.height
+
   const hubdocURL = process.env.STRAPI_URL + data.hubdocLogo.data.attributes.url
+  const hubdocWidth = data.hubdocLogo.data.attributes.width
+  const hubdocHeight = data.hubdocLogo.data.attributes.height
+
   const xeroLogoURL = process.env.STRAPI_URL + data.xeroLogo.data.attributes.url
+  const xeroLogoWidth = data.xeroLogo.data.attributes.width
+  const xeroLogoHeight = data.xeroLogo.data.attributes.height
+
   const mshopURL = process.env.STRAPI_URL + data.mshopLogo.data.attributes.url
+  const mshopWidth = data.mshopLogo.data.attributes.width
+  const mshopHeight = data.mshopLogo.data.attributes.height
+
   const gingersoftURL =
     process.env.STRAPI_URL + data.gingersoftLogo.data.attributes.url
+  const gingersoftWidth = data.gingersoftLogo.data.attributes.width
+  const gingersoftHeight = data.gingersoftLogo.data.attributes.height
+
   const eats365URL =
     process.env.STRAPI_URL + data.eats365Logo.data.attributes.url
+  const eats365Width = data.eats365Logo.data.attributes.width
+  const eats365Height = data.eats365Logo.data.attributes.height
+
   const foodmarkethubURL =
     process.env.STRAPI_URL + data.foodmarkethubLogo.data.attributes.url
+  const foodmarkethubWidth = data.foodmarkethubLogo.data.attributes.width
+  const foodmarkethubHeight = data.foodmarkethubLogo.data.attributes.height
+
   const yoovURL = process.env.STRAPI_URL + data.yoovLogo.data.attributes.url
+  const yoovWidth = data.yoovLogo.data.attributes.width
+  const yoovHeight = data.yoovLogo.data.attributes.height
+
   const dkdooURL = process.env.STRAPI_URL + data.dkdooLogo.data.attributes.url
+  const dkdooWidth = data.dkdooLogo.data.attributes.width
+  const dkdooHeight = data.dkdooLogo.data.attributes.height
+
   const kpayURL = process.env.STRAPI_URL + data.kpayLogo.data.attributes.url
+  const kpayWidth = data.kpayLogo.data.attributes.width
+  const kpayHeight = data.kpayLogo.data.attributes.height
+
   const eberURL = process.env.STRAPI_URL + data.eberLogo.data.attributes.url
+  const eberWidth = data.eberLogo.data.attributes.width
+  const eberHeight = data.eberLogo.data.attributes.height
+
   const hikeURL = process.env.STRAPI_URL + data.hikeLogo.data.attributes.url
+  const hikeWidth = data.hikeLogo.data.attributes.width
+  const hikeHeight = data.hikeLogo.data.attributes.height
+
   const boutirURL = process.env.STRAPI_URL + data.boutirLogo.data.attributes.url
+  const boutirWidth = data.boutirLogo.data.attributes.width
+  const boutirHeight = data.boutirLogo.data.attributes.height
+
   const postifyURL =
     process.env.STRAPI_URL + data.postifyLogo.data.attributes.url
+  const postifyWidth = data.postifyLogo.data.attributes.width
+  const postifyHeight = data.postifyLogo.data.attributes.height
 
   const caseTitle = data.caseTitle
   const caseDesc = data.caseDesc
@@ -153,16 +248,16 @@ export default async function Main() {
             <Image
               src={descLeftURL}
               alt='Keep It Simple'
-              width='535'
-              height='504'
+              width={descLeftWidth}
+              height={descLeftHeight}
             />
           </div>
           <div className='flex flex-col space-y-8 md:w-1/2'>
             <Image
               src={descLeftTitleURL}
               alt='Keep It Simple Title'
-              width='331'
-              height='43'
+              width={descLeftTitleWidth}
+              height={descLeftTitleHeight}
             />
             <p>
               We offer a hands-on approach with an understanding of your value
@@ -176,8 +271,8 @@ export default async function Main() {
             <Image
               src={descRightTitleURL}
               alt='Glow It Fast'
-              width='309'
-              height='45'
+              width={descRightTitleWidth}
+              height={descRightTitleHeight}
             />
 
             <p>
@@ -190,8 +285,8 @@ export default async function Main() {
             <Image
               src={descRightURL}
               alt='Xero Silver Partner'
-              width='553'
-              height='504'
+              width={descRightWidth}
+              height={descRightHeight}
             />
           </div>
         </div>
@@ -202,7 +297,12 @@ export default async function Main() {
         <div className='max-w-5xl px-5 mx-auto text-center'>
           <div className='flex flex-col py-20 md:flex-row md:space-x-14'>
             <div className='flex flex-col items-center p-8 space-y-2 h-30 md:w-1/3'>
-              <Image src={expURL} alt={expText} width='240' height='300' />
+              <Image
+                src={expURL}
+                alt={expText}
+                width={expWidth}
+                height={expHeight}
+              />
               <h5 className='text-4xl font-bold text-veryDarkBlue pt-6'>
                 {expNumber}
               </h5>
@@ -213,8 +313,8 @@ export default async function Main() {
               <Image
                 src={clientURL}
                 alt={clientText}
-                width='293'
-                height='300'
+                width={clientWidth}
+                height={clientHeight}
               />
               <h5 className='text-4xl font-bold text-veryDarkBlue pt-6'>
                 {clientNumber}
@@ -223,7 +323,12 @@ export default async function Main() {
             </div>
 
             <div className='flex flex-col items-center p-8 space-y-2 h-30 md:w-1/3'>
-              <Image src={awardURL} alt={awardText} width='269' height='300' />
+              <Image
+                src={awardURL}
+                alt={awardText}
+                width={awardWidth}
+                height={awardHeight}
+              />
               <h5 className='text-4xl font-bold text-veryDarkBlue pt-6'>
                 {awardTitle}
               </h5>
@@ -238,14 +343,14 @@ export default async function Main() {
         <Image src={contactTop} alt='' />
         <div className='container max-w-4xl flex flex-col px-4 mx-auto py-40 md:flex-row'>
           <div className='flex flex-col space-y-12 mb-10 items-center md:w-1/2'>
-            <Image src={xeroURL} alt='' width='256' height='123' />
+            <Image src={xeroURL} alt='' width={xeroWidth} height={xeroHeight} />
           </div>
           <div className='flex flex-col space-y-8 md:w-1/2'>
             <Image
               src={xeroSilverURL}
               alt='Xero Silver Partner'
-              width='471'
-              height='41'
+              width={xeroSilverWidth}
+              height={xeroSilverHeight}
             />
             <h3 className='text-brightBlue text-xl font-bold'>{xeroTitle}</h3>
             <p className='text-darkBrown'>{xeroText}</p>
@@ -265,8 +370,8 @@ export default async function Main() {
               <Image
                 src={incorporationURL}
                 alt={incorporation}
-                width='216'
-                height='216'
+                width={incorporationWidth}
+                height={incorporationHeight}
               />
               <h5 className='text-md text-white pt-6'>{incorporation}</h5>
             </div>
@@ -275,8 +380,8 @@ export default async function Main() {
               <Image
                 src={secretaryURL}
                 alt={secretary}
-                width='216'
-                height='216'
+                width={secretaryWidth}
+                height={secretaryHeight}
               />
               <h5 className='text-md text-white pt-6'>{secretary}</h5>
             </div>
@@ -285,8 +390,8 @@ export default async function Main() {
               <Image
                 src={accountingURL}
                 alt={accounting}
-                width='216'
-                height='216'
+                width={accountingWidth}
+                height={accountingHeight}
               />
               <h5 className='text-md text-white pt-6'>{accounting}</h5>
             </div>
@@ -295,8 +400,8 @@ export default async function Main() {
               <Image
                 src={taxationURL}
                 alt={taxation}
-                width='216'
-                height='216'
+                width={taxationWidth}
+                height={taxationHeight}
               />
               <h5 className='text-md text-white pt-6'>{taxation}</h5>
             </div>
@@ -307,19 +412,29 @@ export default async function Main() {
               <Image
                 src={auditingURL}
                 alt={auditing}
-                width='216'
-                height='216'
+                width={auditingWidth}
+                height={auditingHeight}
               />
               <h5 className='text-md text-white pt-6'>{auditing}</h5>
             </div>
 
             <div className='flex flex-col items-center p-6 space-y-2 md:w-1/4'>
-              <Image src={fundingURL} alt={funding} width='216' height='216' />
+              <Image
+                src={fundingURL}
+                alt={funding}
+                width={fundingWidth}
+                height={fundingHeight}
+              />
               <h5 className='text-md text-white pt-6'>{funding}</h5>
             </div>
 
             <div className='flex flex-col items-center p-6 space-y-2 md:w-1/4'>
-              <Image src={cloudURL} alt={cloud} width='216' height='216' />
+              <Image
+                src={cloudURL}
+                alt={cloud}
+                width={cloudWidth}
+                height={cloudHeight}
+              />
               <h5 className='text-md text-white pt-6'>{cloud}</h5>
             </div>
 
@@ -327,8 +442,8 @@ export default async function Main() {
               <Image
                 src={solutionURL}
                 alt={solution}
-                width='216'
-                height='216'
+                width={solutionWidth}
+                height={solutionHeight}
               />
               <h5 className='text-md text-white pt-6'>{solution}</h5>
             </div>
@@ -346,65 +461,135 @@ export default async function Main() {
 
           <div className='flex flex-col items-center justify-center md:flex-row md:space-x-0'>
             <div className='flex flex-col justify-center space-y-2 md:w-1/4'>
-              <Image src={workstemURL} alt='' width='300' height='47' />
+              <Image
+                src={workstemURL}
+                alt=''
+                width={workstemWidth}
+                height={workstemHeight}
+              />
             </div>
 
             <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
-              <Image src={hubdocURL} alt='' width='185' height='57' />
+              <Image
+                src={hubdocURL}
+                alt=''
+                width={hubdocWidth}
+                height={hubdocHeight}
+              />
             </div>
 
             <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
-              <Image src={xeroLogoURL} alt='' width='100' height='100' />
+              <Image
+                src={xeroLogoURL}
+                alt=''
+                width={xeroLogoWidth}
+                height={xeroLogoHeight}
+              />
             </div>
 
             <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
-              <Image src={mshopURL} alt='' width='291' height='80' />
+              <Image
+                src={mshopURL}
+                alt=''
+                width={mshopWidth}
+                height={mshopHeight}
+              />
             </div>
           </div>
 
           <div className='flex flex-col items-center justify-center md:flex-row md:space-x-4'>
             <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/3'>
-              <Image src={gingersoftURL} alt='' width='300' height='79' />
+              <Image
+                src={gingersoftURL}
+                alt=''
+                width={gingersoftWidth}
+                height={gingersoftHeight}
+              />
             </div>
 
             <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/3'>
-              <Image src={eats365URL} alt='' width='300' height='150' />
+              <Image
+                src={eats365URL}
+                alt=''
+                width={eats365Width}
+                height={eats365Height}
+              />
             </div>
 
             <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/3'>
-              <Image src={foodmarkethubURL} alt='' width='300' height='124' />
+              <Image
+                src={foodmarkethubURL}
+                alt=''
+                width={foodmarkethubWidth}
+                height={foodmarkethubHeight}
+              />
             </div>
           </div>
 
           <div className='flex flex-col items-center justify-center md:flex-row md:space-x-4'>
             <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
-              <Image src={yoovURL} alt='' width='281' height='100' />
+              <Image
+                src={yoovURL}
+                alt=''
+                width={yoovWidth}
+                height={yoovHeight}
+              />
             </div>
 
             <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
-              <Image src={dkdooURL} alt='' width='300' height='79' />
+              <Image
+                src={dkdooURL}
+                alt=''
+                width={dkdooWidth}
+                height={dkdooHeight}
+              />
             </div>
 
             <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
-              <Image src={kpayURL} alt='' width='300' height='150' />
+              <Image
+                src={kpayURL}
+                alt=''
+                width={kpayWidth}
+                height={kpayHeight}
+              />
             </div>
 
             <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
-              <Image src={eberURL} alt='' width='300' height='150' />
+              <Image
+                src={eberURL}
+                alt=''
+                width={eberWidth}
+                height={eberHeight}
+              />
             </div>
           </div>
 
           <div className='flex flex-col items-center justify-center md:flex-row md:space-x-4'>
             <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
-              <Image src={hikeURL} alt='' width='281' height='100' />
+              <Image
+                src={hikeURL}
+                alt=''
+                width={hikeWidth}
+                height={hikeHeight}
+              />
             </div>
 
             <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
-              <Image src={boutirURL} alt='' width='300' height='79' />
+              <Image
+                src={boutirURL}
+                alt=''
+                width={boutirWidth}
+                height={boutirHeight}
+              />
             </div>
 
             <div className='flex flex-col justify-center p-6 space-y-2 md:w-1/4'>
-              <Image src={postifyURL} alt='' width='300' height='150' />
+              <Image
+                src={postifyURL}
+                alt=''
+                width={postifyWidth}
+                height={postifyHeight}
+              />
             </div>
           </div>
         </div>

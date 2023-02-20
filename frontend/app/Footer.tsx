@@ -44,7 +44,9 @@ async function Footer() {
     (item) => item.parent.id === 19
   )
   const linkCloud = linkWithParent.filter((item) => item.parent.id === 20)
-  const logoURL = footer.LogoWhite.data.attributes.url
+  const logoURL = process.env.STRAPI_URL + footer.LogoWhite.data.attributes.url
+  const logoWidth = footer.LogoWhite.data.attributes.width
+  const logoHeight = footer.LogoWhite.data.attributes.height
   const social = await fetchSocial()
   const icons = social.map((icon) => ({
     text: icon.Text,
@@ -63,10 +65,10 @@ async function Footer() {
             <div className='mx-auto md:border-r'>
               <div className='px-4 py-8'>
                 <Image
-                  src={`${process.env.STRAPI_URL}${logoURL}`}
+                  src={logoURL}
                   alt='CLG Group Logo'
-                  width={174}
-                  height={64}
+                  width={logoWidth}
+                  height={logoHeight}
                   quality='100'
                   className='mx-auto '
                 />
