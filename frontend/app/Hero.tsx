@@ -1,30 +1,19 @@
 import Image from 'next/image'
 import React from 'react'
-
-const fetchHeroImages = async () => {
-  const res = await fetch(
-    `${process.env.STRAPI_API_URL}/home-page?populate[HeroIcon]=%2A`
-  )
-
-  const resData = await res.json()
-  return resData.data.attributes.HeroIcon.data[0].attributes.url
-}
-
-const fetchData = async () => {
-  const res = await fetch(
-    `${process.env.STRAPI_API_URL}/home-page?populate=%2A`
-  )
-
-  const resData = await res.json()
-  return resData
-}
+import { fetchSingle } from '../lib/utils'
 
 export default async function Hero() {
-  const getStarted = await fetchHeroImages()
-  const getStartedURL = process.env.STRAPI_URL + getStarted
+  const data = await fetchSingle('home-page')
+  const heroIcon = data.HeroIcon.data.attributes
+  const heroIconURL = process.env.STRAPI_URL + heroIcon.url
+  const heroIconWidth = heroIcon.width
+  const heroIconHeight = heroIcon.width
 
-  const res = await fetchData()
-  const data = res.data.attributes
+  const homeHero = data.HomeHero.data.attributes
+  const homeHeroURL = process.env.STRAPI_URL + homeHero.url
+  const homeHeroWidth = homeHero.width
+  const homeHeroHeight = homeHero.width
+
   const mainSlogan = data.main_slogan
   const subSlogan = data.sub_slogan
 
@@ -41,16 +30,21 @@ export default async function Hero() {
             </h2>
           </div>
           <div className='px-36 py-10 md:mt-10 md:pr-32 md:px-0 md:pt-32'>
-            <Image src={getStartedURL} alt='' width={285} height={327} />
+            <Image
+              src={heroIconURL}
+              alt=''
+              width={heroIconWidth}
+              height={heroIconHeight}
+            />
           </div>
         </div>
 
         <div className='md:w-2/3'>
           <Image
-            src={`${process.env.STRAPI_URL}/uploads/home_hero_89b6a100d1.png`}
+            src={homeHeroURL}
             alt=''
-            width={1200}
-            height={686}
+            width={homeHeroWidth}
+            height={homeHeroHeight}
             className='md:mb-40'
           />
         </div>

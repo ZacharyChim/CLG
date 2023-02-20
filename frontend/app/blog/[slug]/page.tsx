@@ -1,6 +1,6 @@
 import React from 'react'
 import Main from './Main'
-import Hero from '../Hero'
+import Hero from '../../../components/Hero'
 
 type PageProps = {
   params: {
@@ -9,10 +9,12 @@ type PageProps = {
 }
 
 export default function Post({ params: { slug } }: PageProps) {
-  return <>
-  {/* @ts-ignore */}
-  <Hero />
-  {/* @ts-ignore */}
-  <Main slug={slug} />
-</>
+  return (
+    <>
+      {/* @ts-ignore */}
+      <Hero page='blog' />
+      {/* @ts-ignore */}
+      <Main slug={slug} />
+    </>
+  )
 }

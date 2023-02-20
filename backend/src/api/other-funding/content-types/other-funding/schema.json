@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "other_fundings",
+  "info": {
+    "singularName": "other-funding",
+    "pluralName": "other-fundings",
+    "displayName": "Other Funding",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "main_slogan": {
+      "type": "string"
+    },
+    "hero_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

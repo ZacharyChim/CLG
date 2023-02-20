@@ -1,5 +1,14 @@
 import { marked } from 'marked'
 
+export const fetchSingle = async (single: string) => {
+  const res = await fetch(
+    `${process.env.STRAPI_API_URL}/${single}?populate=%2A`
+  )
+
+  const resData = await res.json()
+  return resData.data.attributes
+}
+
 export const richTextReducer = (raw: string) => {
   const parsed = marked.parse(raw)
   const fixedImageURL = parsed.replace(

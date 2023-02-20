@@ -1,12 +1,12 @@
 import React from 'react'
-import Hero from './Hero'
+import Hero from '../../components/Hero'
 import Main from './Main'
 
 function Blog() {
   return (
     <div>
       {/* @ts-ignore */}
-      <Hero />
+      <Hero page='blog' />
       {/* @ts-ignore */}
       <Main />
     </div>
