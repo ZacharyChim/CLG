@@ -2,17 +2,10 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { v4 } from 'uuid'
-import { trimTitle } from '../../lib/utils'
-
-const fetchCases = async () => {
-  const res = await fetch(`${process.env.STRAPI_API_URL}/cases?populate=%2A`)
-
-  const resData = await res.json()
-  return resData.data
-}
+import { fetchCollection, trimTitle } from '../../lib/utils'
 
 export default async function Main() {
-  const allCases = await fetchCases()
+  const allCases = await fetchCollection('cases')
 
   return (
     <section id='case' className='flex flex-col mx-auto items-center max-w-5xl'>

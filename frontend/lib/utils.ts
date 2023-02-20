@@ -9,6 +9,13 @@ export const fetchSingle = async (single: string) => {
   return resData.data.attributes
 }
 
+export const fetchCollection = async (collection: string) => {
+  const res = await fetch(`${process.env.STRAPI_API_URL}/${collection}?populate=%2A`)
+
+  const resData = await res.json()
+  return resData.data
+}
+
 export const richTextReducer = (raw: string) => {
   const parsed = marked.parse(raw)
   const fixedImageURL = parsed.replace(

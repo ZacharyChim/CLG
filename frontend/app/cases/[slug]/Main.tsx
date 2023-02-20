@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { richTextReducer, trimTitle } from '../../../lib/utils'
+import { fetchCollection, richTextReducer, trimTitle } from '../../../lib/utils'
 import { v4 } from 'uuid'
 
 const fetchCase = async (slug: string) => {
@@ -9,13 +9,6 @@ const fetchCase = async (slug: string) => {
 
   const resData = await res.json()
   return resData.data.attributes
-}
-
-const fetchCases = async () => {
-  const res = await fetch(`${process.env.STRAPI_API_URL}/cases?populate=%2A`)
-
-  const resData = await res.json()
-  return resData.data
 }
 
 type PageProps = {
@@ -45,7 +38,7 @@ export default async function Main(props: PageProps) {
   const month = monthNames[publishedAt.getMonth() - 1]
   const date = publishedAt.getDate()
 
-  const allCases = await fetchCases()
+  const allCases = await fetchCollection('cases')
   const newCases = allCases.filter((item) => item.id < 4)
 
   return (

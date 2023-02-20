@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { v4 } from 'uuid'
-import { trimTitle } from '../lib/utils'
+import { fetchCollection, fetchSingle, trimTitle } from '../lib/utils'
 
 import contactTop from '../public/contact-top.png'
 import caseTop from '../public/case-top.png'
@@ -18,13 +18,6 @@ const fetchData = async () => {
   return resData
 }
 
-const fetchCases = async () => {
-  const res = await fetch(`${process.env.STRAPI_API_URL}/cases?populate=%2A`)
-
-  const resData = await res.json()
-  return resData.data
-}
-
 const fetchDesc = async () => {
   const res = await fetch(
     `${process.env.STRAPI_API_URL}/home-page?populate[0]=ImageDescLeft&populate[1]=ImageDescLeft.Image&populate[2]=ImageDescRight&populate[3]=ImageDescRight.Image&populate[4]=ImageDescLeft.ImageTitle&populate[5]=ImageDescRight.ImageTitle`
@@ -34,20 +27,10 @@ const fetchDesc = async () => {
   return resData
 }
 
-const fetchNumber = async () => {
-  const res = await fetch(
-    `${process.env.STRAPI_API_URL}/home-page?populate[0]=experience&populate[1]=client&populate[2]=award`
-  )
-
-  const resData = await res.json()
-  return resData.data.attributes
-}
-
 export default async function Main() {
-  const res = await fetchData()
-  const data = res.data.attributes
+  const data = await fetchSingle('home-page')
 
-  const allCases = await fetchCases()
+  const allCases = await fetchCollection('cases')
   const newCases = allCases.filter((item) => item.id < 4)
 
   const commaURL = process.env.STRAPI_URL + data.comma.data.attributes.url
@@ -69,17 +52,16 @@ export default async function Main() {
     process.env.STRAPI_URL +
     desc.data.attributes.ImageDescRight.ImageTitle.data.attributes.url
 
-  const number = await fetchNumber()
-  const expURL = process.env.STRAPI_URL + number.experience.data.attributes.url
-  const expNumber = number.experienceNumber
-  const expText = number.experienceText
-  const clientURL = process.env.STRAPI_URL + number.client.data.attributes.url
-  const clientNumber = number.clientNumber
-  const clientText = number.clientText
-  const awardURL = process.env.STRAPI_URL + number.award.data.attributes.url
-  const awardTitle = number.awardTitle
-  const awardText = number.awardText
-  const awardDesc = number.awardDesc
+  const expURL = process.env.STRAPI_URL + data.experience.data.attributes.url
+  const expNumber = data.experienceNumber
+  const expText = data.experienceText
+  const clientURL = process.env.STRAPI_URL + data.client.data.attributes.url
+  const clientNumber = data.clientNumber
+  const clientText = data.clientText
+  const awardURL = process.env.STRAPI_URL + data.award.data.attributes.url
+  const awardTitle = data.awardTitle
+  const awardText = data.awardText
+  const awardDesc = data.awardDesc
 
   const xeroURL = process.env.STRAPI_URL + data.xero.data.attributes.url
 
