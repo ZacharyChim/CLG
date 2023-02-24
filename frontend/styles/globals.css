@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+a {
+  color: blueviolet;
+}
+
 .hamburger {
   cursor: pointer;
   width: 24px;

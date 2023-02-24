@@ -35,6 +35,7 @@ module.exports = {
         lineBg: "url('/line-bg.png')",
         heroBg: "url('/heroBg.png')",
         textBg: "url('/text-bg.png')",
+        moreInfoBg: "url('/more-info.png')",
       },
     },
   },

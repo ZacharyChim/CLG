@@ -2,57 +2,150 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { v4 } from 'uuid'
-import { fetchCollection, trimTitle } from '../../lib/utils'
+import { fetchSingle, richTextReducer, trimTitle } from '../../lib/utils'
 
 export default async function Main() {
-  const allCases = await fetchCollection('cases')
+  const otherFunding = await fetchSingle('other-funding')
+  const image1 =
+    process.env.STRAPI_URL + otherFunding.image1.data.attributes.url
+  const image1Width = otherFunding.image1.data.attributes.width
+  const image1Height = otherFunding.image1.data.attributes.height
+
+  const image2 =
+    process.env.STRAPI_URL + otherFunding.image2.data.attributes.url
+  const image2Width = otherFunding.image2.data.attributes.width
+  const image2Height = otherFunding.image2.data.attributes.height
+
+  const image3 =
+    process.env.STRAPI_URL + otherFunding.image3.data.attributes.url
+  const image3Width = otherFunding.image3.data.attributes.width
+  const image3Height = otherFunding.image3.data.attributes.height
+
+  const number1 =
+    process.env.STRAPI_URL + otherFunding.number1.data.attributes.url
+  const number1Width = otherFunding.number1.data.attributes.width
+  const number1Height = otherFunding.number1.data.attributes.height
+  const number2 =
+    process.env.STRAPI_URL + otherFunding.number2.data.attributes.url
+  const number2Width = otherFunding.number2.data.attributes.width
+  const number2Height = otherFunding.number2.data.attributes.height
+  const number3 =
+    process.env.STRAPI_URL + otherFunding.number3.data.attributes.url
+  const number3Width = otherFunding.number3.data.attributes.width
+  const number3Height = otherFunding.number3.data.attributes.height
+
+  const title1 = otherFunding.title1
+  const title2 = otherFunding.title2
+  const title3 = otherFunding.title3
+
+  const content1 = richTextReducer(otherFunding.content1)
+  const content2 = richTextReducer(otherFunding.content2)
+  const content3 = richTextReducer(otherFunding.content3)
+
+  const moreInfo = otherFunding.more_info
 
   return (
     <section id='case' className='flex flex-col mx-auto items-center max-w-5xl'>
-      <div className='px-5 mx-auto pb-20 text-center'>
-        <h2 className='text-2xl font-bold text-darkBlue'>All</h2>
-        <div className='grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-12 lg:grid-cols-3'>
-          {allCases.map((item) => (
-            <div
-              key={v4()}
-              className='flex flex-col items-center mt-12 space-y-2 bg-veryLightBlue'
-            >
-              <article className='overflow-hidden bg-white m-3 border border-gray-100 shadow-sm md:w-auto'>
-                <Image
-                  alt={item.attributes.title}
-                  src={
-                    process.env.STRAPI_URL +
-                    item.attributes.featuredImage.data.attributes.url
-                  }
-                  width={item.attributes.featuredImage.data.attributes.width}
-                  height={item.attributes.featuredImage.data.attributes.height}
-                  className='h-48 w-full object-cover'
-                />
-
-                <div className='text-left px-4 py-2'>
-                  <Link
-                    href={
-                      process.env.SITE_URL + '/cases/' + item.attributes.slug
-                    }
-                  >
-                    <h3 className='text-sm text-darkBrown'>
-                      {trimTitle(item.attributes.title)}
-                    </h3>
-                  </Link>
-
-                  <Link
-                    href={
-                      process.env.SITE_URL + '/cases/' + item.attributes.slug
-                    }
-                    className='group mt-2 inline-flex gap-1 text-sm font-medium text-oceanBlue'
-                  >
-                    DETAILS
-                  </Link>
-                </div>
-              </article>
-            </div>
-          ))}
+      <div className='mx-auto pt-20 text-center'>
+        <div className='flex flex-col gap-8 pb-20 px-5 md:flex-row'>
+          <div className='m-auto md:w-1/2'>
+            <Image
+              alt=''
+              src={image1}
+              width={image1Width}
+              height={image1Height}
+            />
+          </div>
+          <div className='text-left md:w-1/2'>
+            <Image
+              alt=''
+              src={number1}
+              width={number1Width}
+              height={number1Height}
+              className='h-16 w-16 object-fit'
+              quality='100'
+            />
+            <h2 className='text-3xl font-bold text-darkBlue mb-10'>{title1}</h2>
+            <article
+              className='text-darkBrown leading-7 space-y-4'
+              dangerouslySetInnerHTML={{ __html: content1 }}
+            ></article>
+          </div>
         </div>
+      </div>
+
+      <div className='flex flex-col-reverse gap-8 pb-20 px-5 md:flex-row'>
+        <div className='text-left md:w-1/2'>
+          <Image
+            alt=''
+            src={number2}
+            width={number2Width}
+            height={number2Height}
+            className='h-16 w-16 object-fit'
+            quality='100'
+          />
+          <h2 className='text-3xl font-bold text-darkBlue mb-10'>{title2}</h2>
+          <article
+            className='text-darkBrown leading-7 space-y-4'
+            dangerouslySetInnerHTML={{ __html: content2 }}
+          ></article>
+        </div>
+        <div className='m-auto md:w-1/2'>
+          <Image
+            alt=''
+            src={image2}
+            width={image2Width}
+            height={image2Height}
+          />
+        </div>
+      </div>
+
+      <div className='flex flex-col gap-8 pb-20 px-5 md:flex-row'>
+        <div className='m-auto md:w-1/2'>
+          <Image
+            alt=''
+            src={image3}
+            width={image3Width}
+            height={image3Height}
+          />
+        </div>
+        <div className='text-left md:w-1/2'>
+          <Image
+            alt=''
+            src={number3}
+            width={number3Width}
+            height={number3Height}
+            className='h-16 w-16 object-fit'
+            quality='100'
+          />
+          <h2 className='text-3xl font-bold text-darkBlue mb-10'>{title3}</h2>
+          <article
+            className='text-darkBrown leading-7 space-y-4'
+            dangerouslySetInnerHTML={{ __html: content3 }}
+          ></article>
+        </div>
+      </div>
+      <div className='flex flex-row max-w-4xl h-36 md:h-80 pt-18 px-16 text-xs md:text-lg items-center justify-center mb-20 bg-moreInfoBg bg-contain bg-no-repeat bg-center'>
+        <span>{moreInfo}</span>
+        <Link
+          className='inline-block rounded-full p-3 mr-2 md:mr-10 text-indigo-600 bg-white hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500'
+          href='#'
+        >
+          <svg
+            className='h-5 w-5'
+            xmlns='http://www.w3.org/2000/svg'
+            fill='none'
+            viewBox='0 0 24 24'
+            stroke='currentColor'
+          >
+            <path
+              stroke-linecap='round'
+              stroke-linejoin='round'
+              stroke-width='2'
+              d='M14 5l7 7m0 0l-7 7m7-7H3'
+            />
+          </svg>
+        </Link>
       </div>
     </section>
   )

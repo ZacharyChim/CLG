@@ -2,1091 +2,266 @@
   "data": {
     "id": 1,
     "attributes": {
-      "HeroHeader": "CLG Group",
-      "HeroDesc": "Smart Accounting For Happy Life",
-      "createdAt": "2023-01-05T20:02:13.952Z",
-      "updatedAt": "2023-02-09T12:18:07.044Z",
-      "publishedAt": "2023-01-05T20:02:16.187Z",
-      "Statement": "By facing substantial change in society and the general environment, we are always passionate about finding solutions for different business difficulties, to help our clients to work smartly and easily every day.  We did it through our three main service scopes — cloud solutions, assurance, and advisory.  We are always doing our best to assist our clients with their challenging and tough business tasks and realize their largest aspirations in their business.",
-      "experienceNumber": "10+",
-      "experienceText": "YEARS OF EXPERIENCE",
-      "clientNumber": "500+",
-      "clientText": "CLIENTS",
-      "awardTitle": "WINNER",
-      "awardText": "FOR XERO AWARDS 2020",
-      "awardDesc": "Hong Kong Emerging Accounting Partner of the Year",
-      "serviceTitle": "Our Services",
-      "incorporation": "INCORPORATION",
-      "secretary": "COMPANY SECRETARY",
-      "accounting": "ACCOUNTING",
-      "taxation": "TAXATION",
-      "auditing": "AUDITING",
-      "funding": "FUNDING AUDIT",
-      "cloud": "CLOUD ACCOUNTING",
-      "solution": "CLOUD SOLUTIONS",
-      "partnership": "PARTNERSHIP",
-      "partnershipDesc": "Working with global & local partners to bring digital innovation to business",
-      "contactTitle": "GET STARTED",
-      "contactSubtitle": "LET US TALK",
-      "contactText": "Tell us about your business, goals and challenges. Our Team is ready to plan the route to success and then walk through together with you.",
-      "xeroTitle": "Emerging Accounting Partner Of The Year - HONG KONG",
-      "xeroText": "By combining innovation and technology, CLG Group has become the partner of the cloud-based accounting software Xero. We believe that the use of technology greatly improves the efficiency and effectiveness of streamlining business processes. Our Team consists of Xero-certified advisors, guiding our clients to transform their business with solid experiences and knowledge.",
-      "caseTitle": "SUCCESSFUL CASES",
-      "caseDesc": "Working with global & local partners to bring digital innovation to business",
-      "main_slogan": "CLG GROUP",
-      "sub_slogan": "YOUR TAX EXPERT",
-      "intro_title": "SMART ACCOUNTING FOR THE HAPPY LIFE",
-      "intro_text": "By facing substantial change in society and the general environment, we are always passionate about finding solutions for different business difficulties, to help our clients to work smartly and easily every day. We did it through our three main service scopes — cloud solutions, assurance, and advisory. We are always doing our best to assist our clients with their challenging and tough business tasks and realize their largest aspirations in their business.",
-      "HeroIcon": {
+      "createdAt": "2023-02-19T16:44:33.356Z",
+      "updatedAt": "2023-02-23T15:04:01.459Z",
+      "publishedAt": "2023-02-19T17:00:04.383Z",
+      "main_slogan": "Other Government  Funding Programs",
+      "title1": "Technology Start-Up Support Scheme  For Universities (TSSSU)",
+      "content1": "Launched in 2014, the TSSSU aims to provide funding to support technology start-ups established by teams at six universities to commercialize their research and development results.\n\n[Program Features](https://clggroup.com.hk)\n\n\nEach of the six universities will receive an annual grant of up to HK$8 million and each start-up will receive an annual grant of up to HK$1.5 million for a period not exceeding three years.\n\n[Offical website](https://clggroup.com.hk)",
+      "title2": "Pilot Subsidy Scheme For Third-Party  Logistics Service Providers",
+      "content2": "To support the competitiveness of Hong Kong’s logistics sector, HKSAR launched a “Pilot Subsidy Scheme for Third-party Logistics Service Providers” (the Pilot Scheme) on 12 October 2020, encouraging the adoption of technology by the logistics sector for enhancing efficiency and productivity. The Pilot Scheme also covers the purchases of screening equipment including X-ray machines and Explosive Trace Detection (ETD) equipment under the Regulated Air Cargo Screening Facilities (RACSFs) Scheme accepted by the Civil Aviation Department.\n\nThe Pilot Scheme is open for application all year round and the support will be granted to each applicant enterprise for a maximum of 4 approved projects, with each approved project to be completed within 24 months.\n\nThe total cumulative subsidy ceiling per applicant enterprise under the Pilot Scheme is HK$1 million (including project audit fee). The Government will cover a maximum of 50% of the total approved project cost (except the project audit fee) while the applicant enterprise has to contribute the remaining portion.\n\nTo ensure that the project funds have been properly applied to the projects, the required accounts shall be audited by an independent auditor. Final audited accounts and final should be submitted within two months upon project completion.\n\n[Offical website](https://clggroup.com.hk)",
+      "title3": "Enterprise Support Scheme (ESS)",
+      "content3": "Launched in 2015, Enterprise Support Scheme (ESS) aims to provide funding support for local companies to mainly conduct in-house research and development (R&D) work in Hong Kong with a view, encouraging the private sector to invest in R&D. The Support Scheme is open for application all year round and the project should be completed within 24 months.\n\nThe Support Scheme is open for application all year round and the project should be completed within 24 months.\n\nThe total cumulative subsidy ceiling per applicant enterprise under the Pilot Scheme is HK$10 million. The Government will cover a maximum of 50% of the total approved project cost while the applicant enterprise has to contribute the remaining portion.\n\nTo ensure that the project funds have been properly applied to the projects, the required accounts shall be audited by an independent auditor.\n\n[Offical website](https://clggroup.com.hk)",
+      "hero_image": {
         "data": {
-          "id": 1,
+          "id": 66,
           "attributes": {
-            "name": "get_started.png",
+            "name": "other-funding.png",
             "alternativeText": null,
             "caption": null,
-            "width": 285,
-            "height": 327,
+            "width": 505,
+            "height": 512,
             "formats": {
               "thumbnail": {
-                "name": "thumbnail_get_started.png",
-                "hash": "thumbnail_get_started_b7a82a32f3",
+                "name": "thumbnail_other-funding.png",
+                "hash": "thumbnail_other_funding_d08b28ca9a",
                 "ext": ".png",
                 "mime": "image/png",
                 "path": null,
-                "width": 136,
+                "width": 154,
                 "height": 156,
-                "size": 30.58,
-                "url": "/uploads/thumbnail_get_started_b7a82a32f3.png"
+                "size": 42.39,
+                "url": "/uploads/thumbnail_other_funding_d08b28ca9a.png"
+              },
+              "small": {
+                "name": "small_other-funding.png",
+                "hash": "small_other_funding_d08b28ca9a",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 493,
+                "height": 500,
+                "size": 284.21,
+                "url": "/uploads/small_other_funding_d08b28ca9a.png"
               }
             },
-            "hash": "get_started_b7a82a32f3",
+            "hash": "other_funding_d08b28ca9a",
             "ext": ".png",
             "mime": "image/png",
-            "size": 10.39,
-            "url": "/uploads/get_started_b7a82a32f3.png",
+            "size": 67.97,
+            "url": "/uploads/other_funding_d08b28ca9a.png",
             "previewUrl": null,
             "provider": "local",
             "provider_metadata": null,
-            "createdAt": "2023-01-05T19:46:18.370Z",
-            "updatedAt": "2023-01-23T02:43:52.312Z"
+            "createdAt": "2023-02-19T16:42:47.682Z",
+            "updatedAt": "2023-02-19T16:42:47.682Z"
           }
         }
       },
-      "ImageDescLeft": {
-        "id": 1,
-        "Desc": "We offer a hands-on approach with an understanding of your value chain.  We help simplify everyday business tasks with cloud solutions."
-      },
-      "ImageDescRight": {
-        "id": 2,
-        "Desc": "Let us take you to the complex accounting, finance and taxes world.  You then focus on what matters most, growing the business faster together."
-      },
-      "HomeHero": {
+      "number1": {
         "data": {
-          "id": 15,
+          "id": 67,
           "attributes": {
-            "name": "home-hero.png",
+            "name": "01.png",
             "alternativeText": null,
             "caption": null,
-            "width": 1200,
-            "height": 686,
+            "width": 85,
+            "height": 83,
+            "formats": null,
+            "hash": "01_62b8ac69f2",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 1.31,
+            "url": "/uploads/01_62b8ac69f2.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-02-22T17:06:58.866Z",
+            "updatedAt": "2023-02-22T17:06:58.866Z"
+          }
+        }
+      },
+      "image1": {
+        "data": {
+          "id": 70,
+          "attributes": {
+            "name": "start-up.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 542,
+            "height": 514,
             "formats": {
               "thumbnail": {
-                "name": "thumbnail_home-hero.png",
-                "hash": "thumbnail_home_hero_89b6a100d1",
+                "name": "thumbnail_start-up.png",
+                "hash": "thumbnail_start_up_9036c644fa",
                 "ext": ".png",
                 "mime": "image/png",
                 "path": null,
-                "width": 245,
-                "height": 140,
-                "size": 37.16,
-                "url": "/uploads/thumbnail_home_hero_89b6a100d1.png"
+                "width": 164,
+                "height": 156,
+                "size": 50.3,
+                "url": "/uploads/thumbnail_start_up_9036c644fa.png"
               },
               "small": {
-                "name": "small_home-hero.png",
-                "hash": "small_home_hero_89b6a100d1",
+                "name": "small_start-up.png",
+                "hash": "small_start_up_9036c644fa",
                 "ext": ".png",
                 "mime": "image/png",
                 "path": null,
                 "width": 500,
-                "height": 286,
-                "size": 93.16,
-                "url": "/uploads/small_home_hero_89b6a100d1.png"
-              },
-              "medium": {
-                "name": "medium_home-hero.png",
-                "hash": "medium_home_hero_89b6a100d1",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 750,
-                "height": 429,
-                "size": 160.26,
-                "url": "/uploads/medium_home_hero_89b6a100d1.png"
-              },
-              "large": {
-                "name": "large_home-hero.png",
-                "hash": "large_home_hero_89b6a100d1",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 1000,
-                "height": 572,
-                "size": 237.26,
-                "url": "/uploads/large_home_hero_89b6a100d1.png"
+                "height": 474,
+                "size": 344.07,
+                "url": "/uploads/small_start_up_9036c644fa.png"
               }
             },
-            "hash": "home_hero_89b6a100d1",
+            "hash": "start_up_9036c644fa",
             "ext": ".png",
             "mime": "image/png",
-            "size": 51.97,
-            "url": "/uploads/home_hero_89b6a100d1.png",
+            "size": 101.41,
+            "url": "/uploads/start_up_9036c644fa.png",
             "previewUrl": null,
             "provider": "local",
             "provider_metadata": null,
-            "createdAt": "2023-01-16T16:42:59.186Z",
-            "updatedAt": "2023-01-16T16:42:59.186Z"
+            "createdAt": "2023-02-22T17:08:00.596Z",
+            "updatedAt": "2023-02-22T17:08:00.596Z"
           }
         }
       },
-      "xero": {
+      "number2": {
         "data": {
-          "id": 17,
+          "id": 68,
           "attributes": {
-            "name": "xero.png",
+            "name": "02.png",
             "alternativeText": null,
             "caption": null,
-            "width": 465,
-            "height": 224,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_xero.png",
-                "hash": "thumbnail_xero_8c3528f0a8",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 245,
-                "height": 118,
-                "size": 17.64,
-                "url": "/uploads/thumbnail_xero_8c3528f0a8.png"
-              }
-            },
-            "hash": "xero_8c3528f0a8",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 6.65,
-            "url": "/uploads/xero_8c3528f0a8.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-24T06:53:46.791Z",
-            "updatedAt": "2023-01-24T06:53:46.791Z"
-          }
-        }
-      },
-      "xeroSilver": {
-        "data": {
-          "id": 18,
-          "attributes": {
-            "name": "xero-silver-partner.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 471,
-            "height": 41,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_xero-silver-partner.png",
-                "hash": "thumbnail_xero_silver_partner_c1fd8d1066",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 245,
-                "height": 21,
-                "size": 9.02,
-                "url": "/uploads/thumbnail_xero_silver_partner_c1fd8d1066.png"
-              }
-            },
-            "hash": "xero_silver_partner_c1fd8d1066",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 2.62,
-            "url": "/uploads/xero_silver_partner_c1fd8d1066.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-24T09:59:51.394Z",
-            "updatedAt": "2023-01-24T09:59:51.394Z"
-          }
-        }
-      },
-      "comma": {
-        "data": {
-          "id": 19,
-          "attributes": {
-            "name": "comma.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 70,
-            "height": 51,
-            "formats": {},
-            "hash": "comma_fa98b4b91a",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 0.94,
-            "url": "/uploads/comma_fa98b4b91a.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-24T10:26:13.770Z",
-            "updatedAt": "2023-01-24T11:57:48.451Z"
-          }
-        }
-      },
-      "experience": {
-        "data": {
-          "id": 20,
-          "attributes": {
-            "name": "experience.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 240,
-            "height": 300,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_experience.png",
-                "hash": "thumbnail_experience_6ce301c5a0",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 125,
-                "height": 156,
-                "size": 25.7,
-                "url": "/uploads/thumbnail_experience_6ce301c5a0.png"
-              }
-            },
-            "hash": "experience_6ce301c5a0",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 13.79,
-            "url": "/uploads/experience_6ce301c5a0.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-25T05:04:00.623Z",
-            "updatedAt": "2023-01-27T06:19:58.805Z"
-          }
-        }
-      },
-      "client": {
-        "data": {
-          "id": 21,
-          "attributes": {
-            "name": "clients.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 240,
-            "height": 300,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_clients.png",
-                "hash": "thumbnail_clients_12135f4a09",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 125,
-                "height": 156,
-                "size": 19.35,
-                "url": "/uploads/thumbnail_clients_12135f4a09.png"
-              }
-            },
-            "hash": "clients_12135f4a09",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 7.93,
-            "url": "/uploads/clients_12135f4a09.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-25T05:04:28.340Z",
-            "updatedAt": "2023-01-27T06:13:51.234Z"
-          }
-        }
-      },
-      "award": {
-        "data": {
-          "id": 22,
-          "attributes": {
-            "name": "winner.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 269,
-            "height": 300,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_winner.png",
-                "hash": "thumbnail_winner_cfffb96c4b",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 140,
-                "height": 156,
-                "size": 29.25,
-                "url": "/uploads/thumbnail_winner_cfffb96c4b.png"
-              }
-            },
-            "hash": "winner_cfffb96c4b",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 12.69,
-            "url": "/uploads/winner_cfffb96c4b.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-25T05:04:57.988Z",
-            "updatedAt": "2023-01-27T05:58:19.518Z"
-          }
-        }
-      },
-      "incorporationImage": {
-        "data": {
-          "id": 23,
-          "attributes": {
-            "name": "incorporation.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 216,
-            "height": 216,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_incorporation.png",
-                "hash": "thumbnail_incorporation_3694cce40a",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 156,
-                "height": 156,
-                "size": 31.65,
-                "url": "/uploads/thumbnail_incorporation_3694cce40a.png"
-              }
-            },
-            "hash": "incorporation_3694cce40a",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 13.12,
-            "url": "/uploads/incorporation_3694cce40a.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-27T15:14:13.641Z",
-            "updatedAt": "2023-01-27T17:46:04.347Z"
-          }
-        }
-      },
-      "secretaryImage": {
-        "data": {
-          "id": 29,
-          "attributes": {
-            "name": "secretary.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 216,
-            "height": 216,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_secretary.png",
-                "hash": "thumbnail_secretary_99431bd05e",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 156,
-                "height": 156,
-                "size": 28.65,
-                "url": "/uploads/thumbnail_secretary_99431bd05e.png"
-              }
-            },
-            "hash": "secretary_99431bd05e",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 7.69,
-            "url": "/uploads/secretary_99431bd05e.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-27T15:19:06.582Z",
-            "updatedAt": "2023-01-27T17:45:56.061Z"
-          }
-        }
-      },
-      "accountingImage": {
-        "data": {
-          "id": 30,
-          "attributes": {
-            "name": "accounting.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 216,
-            "height": 216,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_accounting.png",
-                "hash": "thumbnail_accounting_f387265b7a",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 156,
-                "height": 156,
-                "size": 35.63,
-                "url": "/uploads/thumbnail_accounting_f387265b7a.png"
-              }
-            },
-            "hash": "accounting_f387265b7a",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 13.28,
-            "url": "/uploads/accounting_f387265b7a.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-27T15:20:07.373Z",
-            "updatedAt": "2023-01-27T17:45:47.367Z"
-          }
-        }
-      },
-      "taxationImage": {
-        "data": {
-          "id": 31,
-          "attributes": {
-            "name": "taxation.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 216,
-            "height": 216,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_taxation.png",
-                "hash": "thumbnail_taxation_beb15ad578",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 156,
-                "height": 156,
-                "size": 30.06,
-                "url": "/uploads/thumbnail_taxation_beb15ad578.png"
-              }
-            },
-            "hash": "taxation_beb15ad578",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 10.85,
-            "url": "/uploads/taxation_beb15ad578.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-27T15:20:28.840Z",
-            "updatedAt": "2023-01-27T17:45:36.637Z"
-          }
-        }
-      },
-      "auditingImage": {
-        "data": {
-          "id": 32,
-          "attributes": {
-            "name": "auditing.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 216,
-            "height": 216,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_auditing.png",
-                "hash": "thumbnail_auditing_473aafd2a4",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 156,
-                "height": 156,
-                "size": 33.23,
-                "url": "/uploads/thumbnail_auditing_473aafd2a4.png"
-              }
-            },
-            "hash": "auditing_473aafd2a4",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 15.11,
-            "url": "/uploads/auditing_473aafd2a4.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-27T15:20:49.333Z",
-            "updatedAt": "2023-01-27T17:45:27.845Z"
-          }
-        }
-      },
-      "fundingImage": {
-        "data": {
-          "id": 27,
-          "attributes": {
-            "name": "funding.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 216,
-            "height": 216,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_funding.png",
-                "hash": "thumbnail_funding_56be51a4d9",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 156,
-                "height": 156,
-                "size": 39.95,
-                "url": "/uploads/thumbnail_funding_56be51a4d9.png"
-              }
-            },
-            "hash": "funding_56be51a4d9",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 15.51,
-            "url": "/uploads/funding_56be51a4d9.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-27T15:15:32.598Z",
-            "updatedAt": "2023-01-27T17:45:10.950Z"
-          }
-        }
-      },
-      "cloudImage": {
-        "data": {
-          "id": 28,
-          "attributes": {
-            "name": "cloud.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 216,
-            "height": 216,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_cloud.png",
-                "hash": "thumbnail_cloud_d8c05a401a",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 156,
-                "height": 156,
-                "size": 38.37,
-                "url": "/uploads/thumbnail_cloud_d8c05a401a.png"
-              }
-            },
-            "hash": "cloud_d8c05a401a",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 15.4,
-            "url": "/uploads/cloud_d8c05a401a.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-27T15:15:56.656Z",
-            "updatedAt": "2023-01-27T17:28:37.787Z"
-          }
-        }
-      },
-      "solutionImage": {
-        "data": {
-          "id": 33,
-          "attributes": {
-            "name": "solution.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 216,
-            "height": 216,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_solution.png",
-                "hash": "thumbnail_solution_d4c6577aed",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 156,
-                "height": 156,
-                "size": 36.08,
-                "url": "/uploads/thumbnail_solution_d4c6577aed.png"
-              }
-            },
-            "hash": "solution_d4c6577aed",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 16.67,
-            "url": "/uploads/solution_d4c6577aed.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-27T15:21:36.292Z",
-            "updatedAt": "2023-01-27T17:44:56.749Z"
-          }
-        }
-      },
-      "workstemLogo": {
-        "data": {
-          "id": 34,
-          "attributes": {
-            "name": "workstemLogo.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 300,
-            "height": 47,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_workstemLogo.png",
-                "hash": "thumbnail_workstem_Logo_e552191d54",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 245,
-                "height": 38,
-                "size": 7.9,
-                "url": "/uploads/thumbnail_workstem_Logo_e552191d54.png"
-              }
-            },
-            "hash": "workstem_Logo_e552191d54",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 2,
-            "url": "/uploads/workstem_Logo_e552191d54.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-27T18:12:32.981Z",
-            "updatedAt": "2023-01-27T18:12:32.981Z"
-          }
-        }
-      },
-      "hubdocLogo": {
-        "data": {
-          "id": 35,
-          "attributes": {
-            "name": "hubdocLogo.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 185,
-            "height": 57,
+            "width": 96,
+            "height": 83,
             "formats": null,
-            "hash": "hubdoc_Logo_87c9ec15cc",
+            "hash": "02_c8bebdd883",
             "ext": ".png",
             "mime": "image/png",
-            "size": 1.58,
-            "url": "/uploads/hubdoc_Logo_87c9ec15cc.png",
+            "size": 1.42,
+            "url": "/uploads/02_c8bebdd883.png",
             "previewUrl": null,
             "provider": "local",
             "provider_metadata": null,
-            "createdAt": "2023-01-27T18:12:44.137Z",
-            "updatedAt": "2023-01-27T18:12:44.137Z"
+            "createdAt": "2023-02-22T17:07:09.859Z",
+            "updatedAt": "2023-02-22T17:07:09.859Z"
           }
         }
       },
-      "xeroLogo": {
+      "image2": {
         "data": {
-          "id": 36,
+          "id": 71,
           "attributes": {
-            "name": "xeroLogo.png",
+            "name": "logistics.png",
             "alternativeText": null,
             "caption": null,
-            "width": 100,
-            "height": 100,
-            "formats": null,
-            "hash": "xero_Logo_c84ee3b5c2",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 1.3,
-            "url": "/uploads/xero_Logo_c84ee3b5c2.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-27T18:12:55.006Z",
-            "updatedAt": "2023-01-27T18:12:55.006Z"
-          }
-        }
-      },
-      "hikeLogo": {
-        "data": {
-          "id": 49,
-          "attributes": {
-            "name": "hikeLogo.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 178,
-            "height": 100,
-            "formats": null,
-            "hash": "hike_Logo_1e2a19b4df",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 5.54,
-            "url": "/uploads/hike_Logo_1e2a19b4df.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-02-06T16:08:17.908Z",
-            "updatedAt": "2023-02-06T16:08:17.908Z"
-          }
-        }
-      },
-      "boutirLogo": {
-        "data": {
-          "id": 50,
-          "attributes": {
-            "name": "boutirLogo.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 200,
-            "height": 99,
-            "formats": null,
-            "hash": "boutir_Logo_7e6f477e33",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 1.93,
-            "url": "/uploads/boutir_Logo_7e6f477e33.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-02-06T16:08:28.522Z",
-            "updatedAt": "2023-02-06T16:08:28.522Z"
-          }
-        }
-      },
-      "mshopLogo": {
-        "data": {
-          "id": 37,
-          "attributes": {
-            "name": "mshopLogo.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 291,
-            "height": 80,
+            "width": 545,
+            "height": 525,
             "formats": {
               "thumbnail": {
-                "name": "thumbnail_mshopLogo.png",
-                "hash": "thumbnail_mshop_Logo_9c0f5b89f8",
+                "name": "thumbnail_logistics.png",
+                "hash": "thumbnail_logistics_5b5b548b91",
                 "ext": ".png",
                 "mime": "image/png",
                 "path": null,
-                "width": 245,
-                "height": 67,
-                "size": 21.7,
-                "url": "/uploads/thumbnail_mshop_Logo_9c0f5b89f8.png"
-              }
-            },
-            "hash": "mshop_Logo_9c0f5b89f8",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 4.42,
-            "url": "/uploads/mshop_Logo_9c0f5b89f8.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-27T18:13:25.230Z",
-            "updatedAt": "2023-01-27T18:13:25.230Z"
-          }
-        }
-      },
-      "postifyLogo": {
-        "data": {
-          "id": 51,
-          "attributes": {
-            "name": "posityLogo.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 200,
-            "height": 75,
-            "formats": null,
-            "hash": "posity_Logo_fa9690f0b9",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 2.01,
-            "url": "/uploads/posity_Logo_fa9690f0b9.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-02-06T16:08:36.767Z",
-            "updatedAt": "2023-02-06T16:08:36.767Z"
-          }
-        }
-      },
-      "gingersoftLogo": {
-        "data": {
-          "id": 38,
-          "attributes": {
-            "name": "gingersoftLogo.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 300,
-            "height": 79,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_gingersoftLogo.png",
-                "hash": "thumbnail_gingersoft_Logo_089e189c62",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 245,
-                "height": 65,
-                "size": 29.05,
-                "url": "/uploads/thumbnail_gingersoft_Logo_089e189c62.png"
-              }
-            },
-            "hash": "gingersoft_Logo_089e189c62",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 10.7,
-            "url": "/uploads/gingersoft_Logo_089e189c62.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-27T18:13:40.384Z",
-            "updatedAt": "2023-01-27T18:13:40.384Z"
-          }
-        }
-      },
-      "eats365Logo": {
-        "data": {
-          "id": 39,
-          "attributes": {
-            "name": "eat365Logo.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 300,
-            "height": 150,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_eat365Logo.png",
-                "hash": "thumbnail_eat365_Logo_8a2ecb31c2",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 245,
-                "height": 123,
-                "size": 24.35,
-                "url": "/uploads/thumbnail_eat365_Logo_8a2ecb31c2.png"
-              }
-            },
-            "hash": "eat365_Logo_8a2ecb31c2",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 4.12,
-            "url": "/uploads/eat365_Logo_8a2ecb31c2.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-27T18:13:48.550Z",
-            "updatedAt": "2023-01-27T18:13:48.550Z"
-          }
-        }
-      },
-      "foodmarkethubLogo": {
-        "data": {
-          "id": 40,
-          "attributes": {
-            "name": "foodmarkethubLogo.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 300,
-            "height": 124,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_foodmarkethubLogo.png",
-                "hash": "thumbnail_foodmarkethub_Logo_7940144cca",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 245,
-                "height": 101,
-                "size": 26.72,
-                "url": "/uploads/thumbnail_foodmarkethub_Logo_7940144cca.png"
-              }
-            },
-            "hash": "foodmarkethub_Logo_7940144cca",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 4.47,
-            "url": "/uploads/foodmarkethub_Logo_7940144cca.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-27T18:13:57.327Z",
-            "updatedAt": "2023-01-27T18:13:57.327Z"
-          }
-        }
-      },
-      "yoovLogo": {
-        "data": {
-          "id": 41,
-          "attributes": {
-            "name": "yoovLogo.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 281,
-            "height": 100,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_yoovLogo.png",
-                "hash": "thumbnail_yoov_Logo_903c2d78dc",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 245,
-                "height": 87,
-                "size": 10.44,
-                "url": "/uploads/thumbnail_yoov_Logo_903c2d78dc.png"
-              }
-            },
-            "hash": "yoov_Logo_903c2d78dc",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 2.31,
-            "url": "/uploads/yoov_Logo_903c2d78dc.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-27T18:14:05.970Z",
-            "updatedAt": "2023-01-27T18:14:05.970Z"
-          }
-        }
-      },
-      "dkdooLogo": {
-        "data": {
-          "id": 42,
-          "attributes": {
-            "name": "dkdooLogo.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 219,
-            "height": 85,
-            "formats": null,
-            "hash": "dkdoo_Logo_f3c9546a99",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 2.09,
-            "url": "/uploads/dkdoo_Logo_f3c9546a99.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-27T18:39:01.568Z",
-            "updatedAt": "2023-01-27T18:39:01.568Z"
-          }
-        }
-      },
-      "kpayLogo": {
-        "data": {
-          "id": 43,
-          "attributes": {
-            "name": "kpayLogo.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 186,
-            "height": 185,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_kpayLogo.png",
-                "hash": "thumbnail_kpay_Logo_80fca176ce",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 157,
+                "width": 162,
                 "height": 156,
-                "size": 8,
-                "url": "/uploads/thumbnail_kpay_Logo_80fca176ce.png"
-              }
-            },
-            "hash": "kpay_Logo_80fca176ce",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 2.04,
-            "url": "/uploads/kpay_Logo_80fca176ce.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-27T18:39:11.873Z",
-            "updatedAt": "2023-01-27T18:39:11.873Z"
-          }
-        }
-      },
-      "eberLogo": {
-        "data": {
-          "id": 44,
-          "attributes": {
-            "name": "eberLogo.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 316,
-            "height": 100,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_eberLogo.png",
-                "hash": "thumbnail_eber_Logo_4c62ea1129",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 245,
-                "height": 78,
-                "size": 7.72,
-                "url": "/uploads/thumbnail_eber_Logo_4c62ea1129.png"
-              }
-            },
-            "hash": "eber_Logo_4c62ea1129",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 1.97,
-            "url": "/uploads/eber_Logo_4c62ea1129.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-01-27T18:44:57.596Z",
-            "updatedAt": "2023-01-27T18:44:57.596Z"
-          }
-        }
-      },
-      "contactBg": {
-        "data": {
-          "id": 45,
-          "attributes": {
-            "name": "contactBg.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 640,
-            "height": 229,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_contactBg.png",
-                "hash": "thumbnail_contact_Bg_1743b80744",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 245,
-                "height": 88,
-                "size": 16.22,
-                "url": "/uploads/thumbnail_contact_Bg_1743b80744.png"
+                "size": 55.3,
+                "url": "/uploads/thumbnail_logistics_5b5b548b91.png"
               },
               "small": {
-                "name": "small_contactBg.png",
-                "hash": "small_contact_Bg_1743b80744",
+                "name": "small_logistics.png",
+                "hash": "small_logistics_5b5b548b91",
                 "ext": ".png",
                 "mime": "image/png",
                 "path": null,
                 "width": 500,
-                "height": 179,
-                "size": 48.4,
-                "url": "/uploads/small_contact_Bg_1743b80744.png"
+                "height": 482,
+                "size": 411.19,
+                "url": "/uploads/small_logistics_5b5b548b91.png"
               }
             },
-            "hash": "contact_Bg_1743b80744",
+            "hash": "logistics_5b5b548b91",
             "ext": ".png",
             "mime": "image/png",
-            "size": 18.53,
-            "url": "/uploads/contact_Bg_1743b80744.png",
+            "size": 112.84,
+            "url": "/uploads/logistics_5b5b548b91.png",
             "previewUrl": null,
             "provider": "local",
             "provider_metadata": null,
-            "createdAt": "2023-01-27T19:14:42.915Z",
-            "updatedAt": "2023-01-27T19:35:59.394Z"
+            "createdAt": "2023-02-22T17:08:16.678Z",
+            "updatedAt": "2023-02-22T17:08:16.678Z"
+          }
+        }
+      },
+      "number3": {
+        "data": {
+          "id": 69,
+          "attributes": {
+            "name": "03.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 102,
+            "height": 83,
+            "formats": null,
+            "hash": "03_bddda4af9a",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 1.55,
+            "url": "/uploads/03_bddda4af9a.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-02-22T17:07:24.271Z",
+            "updatedAt": "2023-02-22T17:07:24.271Z"
+          }
+        }
+      },
+      "image3": {
+        "data": {
+          "id": 72,
+          "attributes": {
+            "name": "support.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 542,
+            "height": 521,
+            "formats": {
+              "thumbnail": {
+                "name": "thumbnail_support.png",
+                "hash": "thumbnail_support_1172fcd65a",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 162,
+                "height": 156,
+                "size": 43.73,
+                "url": "/uploads/thumbnail_support_1172fcd65a.png"
+              },
+              "small": {
+                "name": "small_support.png",
+                "hash": "small_support_1172fcd65a",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 500,
+                "height": 481,
+                "size": 280.22,
+                "url": "/uploads/small_support_1172fcd65a.png"
+              }
+            },
+            "hash": "support_1172fcd65a",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 73.38,
+            "url": "/uploads/support_1172fcd65a.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-02-22T17:08:27.358Z",
+            "updatedAt": "2023-02-22T17:08:27.358Z"
           }
         }
       }
