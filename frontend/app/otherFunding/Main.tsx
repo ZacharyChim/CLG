@@ -125,27 +125,19 @@ export default async function Main() {
           ></article>
         </div>
       </div>
-      <div className='flex flex-row max-w-4xl h-36 md:h-80 pt-18 px-16 text-xs md:text-lg items-center justify-center mb-20 bg-moreInfoBg bg-contain bg-no-repeat bg-center'>
-        <span>{moreInfo}</span>
-        <Link
-          className='inline-block rounded-full p-3 mr-2 md:mr-10 text-indigo-600 bg-white hover:bg-indigo-600 hover:text-white focus:outline-none focus:ring active:bg-indigo-500'
-          href='#'
-        >
-          <svg
-            className='h-5 w-5'
-            xmlns='http://www.w3.org/2000/svg'
-            fill='none'
-            viewBox='0 0 24 24'
-            stroke='currentColor'
+
+      <div className='max-w-4xl flex flex-col items-center justify-center'>
+        <div className='flex flex-col items-center justify-center mb-20 mx-5 bg-contactBg bg-cover pb-20 md:flex-row'>
+          <p className='text-lg text-left text-darkBlue mt-56 md:mt-48 ml-20 mr-1 mb-2'>
+            {moreInfo}
+          </p>
+          <Link
+            className='inline-block rounded-full bg-white place-self-end mr-2 mb-7 py-2 px-8 text-md font-bold text-darkBlue md:w-1/3 hover:bg-darkBlue hover:text-white'
+            href='#'
           >
-            <path
-              stroke-linecap='round'
-              stroke-linejoin='round'
-              stroke-width='2'
-              d='M14 5l7 7m0 0l-7 7m7-7H3'
-            />
-          </svg>
-        </Link>
+            CONTACT US
+          </Link>
+        </div>
       </div>
     </section>
   )
