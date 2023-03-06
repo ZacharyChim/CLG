@@ -2,59 +2,118 @@
   "data": {
     "id": 1,
     "attributes": {
-      "createdAt": "2023-02-19T16:44:33.356Z",
-      "updatedAt": "2023-02-23T15:04:01.459Z",
-      "publishedAt": "2023-02-19T17:00:04.383Z",
-      "main_slogan": "Other Government  Funding Programs",
-      "title1": "Technology Start-Up Support Scheme  For Universities (TSSSU)",
-      "content1": "Launched in 2014, the TSSSU aims to provide funding to support technology start-ups established by teams at six universities to commercialize their research and development results.\n\n[Program Features](https://clggroup.com.hk)\n\n\nEach of the six universities will receive an annual grant of up to HK$8 million and each start-up will receive an annual grant of up to HK$1.5 million for a period not exceeding three years.\n\n[Offical website](https://clggroup.com.hk)",
-      "title2": "Pilot Subsidy Scheme For Third-Party  Logistics Service Providers",
-      "content2": "To support the competitiveness of Hong Kong’s logistics sector, HKSAR launched a “Pilot Subsidy Scheme for Third-party Logistics Service Providers” (the Pilot Scheme) on 12 October 2020, encouraging the adoption of technology by the logistics sector for enhancing efficiency and productivity. The Pilot Scheme also covers the purchases of screening equipment including X-ray machines and Explosive Trace Detection (ETD) equipment under the Regulated Air Cargo Screening Facilities (RACSFs) Scheme accepted by the Civil Aviation Department.\n\nThe Pilot Scheme is open for application all year round and the support will be granted to each applicant enterprise for a maximum of 4 approved projects, with each approved project to be completed within 24 months.\n\nThe total cumulative subsidy ceiling per applicant enterprise under the Pilot Scheme is HK$1 million (including project audit fee). The Government will cover a maximum of 50% of the total approved project cost (except the project audit fee) while the applicant enterprise has to contribute the remaining portion.\n\nTo ensure that the project funds have been properly applied to the projects, the required accounts shall be audited by an independent auditor. Final audited accounts and final should be submitted within two months upon project completion.\n\n[Offical website](https://clggroup.com.hk)",
-      "title3": "Enterprise Support Scheme (ESS)",
-      "content3": "Launched in 2015, Enterprise Support Scheme (ESS) aims to provide funding support for local companies to mainly conduct in-house research and development (R&D) work in Hong Kong with a view, encouraging the private sector to invest in R&D. The Support Scheme is open for application all year round and the project should be completed within 24 months.\n\nThe Support Scheme is open for application all year round and the project should be completed within 24 months.\n\nThe total cumulative subsidy ceiling per applicant enterprise under the Pilot Scheme is HK$10 million. The Government will cover a maximum of 50% of the total approved project cost while the applicant enterprise has to contribute the remaining portion.\n\nTo ensure that the project funds have been properly applied to the projects, the required accounts shall be audited by an independent auditor.\n\n[Offical website](https://clggroup.com.hk)",
+      "main_slogan": "Pre-IPO  Preparation",
+      "createdAt": "2023-03-01T17:07:54.145Z",
+      "updatedAt": "2023-03-06T13:59:15.367Z",
+      "publishedAt": "2023-03-06T13:59:15.363Z",
+      "about_title": "About Pre-IPO Preparation",
+      "about_content": "An initial public offering (IPO) is the process of selling shares that were formerly privately held to new investors for the first time. Therefore, Pre-IPO Preparation is important for the company.\n\nWhen a company goes public, it will have many challenges, including a host of new and complex accounting and financial reporting requirements. To enable the whole listing application can be processed as smooth as possible, it is so important to have listing plan and preparation, especially to get those historical accounting issues resolved early at the pre-IPO stage.",
+      "title": "Pre-IPO Preparation Services Provision",
+      "title1": "Advise On Listing Requirements And Assess The Company’s Competency In Fulfilling These Requirement",
+      "title2": "Review financial and information system for risk assessment",
+      "title3": "Put in place a financial reporting system",
+      "contact_us": "Should you have any inquiry about Pre-IPO Preparation Services, please contact us and we will provide FREE consultation service about Pre-IPO Preparation.",
       "hero_image": {
         "data": {
-          "id": 66,
+          "id": 73,
           "attributes": {
-            "name": "other-funding.png",
+            "name": "pre-ipo.png",
             "alternativeText": null,
             "caption": null,
-            "width": 505,
-            "height": 512,
+            "width": 588,
+            "height": 495,
             "formats": {
               "thumbnail": {
-                "name": "thumbnail_other-funding.png",
-                "hash": "thumbnail_other_funding_d08b28ca9a",
+                "name": "thumbnail_pre-ipo.png",
+                "hash": "thumbnail_pre_ipo_51487182ca",
                 "ext": ".png",
                 "mime": "image/png",
                 "path": null,
-                "width": 154,
+                "width": 185,
                 "height": 156,
-                "size": 42.39,
-                "url": "/uploads/thumbnail_other_funding_d08b28ca9a.png"
+                "size": 54.61,
+                "url": "/uploads/thumbnail_pre_ipo_51487182ca.png"
               },
               "small": {
-                "name": "small_other-funding.png",
-                "hash": "small_other_funding_d08b28ca9a",
+                "name": "small_pre-ipo.png",
+                "hash": "small_pre_ipo_51487182ca",
                 "ext": ".png",
                 "mime": "image/png",
                 "path": null,
-                "width": 493,
-                "height": 500,
-                "size": 284.21,
-                "url": "/uploads/small_other_funding_d08b28ca9a.png"
+                "width": 500,
+                "height": 421,
+                "size": 325.69,
+                "url": "/uploads/small_pre_ipo_51487182ca.png"
               }
             },
-            "hash": "other_funding_d08b28ca9a",
+            "hash": "pre_ipo_51487182ca",
             "ext": ".png",
             "mime": "image/png",
-            "size": 67.97,
-            "url": "/uploads/other_funding_d08b28ca9a.png",
+            "size": 115.08,
+            "url": "/uploads/pre_ipo_51487182ca.png",
             "previewUrl": null,
             "provider": "local",
             "provider_metadata": null,
-            "createdAt": "2023-02-19T16:42:47.682Z",
-            "updatedAt": "2023-02-19T16:42:47.682Z"
+            "createdAt": "2023-03-01T17:05:12.693Z",
+            "updatedAt": "2023-03-01T17:05:12.693Z"
+          }
+        }
+      },
+      "about_image": {
+        "data": {
+          "id": 74,
+          "attributes": {
+            "name": "pre-ipo-about.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 492,
+            "height": 442,
+            "formats": {
+              "thumbnail": {
+                "name": "thumbnail_pre-ipo-about.png",
+                "hash": "thumbnail_pre_ipo_about_146c40a904",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 174,
+                "height": 156,
+                "size": 58.48,
+                "url": "/uploads/thumbnail_pre_ipo_about_146c40a904.png"
+              }
+            },
+            "hash": "pre_ipo_about_146c40a904",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 74.56,
+            "url": "/uploads/pre_ipo_about_146c40a904.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-03-01T17:05:23.572Z",
+            "updatedAt": "2023-03-01T17:05:23.572Z"
+          }
+        }
+      },
+      "advisory": {
+        "data": {
+          "id": 75,
+          "attributes": {
+            "name": "Advisory.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 69,
+            "height": 16,
+            "formats": null,
+            "hash": "Advisory_c32ef42669",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 0.59,
+            "url": "/uploads/Advisory_c32ef42669.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-03-01T17:05:35.344Z",
+            "updatedAt": "2023-03-01T17:05:35.344Z"
           }
         }
       },
@@ -83,47 +142,47 @@
       },
       "image1": {
         "data": {
-          "id": 70,
+          "id": 76,
           "attributes": {
-            "name": "start-up.png",
+            "name": "pre-ipo-1.png",
             "alternativeText": null,
             "caption": null,
-            "width": 542,
-            "height": 514,
+            "width": 551,
+            "height": 524,
             "formats": {
               "thumbnail": {
-                "name": "thumbnail_start-up.png",
-                "hash": "thumbnail_start_up_9036c644fa",
+                "name": "thumbnail_pre-ipo-1.png",
+                "hash": "thumbnail_pre_ipo_1_4e6c49141c",
                 "ext": ".png",
                 "mime": "image/png",
                 "path": null,
                 "width": 164,
                 "height": 156,
-                "size": 50.3,
-                "url": "/uploads/thumbnail_start_up_9036c644fa.png"
+                "size": 54.04,
+                "url": "/uploads/thumbnail_pre_ipo_1_4e6c49141c.png"
               },
               "small": {
-                "name": "small_start-up.png",
-                "hash": "small_start_up_9036c644fa",
+                "name": "small_pre-ipo-1.png",
+                "hash": "small_pre_ipo_1_4e6c49141c",
                 "ext": ".png",
                 "mime": "image/png",
                 "path": null,
                 "width": 500,
-                "height": 474,
-                "size": 344.07,
-                "url": "/uploads/small_start_up_9036c644fa.png"
+                "height": 475,
+                "size": 373.2,
+                "url": "/uploads/small_pre_ipo_1_4e6c49141c.png"
               }
             },
-            "hash": "start_up_9036c644fa",
+            "hash": "pre_ipo_1_4e6c49141c",
             "ext": ".png",
             "mime": "image/png",
-            "size": 101.41,
-            "url": "/uploads/start_up_9036c644fa.png",
+            "size": 96.86,
+            "url": "/uploads/pre_ipo_1_4e6c49141c.png",
             "previewUrl": null,
             "provider": "local",
             "provider_metadata": null,
-            "createdAt": "2023-02-22T17:08:00.596Z",
-            "updatedAt": "2023-02-22T17:08:00.596Z"
+            "createdAt": "2023-03-01T17:06:44.441Z",
+            "updatedAt": "2023-03-01T17:06:44.441Z"
           }
         }
       },
@@ -152,47 +211,47 @@
       },
       "image2": {
         "data": {
-          "id": 71,
+          "id": 77,
           "attributes": {
-            "name": "logistics.png",
+            "name": "pre-ipo-2.png",
             "alternativeText": null,
             "caption": null,
-            "width": 545,
-            "height": 525,
+            "width": 550,
+            "height": 523,
             "formats": {
               "thumbnail": {
-                "name": "thumbnail_logistics.png",
-                "hash": "thumbnail_logistics_5b5b548b91",
+                "name": "thumbnail_pre-ipo-2.png",
+                "hash": "thumbnail_pre_ipo_2_44f49a05f9",
                 "ext": ".png",
                 "mime": "image/png",
                 "path": null,
-                "width": 162,
+                "width": 164,
                 "height": 156,
-                "size": 55.3,
-                "url": "/uploads/thumbnail_logistics_5b5b548b91.png"
+                "size": 54.46,
+                "url": "/uploads/thumbnail_pre_ipo_2_44f49a05f9.png"
               },
               "small": {
-                "name": "small_logistics.png",
-                "hash": "small_logistics_5b5b548b91",
+                "name": "small_pre-ipo-2.png",
+                "hash": "small_pre_ipo_2_44f49a05f9",
                 "ext": ".png",
                 "mime": "image/png",
                 "path": null,
                 "width": 500,
-                "height": 482,
-                "size": 411.19,
-                "url": "/uploads/small_logistics_5b5b548b91.png"
+                "height": 475,
+                "size": 373.38,
+                "url": "/uploads/small_pre_ipo_2_44f49a05f9.png"
               }
             },
-            "hash": "logistics_5b5b548b91",
+            "hash": "pre_ipo_2_44f49a05f9",
             "ext": ".png",
             "mime": "image/png",
-            "size": 112.84,
-            "url": "/uploads/logistics_5b5b548b91.png",
+            "size": 97.67,
+            "url": "/uploads/pre_ipo_2_44f49a05f9.png",
             "previewUrl": null,
             "provider": "local",
             "provider_metadata": null,
-            "createdAt": "2023-02-22T17:08:16.678Z",
-            "updatedAt": "2023-02-22T17:08:16.678Z"
+            "createdAt": "2023-03-01T17:07:06.073Z",
+            "updatedAt": "2023-03-01T17:07:06.073Z"
           }
         }
       },
@@ -215,53 +274,53 @@
             "provider": "local",
             "provider_metadata": null,
             "createdAt": "2023-02-22T17:07:24.271Z",
-            "updatedAt": "2023-02-22T17:07:24.271Z"
+            "updatedAt": "2023-03-01T17:07:34.309Z"
           }
         }
       },
       "image3": {
         "data": {
-          "id": 72,
+          "id": 78,
           "attributes": {
-            "name": "support.png",
+            "name": "pre-ipo-3.png",
             "alternativeText": null,
             "caption": null,
-            "width": 542,
-            "height": 521,
+            "width": 556,
+            "height": 510,
             "formats": {
               "thumbnail": {
-                "name": "thumbnail_support.png",
-                "hash": "thumbnail_support_1172fcd65a",
+                "name": "thumbnail_pre-ipo-3.png",
+                "hash": "thumbnail_pre_ipo_3_9080a25cb7",
                 "ext": ".png",
                 "mime": "image/png",
                 "path": null,
-                "width": 162,
+                "width": 170,
                 "height": 156,
-                "size": 43.73,
-                "url": "/uploads/thumbnail_support_1172fcd65a.png"
+                "size": 51.6,
+                "url": "/uploads/thumbnail_pre_ipo_3_9080a25cb7.png"
               },
               "small": {
-                "name": "small_support.png",
-                "hash": "small_support_1172fcd65a",
+                "name": "small_pre-ipo-3.png",
+                "hash": "small_pre_ipo_3_9080a25cb7",
                 "ext": ".png",
                 "mime": "image/png",
                 "path": null,
                 "width": 500,
-                "height": 481,
-                "size": 280.22,
-                "url": "/uploads/small_support_1172fcd65a.png"
+                "height": 459,
+                "size": 352.03,
+                "url": "/uploads/small_pre_ipo_3_9080a25cb7.png"
               }
             },
-            "hash": "support_1172fcd65a",
+            "hash": "pre_ipo_3_9080a25cb7",
             "ext": ".png",
             "mime": "image/png",
-            "size": 73.38,
-            "url": "/uploads/support_1172fcd65a.png",
+            "size": 114.29,
+            "url": "/uploads/pre_ipo_3_9080a25cb7.png",
             "previewUrl": null,
             "provider": "local",
             "provider_metadata": null,
-            "createdAt": "2023-02-22T17:08:27.358Z",
-            "updatedAt": "2023-02-22T17:08:27.358Z"
+            "createdAt": "2023-03-01T17:07:51.182Z",
+            "updatedAt": "2023-03-01T17:07:51.182Z"
           }
         }
       }

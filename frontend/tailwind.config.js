@@ -12,6 +12,9 @@ module.exports = {
     //   lg: '976px',
     //   xl: '1440px',
     // },
+    backgroundPosition: {
+      'center-40': '50% 40%',
+    },
     extend: {
       colors: {
         brightRed: 'hsl(12, 88%, 59%)',
@@ -30,12 +33,14 @@ module.exports = {
         darkBrown: '#3f3f3f',
       },
       backgroundImage: {
-        contactBg: "url('/contactBg.png')",
+        contactBg: "url('/contact-bg.png')",
         curveLine: "url('/curve-line.png')",
+        preIpoCurveLine: "url('/pre-ipo-curve-line.png')",
         lineBg: "url('/line-bg.png')",
-        heroBg: "url('/heroBg.png')",
+        heroBg: "url('/hero-bg.png')",
         textBg: "url('/text-bg.png')",
         moreInfoBg: "url('/more-info.png')",
+        titleBg: "url('/title-bg.png')",
       },
     },
   },

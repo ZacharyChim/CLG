@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import { v4 } from 'uuid'
 import { fetchSingle, richTextReducer, trimTitle } from '../../lib/utils'
 
 export default async function Main() {
