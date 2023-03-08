@@ -36,6 +36,7 @@ module.exports = {
         contactBg: "url('/contact-bg.png')",
         curveLine: "url('/curve-line.png')",
         preIpoCurveLine: "url('/pre-ipo-curve-line.png')",
+        internalControlCurveLine: "url('/internal-control-curve-line.png')",
         lineBg: "url('/line-bg.png')",
         heroBg: "url('/hero-bg.png')",
         textBg: "url('/text-bg.png')",
