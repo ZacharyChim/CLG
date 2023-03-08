@@ -75,7 +75,10 @@ async function Footer() {
               </div>
               <ul>
                 {icons.map((icon) => (
-                  <li className='flex pb-5 pl-4 items-center' key={v4()}>
+                  <li
+                    className='flex pb-5 pl-4 items-center before:content-[""]'
+                    key={v4()}
+                  >
                     <span className='w-1/12'>
                       <Image
                         src={`${process.env.STRAPI_URL}${icon.iconURL}`}
@@ -163,23 +166,14 @@ async function Footer() {
                 </p>
 
                 <nav className='mt-2'>
-                  <ul className='space-y-3 text-sm mb-4'>
+                  <ul className='space-y-3 text-xs mb-4'>
                     {linkAudit.map((item) => (
                       <li key={v4()}>
                         <a
                           href={item.externalPath}
-                          className='flex items-center text-grayishWhite transition hover:opacity-75'
+                          className='text-grayishWhite transition hover:opacity-75'
                         >
-                          <span className='min-w-[11px]'>
-                            <Image
-                              src={arrow}
-                              alt=''
-                              width={footer.arrow.data.attributes.width}
-                              height={footer.arrow.data.attributes.height}
-                              quality='100'
-                            />
-                          </span>
-                          <span className='ml-1 text-xs'>{item.title}</span>
+                          {item.title}
                         </a>
                       </li>
                     ))}
@@ -188,23 +182,14 @@ async function Footer() {
                   <p className='font-bold text-grayishWhite mb-3'>
                     {allLinks[8].title}
                   </p>
-                  <ul className='space-y-3 text-sm mb-4'>
+                  <ul className='space-y-3 text-xs mb-4'>
                     {linkAdvisory.map((item) => (
                       <li key={v4()}>
                         <a
                           href={item.externalPath}
-                          className='flex items-center text-grayishWhite transition hover:opacity-75'
+                          className='text-grayishWhite transition hover:opacity-75'
                         >
-                          <span className='min-w-[11px]'>
-                            <Image
-                              src={arrow}
-                              alt=''
-                              width={footer.arrow.data.attributes.width}
-                              height={footer.arrow.data.attributes.height}
-                              quality='100'
-                            />
-                          </span>
-                          <span className='ml-1 text-xs'>{item.title}</span>
+                          {item.title}
                         </a>
                       </li>
                     ))}
@@ -213,23 +198,14 @@ async function Footer() {
                   <p className='font-bold text-grayishWhite mb-3'>
                     {allLinks[11].title}
                   </p>
-                  <ul className='space-y-3 text-sm mb-4'>
+                  <ul className='space-y-3 text-xs mb-4'>
                     {linkFunding.map((item) => (
                       <li key={v4()}>
                         <a
                           href={item.externalPath}
-                          className='flex items-center text-grayishWhite transition hover:opacity-75'
+                          className='text-grayishWhite transition hover:opacity-75'
                         >
-                          <span className='min-w-[11px]'>
-                            <Image
-                              src={arrow}
-                              alt=''
-                              width={footer.arrow.data.attributes.width}
-                              height={footer.arrow.data.attributes.height}
-                              quality='100'
-                            />
-                          </span>
-                          <span className='ml-1 text-xs'>{item.title}</span>
+                          {item.title}
                         </a>
                       </li>
                     ))}
@@ -243,23 +219,14 @@ async function Footer() {
                 </p>
 
                 <nav className='mt-2'>
-                  <ul className='space-y-3 text-sm mb-4'>
+                  <ul className='space-y-3 text-xs mb-4'>
                     {linkIncorporation.map((item) => (
                       <li key={v4()}>
                         <a
                           href={item.externalPath}
-                          className='flex items-center text-grayishWhite transition hover:opacity-75'
+                          className='text-grayishWhite transition hover:opacity-75'
                         >
-                          <span className='min-w-[11px]'>
-                            <Image
-                              src={arrow}
-                              alt=''
-                              width={footer.arrow.data.attributes.width}
-                              height={footer.arrow.data.attributes.height}
-                              quality='100'
-                            />
-                          </span>
-                          <span className='ml-1 text-xs'>{item.title}</span>
+                          {item.title}
                         </a>
                       </li>
                     ))}
@@ -273,23 +240,14 @@ async function Footer() {
                 </p>
 
                 <nav className='mt-2'>
-                  <ul className='space-y-3 text-sm mb-4'>
+                  <ul className='space-y-3 text-xs mb-4'>
                     {linkCloud.map((item) => (
                       <li key={v4()}>
                         <a
                           href={item.externalPath}
-                          className='flex items-center text-grayishWhite transition hover:opacity-75'
+                          className='text-grayishWhite transition hover:opacity-75'
                         >
-                          <span className='min-w-[11px]'>
-                            <Image
-                              src={arrow}
-                              alt='arrow'
-                              width={footer.arrow.data.attributes.height}
-                              height={11}
-                              quality='100'
-                            />
-                          </span>
-                          <span className='ml-1 text-xs'>{item.title}</span>
+                          {item.title}
                         </a>
                       </li>
                     ))}

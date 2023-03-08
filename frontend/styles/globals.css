@@ -50,3 +50,9 @@ article a {
 .open .hamburger-bottom {
   transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
+
+ul li::before {
+  content: url(/arrow.png);
+  display: inline-block;
+  margin-right: 0.5em;
+}
