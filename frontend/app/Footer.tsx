@@ -33,7 +33,6 @@ const fetchLinks = async () => {
 async function Footer() {
   const footer = await fetchFooter()
   const copyright = footer.copyright
-  const arrow = process.env.STRAPI_URL + footer.arrow.data.attributes.url
   const allLinks = await fetchLinks()
   const linkWithParent = allLinks.filter((item) => item.parent !== null)
   // const linkAboutUS = linkWithParent.filter((item) => item.parent.id === 4)

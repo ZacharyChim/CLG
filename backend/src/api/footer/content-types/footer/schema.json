@@ -30,16 +30,6 @@
       "type": "component",
       "repeatable": true,
       "component": "home.social"
-    },
-    "arrow": {
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ],
-      "type": "media",
-      "multiple": false
     }
   }
 }
