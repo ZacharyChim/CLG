@@ -113,10 +113,10 @@ export default async function Main() {
               <h5 className='text-lg font-bold text-darkBlue pt-6'>
                 {serviceTitle1}
               </h5>
-              <p
+              <article
                 className='text-sm'
                 dangerouslySetInnerHTML={{ __html: serviceText1 }}
-              ></p>
+              ></article>
             </div>
 
             <div className='flex flex-col items-center space-y-2 h-30 md:w-1/3'>
@@ -130,10 +130,10 @@ export default async function Main() {
               <h5 className='text-lg font-bold text-darkBlue pt-6'>
                 {serviceTitle2}
               </h5>
-              <p
+              <article
                 className='text-sm'
                 dangerouslySetInnerHTML={{ __html: serviceText2 }}
-              ></p>
+              ></article>
             </div>
 
             <div className='flex flex-col items-center space-y-2 h-30 md:w-1/3'>
@@ -147,10 +147,10 @@ export default async function Main() {
               <h5 className='text-lg font-bold text-darkBlue pt-6'>
                 {serviceTitle3}
               </h5>
-              <p
+              <article
                 className='text-sm'
                 dangerouslySetInnerHTML={{ __html: serviceText3 }}
-              ></p>
+              ></article>
             </div>
 
             <div className='flex flex-col items-center space-y-2 h-30 md:w-1/3'>
@@ -164,16 +164,17 @@ export default async function Main() {
               <h5 className='text-lg font-bold text-darkBlue pt-6'>
                 {serviceTitle4}
               </h5>
-              <p
+              <article
                 className='text-sm items-left w-full'
                 dangerouslySetInnerHTML={{ __html: serviceText4 }}
-              ></p>
+              ></article>
             </div>
           </div>
         </div>
       </section>
-      <Image src={contactTop} alt='' />
-
+      <section>
+        <Image src={contactTop} alt='' />
+      </section>
       <section
         id='case'
         className='flex flex-col mx-auto items-center max-w-5xl mt-28'
