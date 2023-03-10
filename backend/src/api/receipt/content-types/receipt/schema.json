@@ -1,0 +1,215 @@
+{
+  "kind": "singleType",
+  "collectionName": "receipts",
+  "info": {
+    "singularName": "receipt",
+    "pluralName": "receipts",
+    "displayName": "Receipt",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "main_slogan": {
+      "type": "string"
+    },
+    "hero_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "cloud_solutions": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "about_title": {
+      "type": "string"
+    },
+    "about_text": {
+      "type": "richtext"
+    },
+    "about_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "steps": {
+      "type": "string"
+    },
+    "step_image1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "step_image2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "step_image3": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "step_title1": {
+      "type": "string"
+    },
+    "step_title2": {
+      "type": "string"
+    },
+    "step_title3": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "feature_image1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "feature_image2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "feature_image3": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "feature_image4": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "feature_image5": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "feature_title1": {
+      "type": "string"
+    },
+    "feature_title2": {
+      "type": "string"
+    },
+    "feature_title3": {
+      "type": "string"
+    },
+    "feature_title4": {
+      "type": "string"
+    },
+    "feature_title5": {
+      "type": "string"
+    },
+    "feature_text1": {
+      "type": "text"
+    },
+    "feature_text2": {
+      "type": "text"
+    },
+    "feature_text3": {
+      "type": "text"
+    },
+    "feature_text4": {
+      "type": "text"
+    },
+    "feature_text5": {
+      "type": "text"
+    },
+    "contact_us": {
+      "type": "string"
+    },
+    "step_arrow": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "curve": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
