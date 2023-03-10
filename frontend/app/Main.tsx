@@ -342,7 +342,7 @@ export default async function Main() {
       <section id='xero' className='bg-lineBg bg-no-repeat bg-cover bg-center'>
         <Image src={contactTop} alt='' />
         <div className='container max-w-4xl flex flex-col px-4 mx-auto py-40 md:flex-row'>
-          <div className='flex flex-col space-y-12 mb-10 items-center md:w-1/2'>
+          <div className='flex flex-col mr-10 mb-10 items-center md:w-1/2'>
             <Image src={xeroURL} alt='' width={xeroWidth} height={xeroHeight} />
           </div>
           <div className='flex flex-col space-y-8 md:w-1/2'>

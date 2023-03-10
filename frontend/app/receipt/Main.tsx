@@ -121,7 +121,7 @@ export default async function Main() {
           <h3 className='text-center text-darkBlue font-bold text-4xl mt-20'>
             {steps}
           </h3>
-          <div className='flex flex-col py-20 md:flex-row md:space-x-14'>
+          <div className='flex flex-col py-20 text-center md:flex-row'>
             <div className='flex flex-col items-center space-y-2 h-30 md:w-1/3'>
               <Image
                 src={image1}
@@ -130,17 +130,18 @@ export default async function Main() {
                 height={image1Height}
                 className='h-40 w-32'
               />
-              <h5 className='text-lg font-bold text-darkBlue pt-6'>
-                {stepTitle1}
-              </h5>
+              <h5 className='text-md text-darkBlue pt-6'>{stepTitle1}</h5>
             </div>
-            <Image
-              src={arrow}
-              alt=''
-              width={arrowWidth}
-              height={arrowHeight}
-              className='h-40 w-36'
-            />
+            <div className='mx-auto my-10 md:m-auto'>
+              <Image
+                src={arrow}
+                alt=''
+                width={arrowWidth}
+                height={arrowHeight}
+                className='h-10 w-5'
+              />
+            </div>
+
             <div className='flex flex-col items-center space-y-2 h-30 md:w-1/3'>
               <Image
                 src={image2}
@@ -149,17 +150,17 @@ export default async function Main() {
                 height={image2Height}
                 className='h-40 w-40'
               />
-              <h5 className='text-lg font-bold text-darkBlue pt-6'>
-                {stepTitle1}
-              </h5>
+              <h5 className='text-md text-darkBlue pt-6'>{stepTitle2}</h5>
             </div>
-            <Image
-              src={arrow}
-              alt=''
-              width={arrowWidth}
-              height={arrowHeight}
-              className='h-40 w-36'
-            />
+            <div className='mx-auto my-10 md:m-auto'>
+              <Image
+                src={arrow}
+                alt=''
+                width={arrowWidth}
+                height={arrowHeight}
+                className='h-10 w-5'
+              />
+            </div>
             <div className='flex flex-col items-center space-y-2 h-30 md:w-1/3'>
               <Image
                 src={image3}
@@ -168,9 +169,7 @@ export default async function Main() {
                 height={image3Height}
                 className='h-40 w-40'
               />
-              <h5 className='text-lg font-bold text-darkBlue pt-6'>
-                {stepTitle1}
-              </h5>
+              <h5 className='text-md text-darkBlue pt-6'>{stepTitle3}</h5>
             </div>
           </div>
         </div>
@@ -270,11 +269,11 @@ export default async function Main() {
 
         <div className='max-w-4xl flex flex-col items-center justify-center'>
           <div className='flex flex-col items-center justify-center mb-20 mx-5 bg-contactBg bg-cover pb-20 md:flex-row'>
-            <p className='text-lg text-left text-darkBlue mt-56 md:mt-44 ml-20 mr-1 mb-2'>
+            <p className='text-lg text-left text-darkBlue mt-56 md:mt-48 ml-20 mr-1 mb-2'>
               {contactUs}
             </p>
             <Link
-              className='inline-block rounded-full bg-white place-self-end mr-2 mb-4 py-2 px-8 text-md font-bold text-darkBlue md:w-1/3 hover:bg-darkBlue hover:text-white'
+              className='inline-block rounded-full bg-white place-self-end mr-2 mb-7   py-2 px-8 text-md font-bold text-darkBlue md:w-1/3 hover:bg-darkBlue hover:text-white'
               href='#'
             >
               CONTACT US
