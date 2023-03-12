@@ -56,3 +56,29 @@ ul li::before {
   display: inline-block;
   margin-right: 0.5em;
 }
+
+.faq ul {
+  list-style-position: outside;
+}
+
+.faq ul li::before {
+  content: url(/arrow-blue.png);
+  display: inline-block;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+
+article ol {
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+
+.circle {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+details[open] > summary > h4 > span.summary-title {
+  color: black;
+}

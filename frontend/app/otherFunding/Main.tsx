@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
+import Contact from '../../components/Contact'
 import { fetchSingle, richTextReducer, trimTitle } from '../../lib/utils'
 
 export default async function Main() {
@@ -125,19 +126,7 @@ export default async function Main() {
         </div>
       </div>
 
-      <div className='max-w-4xl flex flex-col items-center justify-center'>
-        <div className='flex flex-col items-center justify-center mb-20 mx-5 bg-contactBg bg-cover pb-20 md:flex-row'>
-          <p className='text-lg text-left text-darkBlue mt-56 md:mt-48 ml-20 mr-1 mb-2'>
-            {moreInfo}
-          </p>
-          <Link
-            className='inline-block rounded-full bg-white place-self-end mr-2 mb-7 py-2 px-8 text-md font-bold text-darkBlue md:w-1/3 hover:bg-darkBlue hover:text-white'
-            href='#'
-          >
-            CONTACT US
-          </Link>
-        </div>
-      </div>
+      <Contact contactUs={moreInfo} />
     </section>
   )
 }

@@ -11,7 +11,7 @@ export default function BackToTop() {
   }
 
   return (
-    <div className='flex flex-col items-center'>
+    <div className='flex flex-col items-center mt-10'>
       <button className='inline-block' onClick={scrollToTop}>
         <Image
           src='/backToTop.png'

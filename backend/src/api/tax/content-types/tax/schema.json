@@ -1,0 +1,123 @@
+{
+  "kind": "singleType",
+  "collectionName": "taxes",
+  "info": {
+    "singularName": "tax",
+    "pluralName": "taxes",
+    "displayName": "tax",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "main_slogan": {
+      "type": "string"
+    },
+    "hero_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "audit": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "about_title": {
+      "type": "string"
+    },
+    "about_text": {
+      "type": "richtext"
+    },
+    "about_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tax_title": {
+      "type": "string"
+    },
+    "tax_text": {
+      "type": "richtext"
+    },
+    "tax_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "contact_us": {
+      "type": "string"
+    },
+    "faq1": {
+      "type": "string"
+    },
+    "faq1_content": {
+      "type": "richtext"
+    },
+    "faq2": {
+      "type": "string"
+    },
+    "faq2_content": {
+      "type": "richtext"
+    },
+    "faq3": {
+      "type": "string"
+    },
+    "faq3_content": {
+      "type": "richtext"
+    },
+    "faq4": {
+      "type": "string"
+    },
+    "faq4_content": {
+      "type": "richtext"
+    },
+    "faq5": {
+      "type": "string"
+    },
+    "faq5_content": {
+      "type": "richtext"
+    },
+    "faq6": {
+      "type": "string"
+    },
+    "faq6_content": {
+      "type": "richtext"
+    },
+    "faq7": {
+      "type": "string"
+    },
+    "faq7_content": {
+      "type": "richtext"
+    },
+    "faqs": {
+      "type": "string"
+    }
+  }
+}

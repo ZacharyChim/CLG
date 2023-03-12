@@ -8,6 +8,7 @@ import contactTop from '../public/contact-top.png'
 import caseTop from '../public/case-top.png'
 import partnershipTop from '../public/partnership-top.png'
 import serviceTop from '../public/service-top.png'
+import Contact from '../components/Contact'
 
 const fetchData = async () => {
   const res = await fetch(
@@ -710,19 +711,7 @@ export default async function Main() {
             {contactSubtitle}
           </h2>
 
-          <div className='flex flex-col items-center justify-center'>
-            <div className='flex flex-col items-center justify-center mb-20 mx-5 bg-contactBg bg-cover pb-20 md:flex-row'>
-              <p className='text-lg text-left text-darkBlue mt-48 ml-20 mr-1 mb-2'>
-                {contactText}
-              </p>
-              <Link
-                className='inline-block rounded-full bg-white w-2/5 place-self-end mr-2 py-2 px-4 text-md font-bold text-darkBlue hover:bg-darkBlue hover:text-white md:mb-8'
-                href='#'
-              >
-                CONTACT US
-              </Link>
-            </div>
-          </div>
+          <Contact contactUs={contactText} />
         </div>
       </section>
     </>
