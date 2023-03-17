@@ -1,0 +1,287 @@
+{
+  "kind": "singleType",
+  "collectionName": "payrolls",
+  "info": {
+    "singularName": "payroll",
+    "pluralName": "payrolls",
+    "displayName": "payroll",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "main_slogan": {
+      "type": "string"
+    },
+    "hero_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "cloud_solutions": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "payroll_title": {
+      "type": "string"
+    },
+    "article1_title": {
+      "type": "string"
+    },
+    "article2_title": {
+      "type": "string"
+    },
+    "article3_title": {
+      "type": "string"
+    },
+    "article4_title": {
+      "type": "string"
+    },
+    "article5_title": {
+      "type": "string"
+    },
+    "article1_text": {
+      "type": "richtext"
+    },
+    "article2_text": {
+      "type": "richtext"
+    },
+    "article3_text": {
+      "type": "richtext"
+    },
+    "article4_text": {
+      "type": "richtext"
+    },
+    "article5_text": {
+      "type": "richtext"
+    },
+    "article1_number": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "article2_number": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "article3_number": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "article4_number": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "article5_number": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "article1_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "article2_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "article3_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "article4_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "article5_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "table_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "service_title": {
+      "type": "string"
+    },
+    "service1": {
+      "type": "string"
+    },
+    "service2": {
+      "type": "string"
+    },
+    "service3": {
+      "type": "string"
+    },
+    "service4": {
+      "type": "string"
+    },
+    "service1_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "service2_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "service3_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "service4_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "contact_us": {
+      "type": "string"
+    },
+    "faq1": {
+      "type": "string"
+    },
+    "faq2": {
+      "type": "string"
+    },
+    "faq3": {
+      "type": "string"
+    },
+    "faq4": {
+      "type": "string"
+    },
+    "faq5": {
+      "type": "string"
+    },
+    "faq1_content": {
+      "type": "richtext"
+    },
+    "faq2_content": {
+      "type": "richtext"
+    },
+    "faq3_content": {
+      "type": "richtext"
+    },
+    "faq4_content": {
+      "type": "richtext"
+    },
+    "faq5_content": {
+      "type": "richtext"
+    }
+  }
+}

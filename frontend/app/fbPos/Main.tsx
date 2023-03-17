@@ -3,6 +3,7 @@ import Link from 'next/link'
 import React from 'react'
 import Contact from '../../components/Contact'
 import { fetchSingle, richTextReducer, trimTitle } from '../../lib/utils'
+import curve from '/public/small-curve.png'
 
 export default async function Main() {
   const fbPos = await fetchSingle('fb-pos')
@@ -96,10 +97,8 @@ export default async function Main() {
   const icon8Width = fbPos.solutions_icon8.data.attributes.width
   const icon8Height = fbPos.solutions_icon8.data.attributes.height
 
-  const curve =
-    process.env.STRAPI_URL + fbPos.solutions_curve.data.attributes.url
-  const curveWidth = fbPos.solutions_curve.data.attributes.width
-  const curveHeight = fbPos.solutions_curve.data.attributes.height
+  const curveWidth = 33
+  const curveHeight = 10
 
   const solutionsTitle1 = fbPos.solutions_title1
   const solutionsTitle2 = fbPos.solutions_title2

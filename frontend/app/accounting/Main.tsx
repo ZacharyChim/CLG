@@ -8,6 +8,7 @@ import Contact from '../../components/Contact'
 import { v4 } from 'uuid'
 import contactTop from '../../public/contact-top.png'
 import caseTop from '../../public/case-top.png'
+import Faqs from '../../components/Faqs'
 
 export default async function Main() {
   const accounting = await fetchSingle('accounting')
@@ -264,11 +265,11 @@ export default async function Main() {
           imageLeft={true}
         />
 
-        <h3 className='text-2xl font-bold text-darkBlue my-4 self-start'>
+        <h3 className='text-2xl font-bold text-darkBlue my-4 mx-10 self-start'>
           {aboutTitle}
         </h3>
         <article
-          className='text-darkBrown leading-8 space-y-4 mb-4'
+          className='text-darkBrown leading-8 space-y-4 mb-4 mx-10'
           dangerouslySetInnerHTML={{ __html: aboutText }}
         ></article>
       </section>
@@ -279,8 +280,8 @@ export default async function Main() {
           <h3 className='text-center text-darkBlue font-bold text-4xl mt-20'>
             {service}
           </h3>
-          <div className='flex flex-col py-20 text-center md:flex-row'>
-            <div className='flex flex-col items-center space-y-2 h-30 md:w-1/3'>
+          <div className='flex flex-col py-10 text-center md:flex-row'>
+            <div className='flex flex-col items-center space-y-2 h-30 mt-10 md:w-1/3'>
               <Image
                 src={service1Image}
                 alt=''
@@ -291,7 +292,7 @@ export default async function Main() {
               <h5 className='text-md text-darkBlue pt-6'>{service1}</h5>
             </div>
 
-            <div className='flex flex-col items-center space-y-2 h-30 md:w-1/3'>
+            <div className='flex flex-col items-center space-y-2 h-30 mt-10 md:w-1/3'>
               <Image
                 src={service2Image}
                 alt=''
@@ -302,7 +303,7 @@ export default async function Main() {
               <h5 className='text-md text-darkBlue pt-6'>{service2}</h5>
             </div>
 
-            <div className='flex flex-col items-center space-y-2 h-30 md:w-1/3'>
+            <div className='flex flex-col items-center space-y-2 h-30 mt-10 md:w-1/3'>
               <Image
                 src={service3Image}
                 alt=''
@@ -313,7 +314,7 @@ export default async function Main() {
               <h5 className='text-md text-darkBlue pt-6'>{service3}</h5>
             </div>
 
-            <div className='flex flex-col items-center space-y-2 h-30 md:w-1/3'>
+            <div className='flex flex-col items-center space-y-2 h-30 mt-10 md:w-1/3'>
               <Image
                 src={service4Image}
                 alt=''
@@ -340,49 +341,7 @@ export default async function Main() {
         </div>
         <Contact contactUs={contactUs} />
 
-        <div className='mx-auto space-y-4 max-w-4xl mb-16'>
-          <h3 className='w-full text-center text-darkBlue font-bold text-4xl mb-16'>
-            FAQS
-          </h3>
-          {faqs.map((item, index) => (
-            <details
-              key={v4()}
-              className='group border-b pb-6 border-black [&_summary::-webkit-details-marker]:hidden'
-              // open
-            >
-              <summary className='flex items-center justify-between leading-7 p-4 cursor-pointer '>
-                <h4 className='font-medium flex items-start'>
-                  <span className='w-7 grow-0 shrink-0 inline-block text-center text-white bg-oceanBlue mr-2 rounded-full'>
-                    {index + 1}
-                  </span>
-                  <span className='inline-block font-bold text-darkBlue summary-title'>
-                    {item.title}
-                  </span>
-                </h4>
-
-                <svg
-                  className='ml-1.5 h-5 w-5 flex-shrink-0 transition duration-300 group-open:-rotate-180'
-                  xmlns='http://www.w3.org/2000/svg'
-                  fill='none'
-                  viewBox='0 0 24 24'
-                  stroke='currentColor'
-                >
-                  <path
-                    stroke-linecap='round'
-                    stroke-linejoin='round'
-                    stroke-width='2'
-                    d='M19 9l-7 7-7-7'
-                  />
-                </svg>
-              </summary>
-
-              <article
-                className='text-sm px-14 mt-4 leading-relaxed text-gray-700 faq'
-                dangerouslySetInnerHTML={{ __html: item.content }}
-              ></article>
-            </details>
-          ))}
-        </div>
+        <Faqs faqs={faqs} />
       </section>
     </>
   )
