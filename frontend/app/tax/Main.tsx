@@ -1,11 +1,7 @@
-import Image from 'next/image'
-import Link from 'next/link'
 import React from 'react'
 import { fetchSingle, richTextReducer, trimTitle } from '../../lib/utils'
 import ImageArticle from '../../components/ImageArticle'
-import { ImageType, ArticleType } from '../../types.d'
 import Contact from '../../components/Contact'
-import { v4 } from 'uuid'
 import Faqs from '../../components/Faqs'
 
 export default async function Main() {
