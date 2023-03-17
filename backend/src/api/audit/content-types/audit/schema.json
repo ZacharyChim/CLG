@@ -1,0 +1,210 @@
+{
+  "kind": "singleType",
+  "collectionName": "audits",
+  "info": {
+    "singularName": "audit",
+    "pluralName": "audits",
+    "displayName": "audit"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "main_slogan": {
+      "type": "string"
+    },
+    "hero_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "audit": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "audit_title": {
+      "type": "string"
+    },
+    "audit_diagram": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "service_title": {
+      "type": "string"
+    },
+    "service1": {
+      "type": "string"
+    },
+    "service2": {
+      "type": "string"
+    },
+    "service3": {
+      "type": "string"
+    },
+    "service4": {
+      "type": "string"
+    },
+    "service5": {
+      "type": "string"
+    },
+    "service1_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "service2_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "service3_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "service4_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "service5_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "article1_title": {
+      "type": "string"
+    },
+    "article2_title": {
+      "type": "string"
+    },
+    "article1_text": {
+      "type": "richtext"
+    },
+    "article2_text": {
+      "type": "richtext"
+    },
+    "article1_number": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "article2_number": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "article1_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "article2_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "contact_us": {
+      "type": "string"
+    },
+    "faq1": {
+      "type": "string"
+    },
+    "faq2": {
+      "type": "string"
+    },
+    "faq3": {
+      "type": "string"
+    },
+    "faq4": {
+      "type": "string"
+    },
+    "faq5": {
+      "type": "string"
+    },
+    "faq6": {
+      "type": "string"
+    },
+    "faq1_content": {
+      "type": "richtext"
+    },
+    "faq2_content": {
+      "type": "richtext"
+    },
+    "faq3_content": {
+      "type": "richtext"
+    },
+    "faq4_content": {
+      "type": "richtext"
+    },
+    "faq5_content": {
+      "type": "richtext"
+    },
+    "faq6_content": {
+      "type": "richtext"
+    }
+  }
+}

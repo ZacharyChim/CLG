@@ -185,9 +185,6 @@ export default async function Main() {
   const service4ImageWidth = payroll.service4_image.data.attributes.width
   const service4ImageHeight = payroll.service4_image.data.attributes.height
 
-  const aboutTitle = payroll.about_title
-  // const aboutText = richTextReducer(payroll.about_text)
-
   const tableImage =
     process.env.STRAPI_URL + payroll.table_image.data.attributes.url
   const tableImageWidth = payroll.table_image.data.attributes.width
