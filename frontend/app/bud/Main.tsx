@@ -171,17 +171,17 @@ export default async function Main() {
               <p className='text-sm'>{data1Desc}</p>
             </div>
 
-            <div className='flex flex-col space-y-2 mt-10 mx-4 py-8 md:w-1/5'>
+            <div className='flex flex-col space-y-2 mt-10 mx-6 py-8 md:w-1/5'>
               <h5 className='text-4xl font-bold text-darkBlue'>{data2}</h5>
               <p className='text-sm'>{data2Desc}</p>
             </div>
 
-            <div className='flex flex-col space-y-2 mt-10 mx-4 py-8 md:w-1/5'>
+            <div className='flex flex-col space-y-2 mt-10 mx-6 py-8 md:w-1/5'>
               <h5 className='text-4xl font-bold text-darkBlue'>{data3}</h5>
               <p className='text-sm'>{data3Desc}</p>
             </div>
 
-            <div className='flex flex-col space-y-2 mt-10 ml-4 py-8 md:w-3/10'>
+            <div className='flex flex-col space-y-2 mt-10 ml-10 py-8 md:w-3/10'>
               <h5 className='text-4xl font-bold text-darkBlue'>{data4}</h5>
               <p className='text-sm'>{data4Desc}</p>
             </div>

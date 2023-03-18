@@ -11,7 +11,7 @@ export default async function Hero(props) {
   const height = data.hero_image.data.attributes.height
 
   return (
-    <section id='hero' className='bg-heroBg bg-cover bg-top bg-no-repeat'>
+    <section id='hero' className='bg-heroBg bg-cover bg-top bg-no-repeat pb-20'>
       <div className='container flex flex-col max-w-4xl md:flex-row items-center mx-auto py-12'>
         <div className='flex flex-col md:mt-20 space-y-0 mx-4 md:w-1/2'>
           <div>
