@@ -1,330 +1,155 @@
-{
-  "data": {
-    "id": 1,
-    "attributes": {
-      "main_slogan": "Pre-IPO  Preparation",
-      "createdAt": "2023-03-01T17:07:54.145Z",
-      "updatedAt": "2023-03-06T13:59:15.367Z",
-      "publishedAt": "2023-03-06T13:59:15.363Z",
-      "about_title": "About Pre-IPO Preparation",
-      "about_content": "An initial public offering (IPO) is the process of selling shares that were formerly privately held to new investors for the first time. Therefore, Pre-IPO Preparation is important for the company.\n\nWhen a company goes public, it will have many challenges, including a host of new and complex accounting and financial reporting requirements. To enable the whole listing application can be processed as smooth as possible, it is so important to have listing plan and preparation, especially to get those historical accounting issues resolved early at the pre-IPO stage.",
-      "title": "Pre-IPO Preparation Services Provision",
-      "title1": "Advise On Listing Requirements And Assess The Company’s Competency In Fulfilling These Requirement",
-      "title2": "Review financial and information system for risk assessment",
-      "title3": "Put in place a financial reporting system",
-      "contact_us": "Should you have any inquiry about Pre-IPO Preparation Services, please contact us and we will provide FREE consultation service about Pre-IPO Preparation.",
-      "hero_image": {
-        "data": {
-          "id": 73,
-          "attributes": {
-            "name": "pre-ipo.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 588,
-            "height": 495,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_pre-ipo.png",
-                "hash": "thumbnail_pre_ipo_51487182ca",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 185,
-                "height": 156,
-                "size": 54.61,
-                "url": "/uploads/thumbnail_pre_ipo_51487182ca.png"
-              },
-              "small": {
-                "name": "small_pre-ipo.png",
-                "hash": "small_pre_ipo_51487182ca",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 500,
-                "height": 421,
-                "size": 325.69,
-                "url": "/uploads/small_pre_ipo_51487182ca.png"
-              }
-            },
-            "hash": "pre_ipo_51487182ca",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 115.08,
-            "url": "/uploads/pre_ipo_51487182ca.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-03-01T17:05:12.693Z",
-            "updatedAt": "2023-03-01T17:05:12.693Z"
-          }
-        }
-      },
-      "about_image": {
-        "data": {
-          "id": 74,
-          "attributes": {
-            "name": "pre-ipo-about.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 492,
-            "height": 442,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_pre-ipo-about.png",
-                "hash": "thumbnail_pre_ipo_about_146c40a904",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 174,
-                "height": 156,
-                "size": 58.48,
-                "url": "/uploads/thumbnail_pre_ipo_about_146c40a904.png"
-              }
-            },
-            "hash": "pre_ipo_about_146c40a904",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 74.56,
-            "url": "/uploads/pre_ipo_about_146c40a904.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-03-01T17:05:23.572Z",
-            "updatedAt": "2023-03-01T17:05:23.572Z"
-          }
-        }
-      },
-      "advisory": {
-        "data": {
-          "id": 75,
-          "attributes": {
-            "name": "Advisory.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 69,
-            "height": 16,
-            "formats": null,
-            "hash": "Advisory_c32ef42669",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 0.59,
-            "url": "/uploads/Advisory_c32ef42669.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-03-01T17:05:35.344Z",
-            "updatedAt": "2023-03-01T17:05:35.344Z"
-          }
-        }
-      },
-      "number1": {
-        "data": {
-          "id": 67,
-          "attributes": {
-            "name": "01.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 85,
-            "height": 83,
-            "formats": null,
-            "hash": "01_62b8ac69f2",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 1.31,
-            "url": "/uploads/01_62b8ac69f2.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-02-22T17:06:58.866Z",
-            "updatedAt": "2023-02-22T17:06:58.866Z"
-          }
-        }
-      },
-      "image1": {
-        "data": {
-          "id": 76,
-          "attributes": {
-            "name": "pre-ipo-1.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 551,
-            "height": 524,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_pre-ipo-1.png",
-                "hash": "thumbnail_pre_ipo_1_4e6c49141c",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 164,
-                "height": 156,
-                "size": 54.04,
-                "url": "/uploads/thumbnail_pre_ipo_1_4e6c49141c.png"
-              },
-              "small": {
-                "name": "small_pre-ipo-1.png",
-                "hash": "small_pre_ipo_1_4e6c49141c",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 500,
-                "height": 475,
-                "size": 373.2,
-                "url": "/uploads/small_pre_ipo_1_4e6c49141c.png"
-              }
-            },
-            "hash": "pre_ipo_1_4e6c49141c",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 96.86,
-            "url": "/uploads/pre_ipo_1_4e6c49141c.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-03-01T17:06:44.441Z",
-            "updatedAt": "2023-03-01T17:06:44.441Z"
-          }
-        }
-      },
-      "number2": {
-        "data": {
-          "id": 68,
-          "attributes": {
-            "name": "02.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 96,
-            "height": 83,
-            "formats": null,
-            "hash": "02_c8bebdd883",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 1.42,
-            "url": "/uploads/02_c8bebdd883.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-02-22T17:07:09.859Z",
-            "updatedAt": "2023-02-22T17:07:09.859Z"
-          }
-        }
-      },
-      "image2": {
-        "data": {
-          "id": 77,
-          "attributes": {
-            "name": "pre-ipo-2.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 550,
-            "height": 523,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_pre-ipo-2.png",
-                "hash": "thumbnail_pre_ipo_2_44f49a05f9",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 164,
-                "height": 156,
-                "size": 54.46,
-                "url": "/uploads/thumbnail_pre_ipo_2_44f49a05f9.png"
-              },
-              "small": {
-                "name": "small_pre-ipo-2.png",
-                "hash": "small_pre_ipo_2_44f49a05f9",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 500,
-                "height": 475,
-                "size": 373.38,
-                "url": "/uploads/small_pre_ipo_2_44f49a05f9.png"
-              }
-            },
-            "hash": "pre_ipo_2_44f49a05f9",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 97.67,
-            "url": "/uploads/pre_ipo_2_44f49a05f9.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-03-01T17:07:06.073Z",
-            "updatedAt": "2023-03-01T17:07:06.073Z"
-          }
-        }
-      },
-      "number3": {
-        "data": {
-          "id": 69,
-          "attributes": {
-            "name": "03.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 102,
-            "height": 83,
-            "formats": null,
-            "hash": "03_bddda4af9a",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 1.55,
-            "url": "/uploads/03_bddda4af9a.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-02-22T17:07:24.271Z",
-            "updatedAt": "2023-03-01T17:07:34.309Z"
-          }
-        }
-      },
-      "image3": {
-        "data": {
-          "id": 78,
-          "attributes": {
-            "name": "pre-ipo-3.png",
-            "alternativeText": null,
-            "caption": null,
-            "width": 556,
-            "height": 510,
-            "formats": {
-              "thumbnail": {
-                "name": "thumbnail_pre-ipo-3.png",
-                "hash": "thumbnail_pre_ipo_3_9080a25cb7",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 170,
-                "height": 156,
-                "size": 51.6,
-                "url": "/uploads/thumbnail_pre_ipo_3_9080a25cb7.png"
-              },
-              "small": {
-                "name": "small_pre-ipo-3.png",
-                "hash": "small_pre_ipo_3_9080a25cb7",
-                "ext": ".png",
-                "mime": "image/png",
-                "path": null,
-                "width": 500,
-                "height": 459,
-                "size": 352.03,
-                "url": "/uploads/small_pre_ipo_3_9080a25cb7.png"
-              }
-            },
-            "hash": "pre_ipo_3_9080a25cb7",
-            "ext": ".png",
-            "mime": "image/png",
-            "size": 114.29,
-            "url": "/uploads/pre_ipo_3_9080a25cb7.png",
-            "previewUrl": null,
-            "provider": "local",
-            "provider_metadata": null,
-            "createdAt": "2023-03-01T17:07:51.182Z",
-            "updatedAt": "2023-03-01T17:07:51.182Z"
-          }
-        }
-      }
-    }
+[
+  {
+    "order": 1,
+    "id": 44,
+    "title": "Macau",
+    "type": "EXTERNAL",
+    "path": null,
+    "externalPath": "https://clggroup.com/macau",
+    "uiRouterKey": "macau",
+    "menuAttached": true,
+    "collapsed": false,
+    "createdAt": "2023-03-19T08:51:23.245Z",
+    "updatedAt": "2023-03-19T08:51:23.245Z",
+    "audience": [],
+    "parent": null,
+    "related": null,
+    "items": null
   },
-  "meta": {}
-}
+  {
+    "order": 2,
+    "id": 45,
+    "title": "Singapore",
+    "type": "EXTERNAL",
+    "path": null,
+    "externalPath": "https://clggroup.com/singapore",
+    "uiRouterKey": "singapore",
+    "menuAttached": true,
+    "collapsed": false,
+    "createdAt": "2023-03-19T08:51:23.245Z",
+    "updatedAt": "2023-03-19T08:51:23.245Z",
+    "audience": [],
+    "parent": null,
+    "related": null,
+    "items": null
+  },
+  {
+    "order": 3,
+    "id": 46,
+    "title": "Canada",
+    "type": "EXTERNAL",
+    "path": null,
+    "externalPath": "https://clggroup.com/canada",
+    "uiRouterKey": "canada",
+    "menuAttached": true,
+    "collapsed": false,
+    "createdAt": "2023-03-19T08:51:23.245Z",
+    "updatedAt": "2023-03-19T08:51:23.245Z",
+    "audience": [],
+    "parent": null,
+    "related": null,
+    "items": null
+  },
+  {
+    "order": 4,
+    "id": 47,
+    "title": "Malaysia",
+    "type": "EXTERNAL",
+    "path": null,
+    "externalPath": "https://clggroup.com/malaysia",
+    "uiRouterKey": "malaysia",
+    "menuAttached": true,
+    "collapsed": false,
+    "createdAt": "2023-03-19T08:51:23.245Z",
+    "updatedAt": "2023-03-19T08:51:23.245Z",
+    "audience": [],
+    "parent": null,
+    "related": null,
+    "items": null
+  },
+  {
+    "order": 5,
+    "id": 48,
+    "title": "England",
+    "type": "EXTERNAL",
+    "path": null,
+    "externalPath": "https://clggroup.com/england",
+    "uiRouterKey": "england",
+    "menuAttached": true,
+    "collapsed": false,
+    "createdAt": "2023-03-19T08:51:23.245Z",
+    "updatedAt": "2023-03-19T08:51:23.245Z",
+    "audience": [],
+    "parent": null,
+    "related": null,
+    "items": null
+  },
+  {
+    "order": 6,
+    "id": 49,
+    "title": "BVI",
+    "type": "EXTERNAL",
+    "path": null,
+    "externalPath": "https://clggroup.com/bvi",
+    "uiRouterKey": "bvi",
+    "menuAttached": true,
+    "collapsed": false,
+    "createdAt": "2023-03-19T08:51:23.245Z",
+    "updatedAt": "2023-03-19T08:51:23.245Z",
+    "audience": [],
+    "parent": null,
+    "related": null,
+    "items": null
+  },
+  {
+    "order": 7,
+    "id": 50,
+    "title": "Cayman Island",
+    "type": "EXTERNAL",
+    "path": null,
+    "externalPath": "https://clggroup.com/cayman",
+    "uiRouterKey": "cayman-island",
+    "menuAttached": true,
+    "collapsed": false,
+    "createdAt": "2023-03-19T08:51:23.245Z",
+    "updatedAt": "2023-03-19T08:51:23.245Z",
+    "audience": [],
+    "parent": null,
+    "related": null,
+    "items": null
+  },
+  {
+    "order": 8,
+    "id": 51,
+    "title": "Seychelles",
+    "type": "EXTERNAL",
+    "path": null,
+    "externalPath": "https://clggroup.com/seychelles",
+    "uiRouterKey": "seychelles",
+    "menuAttached": true,
+    "collapsed": false,
+    "createdAt": "2023-03-19T08:51:23.245Z",
+    "updatedAt": "2023-03-19T08:51:23.245Z",
+    "audience": [],
+    "parent": null,
+    "related": null,
+    "items": null
+  },
+  {
+    "order": 9,
+    "id": 52,
+    "title": "Anguilla",
+    "type": "EXTERNAL",
+    "path": null,
+    "externalPath": "https://clggroup.com/anguilla",
+    "uiRouterKey": "anguilla",
+    "menuAttached": true,
+    "collapsed": false,
+    "createdAt": "2023-03-19T08:51:23.245Z",
+    "updatedAt": "2023-03-19T08:51:23.245Z",
+    "audience": [],
+    "parent": null,
+    "related": null,
+    "items": null
+  }
+]

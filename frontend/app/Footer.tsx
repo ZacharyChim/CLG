@@ -22,9 +22,7 @@ const fetchSocial = async () => {
 }
 
 const fetchLinks = async () => {
-  const res = await fetch(`${process.env.STRAPI_API_URL}/navigation/render/1`, {
-    next: { revalidate: 60 },
-  })
+  const res = await fetch(`${process.env.STRAPI_API_URL}/navigation/render/1`)
 
   const links = await res.json()
   return links
