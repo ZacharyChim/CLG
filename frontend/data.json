@@ -1,155 +1,214 @@
-[
-  {
-    "order": 1,
-    "id": 44,
-    "title": "Macau",
-    "type": "EXTERNAL",
-    "path": null,
-    "externalPath": "https://clggroup.com/macau",
-    "uiRouterKey": "macau",
-    "menuAttached": true,
-    "collapsed": false,
-    "createdAt": "2023-03-19T08:51:23.245Z",
-    "updatedAt": "2023-03-19T08:51:23.245Z",
-    "audience": [],
-    "parent": null,
-    "related": null,
-    "items": null
+{
+  "data": {
+    "id": 1,
+    "attributes": {
+      "main_slogan": "Incorporating  companies in  Seychelles",
+      "benefit_title": "Benefits Of Setting Up A Business In Seychelles",
+      "benefit1_title": "Company Secretary Is  Not Required",
+      "benefit2_title": "Share Transfer Is Easy  Without Stamp Duty  And Restriction",
+      "benefit3_title": "No Need To Submit  Company Account",
+      "benefit4_title": "Tax Exempt If No  Operation In Local",
+      "benefit5_title": "Confidentiality",
+      "benefit1_content": "Finding an independent person to be your legal company secretary is always a challenge for SME. That's why Seychelles is a good choice for you.",
+      "benefit2_content": "Seychelles company can easily transfer your company's share, without complicated paperwork and submission.",
+      "benefit3_content": "Creating your account record to the local government will reveal your financial privacy, Seychelles allows you to skip this work.",
+      "benefit4_content": "If there is no operation in Seychelles, you and your company is not required for taxation.",
+      "benefit5_content": "Only a few documents are needed in order to set up a company. That means the information of the directors and shareholders can be well protected.",
+      "article2_title": "Seychelles Company Incorporation Procedures",
+      "article1_title": "Requirements For Setting Up A Company In Seychelles",
+      "article1_text": "- At least one director and one shareholder\n- No minimum capital",
+      "article2_text": "- Name check (we need to avoid identical company names as it is not allowed. The company name can be in english and chinese but french or english translation is required.)\n- Submission of documents and payment of fees\n- Registration of the company",
+      "contact_us": "For more information on incorporating a Seychelles company, please contact our professional consultants and we will provide you with a FREE consultation.",
+      "createdAt": "2023-03-21T04:12:28.091Z",
+      "updatedAt": "2023-03-21T04:17:22.311Z",
+      "publishedAt": "2023-03-21T04:12:30.126Z",
+      "hero_image": {
+        "data": {
+          "id": 227,
+          "attributes": {
+            "name": "seychelles-hero.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 630,
+            "height": 512,
+            "formats": {
+              "thumbnail": {
+                "name": "thumbnail_seychelles-hero.png",
+                "hash": "thumbnail_seychelles_hero_f4419a9a06",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 192,
+                "height": 156,
+                "size": 57.31,
+                "url": "/uploads/thumbnail_seychelles_hero_f4419a9a06.png"
+              },
+              "small": {
+                "name": "small_seychelles-hero.png",
+                "hash": "small_seychelles_hero_f4419a9a06",
+                "ext": ".png",
+                "mime": "image/png",
+                "path": null,
+                "width": 500,
+                "height": 406,
+                "size": 324.51,
+                "url": "/uploads/small_seychelles_hero_f4419a9a06.png"
+              }
+            },
+            "hash": "seychelles_hero_f4419a9a06",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 122.06,
+            "url": "/uploads/seychelles_hero_f4419a9a06.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-03-21T04:15:44.345Z",
+            "updatedAt": "2023-03-21T04:15:44.345Z"
+          }
+        }
+      },
+      "incorporation": {
+        "data": {
+          "id": 196,
+          "attributes": {
+            "name": "singapore-incorporation.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 99,
+            "height": 16,
+            "formats": null,
+            "hash": "singapore_incorporation_536447f716",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 0.62,
+            "url": "/uploads/singapore_incorporation_536447f716.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-03-19T09:10:14.107Z",
+            "updatedAt": "2023-03-21T01:52:24.794Z"
+          }
+        }
+      },
+      "benefit1_image": {
+        "data": [
+          {
+            "id": 228,
+            "attributes": {
+              "name": "seychelles-benefit1.png",
+              "alternativeText": null,
+              "caption": null,
+              "width": 69,
+              "height": 55,
+              "formats": null,
+              "hash": "seychelles_benefit1_cb08d23757",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 0.61,
+              "url": "/uploads/seychelles_benefit1_cb08d23757.png",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "createdAt": "2023-03-21T04:16:11.260Z",
+              "updatedAt": "2023-03-21T04:16:11.260Z"
+            }
+          }
+        ]
+      },
+      "benefit2_image": {
+        "data": {
+          "id": 229,
+          "attributes": {
+            "name": "seychelles-benefit2.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 66,
+            "height": 52,
+            "formats": null,
+            "hash": "seychelles_benefit2_64f3af823c",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 0.62,
+            "url": "/uploads/seychelles_benefit2_64f3af823c.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-03-21T04:16:31.772Z",
+            "updatedAt": "2023-03-21T04:16:31.772Z"
+          }
+        }
+      },
+      "benefit3_image": {
+        "data": {
+          "id": 214,
+          "attributes": {
+            "name": "england-benefit3.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 66,
+            "height": 44,
+            "formats": null,
+            "hash": "england_benefit3_c05ff476a9",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 0.42,
+            "url": "/uploads/england_benefit3_c05ff476a9.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-03-21T01:28:18.044Z",
+            "updatedAt": "2023-03-21T01:28:18.044Z"
+          }
+        }
+      },
+      "benefit4_image": {
+        "data": {
+          "id": 221,
+          "attributes": {
+            "name": "bvi-benefit4.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 62,
+            "height": 54,
+            "formats": null,
+            "hash": "bvi_benefit4_3929f1c573",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 0.47,
+            "url": "/uploads/bvi_benefit4_3929f1c573.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-03-21T01:56:24.069Z",
+            "updatedAt": "2023-03-21T01:56:24.069Z"
+          }
+        }
+      },
+      "benefit5_image": {
+        "data": {
+          "id": 230,
+          "attributes": {
+            "name": "seychelles-benefit5.png",
+            "alternativeText": null,
+            "caption": null,
+            "width": 62,
+            "height": 54,
+            "formats": null,
+            "hash": "seychelles_benefit5_7f70fbf46d",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 0.47,
+            "url": "/uploads/seychelles_benefit5_7f70fbf46d.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "createdAt": "2023-03-21T04:17:16.255Z",
+            "updatedAt": "2023-03-21T04:17:16.255Z"
+          }
+        }
+      }
+    }
   },
-  {
-    "order": 2,
-    "id": 45,
-    "title": "Singapore",
-    "type": "EXTERNAL",
-    "path": null,
-    "externalPath": "https://clggroup.com/singapore",
-    "uiRouterKey": "singapore",
-    "menuAttached": true,
-    "collapsed": false,
-    "createdAt": "2023-03-19T08:51:23.245Z",
-    "updatedAt": "2023-03-19T08:51:23.245Z",
-    "audience": [],
-    "parent": null,
-    "related": null,
-    "items": null
-  },
-  {
-    "order": 3,
-    "id": 46,
-    "title": "Canada",
-    "type": "EXTERNAL",
-    "path": null,
-    "externalPath": "https://clggroup.com/canada",
-    "uiRouterKey": "canada",
-    "menuAttached": true,
-    "collapsed": false,
-    "createdAt": "2023-03-19T08:51:23.245Z",
-    "updatedAt": "2023-03-19T08:51:23.245Z",
-    "audience": [],
-    "parent": null,
-    "related": null,
-    "items": null
-  },
-  {
-    "order": 4,
-    "id": 47,
-    "title": "Malaysia",
-    "type": "EXTERNAL",
-    "path": null,
-    "externalPath": "https://clggroup.com/malaysia",
-    "uiRouterKey": "malaysia",
-    "menuAttached": true,
-    "collapsed": false,
-    "createdAt": "2023-03-19T08:51:23.245Z",
-    "updatedAt": "2023-03-19T08:51:23.245Z",
-    "audience": [],
-    "parent": null,
-    "related": null,
-    "items": null
-  },
-  {
-    "order": 5,
-    "id": 48,
-    "title": "England",
-    "type": "EXTERNAL",
-    "path": null,
-    "externalPath": "https://clggroup.com/england",
-    "uiRouterKey": "england",
-    "menuAttached": true,
-    "collapsed": false,
-    "createdAt": "2023-03-19T08:51:23.245Z",
-    "updatedAt": "2023-03-19T08:51:23.245Z",
-    "audience": [],
-    "parent": null,
-    "related": null,
-    "items": null
-  },
-  {
-    "order": 6,
-    "id": 49,
-    "title": "BVI",
-    "type": "EXTERNAL",
-    "path": null,
-    "externalPath": "https://clggroup.com/bvi",
-    "uiRouterKey": "bvi",
-    "menuAttached": true,
-    "collapsed": false,
-    "createdAt": "2023-03-19T08:51:23.245Z",
-    "updatedAt": "2023-03-19T08:51:23.245Z",
-    "audience": [],
-    "parent": null,
-    "related": null,
-    "items": null
-  },
-  {
-    "order": 7,
-    "id": 50,
-    "title": "Cayman Island",
-    "type": "EXTERNAL",
-    "path": null,
-    "externalPath": "https://clggroup.com/cayman",
-    "uiRouterKey": "cayman-island",
-    "menuAttached": true,
-    "collapsed": false,
-    "createdAt": "2023-03-19T08:51:23.245Z",
-    "updatedAt": "2023-03-19T08:51:23.245Z",
-    "audience": [],
-    "parent": null,
-    "related": null,
-    "items": null
-  },
-  {
-    "order": 8,
-    "id": 51,
-    "title": "Seychelles",
-    "type": "EXTERNAL",
-    "path": null,
-    "externalPath": "https://clggroup.com/seychelles",
-    "uiRouterKey": "seychelles",
-    "menuAttached": true,
-    "collapsed": false,
-    "createdAt": "2023-03-19T08:51:23.245Z",
-    "updatedAt": "2023-03-19T08:51:23.245Z",
-    "audience": [],
-    "parent": null,
-    "related": null,
-    "items": null
-  },
-  {
-    "order": 9,
-    "id": 52,
-    "title": "Anguilla",
-    "type": "EXTERNAL",
-    "path": null,
-    "externalPath": "https://clggroup.com/anguilla",
-    "uiRouterKey": "anguilla",
-    "menuAttached": true,
-    "collapsed": false,
-    "createdAt": "2023-03-19T08:51:23.245Z",
-    "updatedAt": "2023-03-19T08:51:23.245Z",
-    "audience": [],
-    "parent": null,
-    "related": null,
-    "items": null
-  }
-]
+  "meta": {}
+}

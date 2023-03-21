@@ -1,0 +1,138 @@
+{
+  "kind": "singleType",
+  "collectionName": "anguillas",
+  "info": {
+    "singularName": "anguilla",
+    "pluralName": "anguillas",
+    "displayName": "Anguilla",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "main_slogan": {
+      "type": "string"
+    },
+    "hero_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "incorporation": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "benefit_title": {
+      "type": "string"
+    },
+    "benefit1_title": {
+      "type": "string"
+    },
+    "benefit2_title": {
+      "type": "string"
+    },
+    "benefit3_title": {
+      "type": "string"
+    },
+    "benefit4_title": {
+      "type": "string"
+    },
+    "benefit5_title": {
+      "type": "string"
+    },
+    "benefit1_content": {
+      "type": "text"
+    },
+    "benefit2_content": {
+      "type": "text"
+    },
+    "benefit3_content": {
+      "type": "text"
+    },
+    "benefit4_content": {
+      "type": "text"
+    },
+    "benefit5_content": {
+      "type": "text"
+    },
+    "benefit1_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "benefit2_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "benefit3_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "benefit4_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "benefit5_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "article1_title": {
+      "type": "string"
+    },
+    "article1_text": {
+      "type": "richtext"
+    },
+    "contact_us": {
+      "type": "string"
+    }
+  }
+}

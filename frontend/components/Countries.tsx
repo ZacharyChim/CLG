@@ -37,17 +37,6 @@ export default async function Countries(props: PropType) {
               </a>
             </li>
           ))}
-          {/* <li>Macau</li>
-              <li className='text-black'>
-                <span className='half_background'>Singapore</span>
-              </li>
-              <li>Canada</li>
-              <li>Malaysia</li>
-              <li>England</li>
-              <li>BVI</li>
-              <li>Cayman Island</li>
-              <li>Seychelles</li>
-              <li>Anguilla</li> */}
         </ul>
       </div>
     </div>
