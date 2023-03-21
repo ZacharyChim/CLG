@@ -1,0 +1,136 @@
+{
+  "kind": "singleType",
+  "collectionName": "bvis",
+  "info": {
+    "singularName": "bvi",
+    "pluralName": "bvis",
+    "displayName": "BVI"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "main_slogan": {
+      "type": "string"
+    },
+    "hero_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "incorporation": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "benefit_title": {
+      "type": "string"
+    },
+    "benefit1_title": {
+      "type": "string"
+    },
+    "benefit2_title": {
+      "type": "string"
+    },
+    "benefit3_title": {
+      "type": "string"
+    },
+    "benefit4_title": {
+      "type": "string"
+    },
+    "benefit5_title": {
+      "type": "string"
+    },
+    "benefit1_content": {
+      "type": "text"
+    },
+    "benefit2_content": {
+      "type": "text"
+    },
+    "benefit3_content": {
+      "type": "text"
+    },
+    "benefit4_content": {
+      "type": "text"
+    },
+    "benefit5_content": {
+      "type": "text"
+    },
+    "benefit1_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "benefit2_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "benefit3_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "benefit4_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "benefit5_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "article1_title": {
+      "type": "string"
+    },
+    "article2_title": {
+      "type": "string"
+    },
+    "article1_text": {
+      "type": "richtext"
+    },
+    "article2_text": {
+      "type": "richtext"
+    },
+    "contact_us": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "kind": "singleType",
+  "collectionName": "canadas",
+  "info": {
+    "singularName": "canada",
+    "pluralName": "canadas",
+    "displayName": "Canada"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "main_slogan": {
+      "type": "string"
+    },
+    "hero_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "incorporation": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "benefit_title": {
+      "type": "string"
+    },
+    "benefit1_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "benefit2_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "benefit3_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "benefit1_content": {
+      "type": "text"
+    },
+    "benefit2_content": {
+      "type": "text"
+    },
+    "benefit3_content": {
+      "type": "text"
+    },
+    "article1_title": {
+      "type": "string"
+    },
+    "article1_text": {
+      "type": "richtext"
+    },
+    "article2_title": {
+      "type": "string"
+    },
+    "article2_text": {
+      "type": "richtext"
+    },
+    "contact_us": {
+      "type": "string"
+    }
+  }
+}

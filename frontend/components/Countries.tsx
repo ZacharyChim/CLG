@@ -16,7 +16,7 @@ export default async function Countries(props: PropType) {
   const nav = await fetchLinks()
 
   return (
-    <div className='flex flex-col w-1/5 mr-10 '>
+    <div className='flex flex-col mx-10 mb-10 md:w-1/5 md:mx-auto'>
       <div className='flex flex-row pb-4 border-b border-black'>
         <Image src={earth} alt='' width='23' height='23' />
         <span className='ml-2 font-bold text-darkBlue '>OTHER COUNTRIES</span>
@@ -28,7 +28,7 @@ export default async function Countries(props: PropType) {
               <a
                 href={item.externalPath}
                 className={`${
-                  props.country === item.title
+                  props.country.toLowerCase() === item.title.toLowerCase()
                     ? 'text-black half_background'
                     : 'text-darkGrayishBlue'
                 } transition hover:opacity-75`}

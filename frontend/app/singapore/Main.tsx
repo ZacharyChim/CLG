@@ -57,7 +57,7 @@ export default async function Main() {
       <section className='flex flex-col mx-auto max-w-5xl mt-10 mb-10 md:flex-row'>
         {/* @ts-expect-error Server Component */}
         <Countries country='Singapore' />
-        <div className='w-4/5'>
+        <div className='md:w-4/5 mx-10'>
           <Image
             alt=''
             src={incorporation}
@@ -68,8 +68,8 @@ export default async function Main() {
           <h3 className='text-2xl font-bold text-darkBlue mb-6 mt-4'>
             {benefitTitle}
           </h3>
-          <div className='grid grid-cols-1 flex-wrap leading-8 md:gap-4 md:grid-cols-2'>
-            <div className='flex flex-col items-center p-6 border-4 rounded-md border-veryLightBlue'>
+          <div className='grid grid-cols-1 flex-wrap leading-8 md:gap-8 md:grid-cols-2'>
+            <div className='flex flex-col items-center px-6 pt-10 pb-6 border-4 rounded-md border-veryLightBlue'>
               <Image
                 alt=''
                 src={benefit1Image}
@@ -90,7 +90,7 @@ export default async function Main() {
               />
               <p className='text-center text-darkBrown'>{benefit1Content}</p>
             </div>
-            <div className='flex flex-col items-center p-6 border-4 rounded-md border-veryLightBlue '>
+            <div className='flex flex-col items-center px-6 pt-10 pb-6 border-4 rounded-md border-veryLightBlue '>
               <Image
                 alt=''
                 src={benefit2Image}
@@ -110,7 +110,7 @@ export default async function Main() {
               />
               <p className='text-center text-darkBrown'>{benefit2Content}</p>
             </div>
-            <div className='flex flex-col items-center p-6 border-4 rounded-md border-veryLightBlue '>
+            <div className='flex flex-col items-center px-6 pt-10 pb-6 border-4 rounded-md border-veryLightBlue '>
               <Image
                 alt=''
                 src={benefit3Image}
@@ -131,7 +131,7 @@ export default async function Main() {
               />
               <p className='text-center text-darkBrown'>{benefit3Content}</p>
             </div>
-            <div className='flex flex-col items-center p-6 border-4 rounded-md border-veryLightBlue '>
+            <div className='flex flex-col items-center px-6 pt-10 pb-6 border-4 rounded-md border-veryLightBlue '>
               <Image
                 alt=''
                 src={benefit4Image}
