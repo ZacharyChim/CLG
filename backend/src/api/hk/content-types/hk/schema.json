@@ -1,0 +1,143 @@
+{
+  "kind": "singleType",
+  "collectionName": "hks",
+  "info": {
+    "singularName": "hk",
+    "pluralName": "hks",
+    "displayName": "hk",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "main_slogan": {
+      "type": "string"
+    },
+    "hero_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "service_title": {
+      "type": "string"
+    },
+    "service_desc": {
+      "type": "string"
+    },
+    "service1_title": {
+      "type": "string"
+    },
+    "service2_title": {
+      "type": "string"
+    },
+    "service3_title": {
+      "type": "string"
+    },
+    "service4_title": {
+      "type": "string"
+    },
+    "service1_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "service2_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "service3_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "service4_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "procedure_step1": {
+      "type": "richtext"
+    },
+    "procedure_step2": {
+      "type": "richtext"
+    },
+    "procedure_step3": {
+      "type": "richtext"
+    },
+    "contact_us": {
+      "type": "string"
+    },
+    "faq1": {
+      "type": "string"
+    },
+    "faq2": {
+      "type": "string"
+    },
+    "faq3": {
+      "type": "string"
+    },
+    "faq4": {
+      "type": "string"
+    },
+    "faq5": {
+      "type": "string"
+    },
+    "faq6": {
+      "type": "string"
+    },
+    "faq1_content": {
+      "type": "richtext"
+    },
+    "faq2_content": {
+      "type": "richtext"
+    },
+    "faq3_content": {
+      "type": "richtext"
+    },
+    "faq4_content": {
+      "type": "richtext"
+    },
+    "faq5_content": {
+      "type": "richtext"
+    },
+    "faq6_content": {
+      "type": "richtext"
+    },
+    "procedure_title": {
+      "type": "string"
+    }
+  }
+}
