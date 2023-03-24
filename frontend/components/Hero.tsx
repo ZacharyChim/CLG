@@ -6,7 +6,8 @@ export default async function Hero(props) {
   const data = await fetchSingle(props.page)
   const mainSlogan = data.main_slogan
 
-  const heroImage = process.env.STRAPI_URL + data.hero_image.data.attributes.url
+  const heroImage =
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.hero_image.data.attributes.url
   const width = data.hero_image.data.attributes.width
   const height = data.hero_image.data.attributes.height
 

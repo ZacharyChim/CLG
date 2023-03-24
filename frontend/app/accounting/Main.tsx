@@ -11,7 +11,8 @@ export default async function Main() {
   const accounting = await fetchSingle('accounting')
 
   const accountingTag =
-    process.env.STRAPI_URL + accounting.accounting.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    accounting.accounting.data.attributes.url
   const accountingTagWidth = accounting.accounting.data.attributes.width
   const accountingTagHeight = accounting.accounting.data.attributes.height
 
@@ -25,7 +26,8 @@ export default async function Main() {
   }
 
   const article1Image =
-    process.env.STRAPI_URL + accounting.article1_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    accounting.article1_image.data.attributes.url
   const article1ImageWidth = accounting.article1_image.data.attributes.width
   const article1ImageHeight = accounting.article1_image.data.attributes.height
   const article1ImageObj = {
@@ -35,7 +37,8 @@ export default async function Main() {
   }
 
   const article1TagImage =
-    process.env.STRAPI_URL + accounting.article1_number.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    accounting.article1_number.data.attributes.url
   const article1TagImageWidth = accounting.article1_number.data.attributes.width
   const article1TagImageHeight =
     accounting.article1_number.data.attributes.height
@@ -53,7 +56,8 @@ export default async function Main() {
   }
 
   const article2Image =
-    process.env.STRAPI_URL + accounting.article2_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    accounting.article2_image.data.attributes.url
   const article2ImageWidth = accounting.article2_image.data.attributes.width
   const article2ImageHeight = accounting.article2_image.data.attributes.height
   const article2ImageObj = {
@@ -63,7 +67,8 @@ export default async function Main() {
   }
 
   const article2TagImage =
-    process.env.STRAPI_URL + accounting.article2_number.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    accounting.article2_number.data.attributes.url
   const article2TagImageWidth = accounting.article2_number.data.attributes.width
   const article2TagImageHeight =
     accounting.article2_number.data.attributes.height
@@ -81,7 +86,8 @@ export default async function Main() {
   }
 
   const article3Image =
-    process.env.STRAPI_URL + accounting.article3_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    accounting.article3_image.data.attributes.url
   const article3ImageWidth = accounting.article3_image.data.attributes.width
   const article3ImageHeight = accounting.article3_image.data.attributes.height
   const article3ImageObj = {
@@ -91,7 +97,8 @@ export default async function Main() {
   }
 
   const article3TagImage =
-    process.env.STRAPI_URL + accounting.article3_number.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    accounting.article3_number.data.attributes.url
   const article3TagImageWidth = accounting.article3_number.data.attributes.width
   const article3TagImageHeight =
     accounting.article3_number.data.attributes.height
@@ -109,7 +116,8 @@ export default async function Main() {
   }
 
   const article4Image =
-    process.env.STRAPI_URL + accounting.article4_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    accounting.article4_image.data.attributes.url
   const article4ImageWidth = accounting.article4_image.data.attributes.width
   const article4ImageHeight = accounting.article4_image.data.attributes.height
   const article4ImageObj = {
@@ -119,7 +127,8 @@ export default async function Main() {
   }
 
   const article4TagImage =
-    process.env.STRAPI_URL + accounting.article4_number.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    accounting.article4_number.data.attributes.url
   const article4TagImageWidth = accounting.article4_number.data.attributes.width
   const article4TagImageHeight =
     accounting.article4_number.data.attributes.height
@@ -137,7 +146,8 @@ export default async function Main() {
   }
 
   const article5Image =
-    process.env.STRAPI_URL + accounting.article5_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    accounting.article5_image.data.attributes.url
   const article5ImageWidth = accounting.article5_image.data.attributes.width
   const article5ImageHeight = accounting.article1_image.data.attributes.height
   const article5ImageObj = {
@@ -147,7 +157,8 @@ export default async function Main() {
   }
 
   const article5TagImage =
-    process.env.STRAPI_URL + accounting.article5_number.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    accounting.article5_number.data.attributes.url
   const article5TagImageWidth = accounting.article5_number.data.attributes.width
   const article5TagImageHeight =
     accounting.article5_number.data.attributes.height
@@ -164,22 +175,26 @@ export default async function Main() {
   const service4 = accounting.service4
 
   const service1Image =
-    process.env.STRAPI_URL + accounting.service1_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    accounting.service1_image.data.attributes.url
   const service1ImageWidth = accounting.service1_image.data.attributes.width
   const service1ImageHeight = accounting.service1_image.data.attributes.height
 
   const service2Image =
-    process.env.STRAPI_URL + accounting.service2_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    accounting.service2_image.data.attributes.url
   const service2ImageWidth = accounting.service2_image.data.attributes.width
   const service2ImageHeight = accounting.service2_image.data.attributes.height
 
   const service3Image =
-    process.env.STRAPI_URL + accounting.service3_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    accounting.service3_image.data.attributes.url
   const service3ImageWidth = accounting.service3_image.data.attributes.width
   const service3ImageHeight = accounting.service3_image.data.attributes.height
 
   const service4Image =
-    process.env.STRAPI_URL + accounting.service4_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    accounting.service4_image.data.attributes.url
   const service4ImageWidth = accounting.service4_image.data.attributes.width
   const service4ImageHeight = accounting.service4_image.data.attributes.height
 
@@ -188,7 +203,8 @@ export default async function Main() {
 
   const table = accounting.table
   const tableImage =
-    process.env.STRAPI_URL + accounting.table_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    accounting.table_image.data.attributes.url
   const tableImageWidth = accounting.table_image.data.attributes.width
   const tableImageHeight = accounting.table_image.data.attributes.height
 

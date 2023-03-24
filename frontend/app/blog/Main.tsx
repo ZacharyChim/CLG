@@ -21,7 +21,7 @@ export default async function Main() {
                 <Image
                   alt={item.attributes.title}
                   src={
-                    process.env.STRAPI_URL +
+                    process.env.NEXT_PUBLIC_STRAPI_URL +
                     item.attributes.featuredImage.data.attributes.url
                   }
                   width={item.attributes.featuredImage.data.attributes.width}
@@ -32,7 +32,9 @@ export default async function Main() {
                 <div className='text-left px-4 py-2'>
                   <Link
                     href={
-                      process.env.SITE_URL + '/blog/' + item.attributes.slug
+                      process.env.NEXT_PUBLIC_SITE_URL +
+                      '/blog/' +
+                      item.attributes.slug
                     }
                   >
                     <h3 className='text-sm text-darkBrown'>
@@ -42,7 +44,9 @@ export default async function Main() {
 
                   <Link
                     href={
-                      process.env.SITE_URL + '/blog/' + item.attributes.slug
+                      process.env.NEXT_PUBLIC_SITE_URL +
+                      '/blog/' +
+                      item.attributes.slug
                     }
                     className='group mt-2 inline-flex gap-1 text-sm font-medium text-oceanBlue'
                   >

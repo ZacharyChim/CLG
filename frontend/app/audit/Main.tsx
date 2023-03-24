@@ -10,7 +10,8 @@ import Faqs from '../../components/Faqs'
 export default async function Main() {
   const audit = await fetchSingle('audit')
 
-  const auditTag = process.env.STRAPI_URL + audit.audit.data.attributes.url
+  const auditTag =
+    process.env.NEXT_PUBLIC_STRAPI_URL + audit.audit.data.attributes.url
   const auditTagWidth = audit.audit.data.attributes.width
   const auditTagHeight = audit.audit.data.attributes.height
 
@@ -24,7 +25,8 @@ export default async function Main() {
   }
 
   const article1Image =
-    process.env.STRAPI_URL + audit.article1_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    audit.article1_image.data.attributes.url
   const article1ImageWidth = audit.article1_image.data.attributes.width
   const article1ImageHeight = audit.article1_image.data.attributes.height
   const article1ImageObj = {
@@ -34,7 +36,8 @@ export default async function Main() {
   }
 
   const article1TagImage =
-    process.env.STRAPI_URL + audit.article1_number.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    audit.article1_number.data.attributes.url
   const article1TagImageWidth = audit.article1_number.data.attributes.width
   const article1TagImageHeight = audit.article1_number.data.attributes.height
   const article1TagImageObj = {
@@ -51,7 +54,8 @@ export default async function Main() {
   }
 
   const article2Image =
-    process.env.STRAPI_URL + audit.article2_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    audit.article2_image.data.attributes.url
   const article2ImageWidth = audit.article2_image.data.attributes.width
   const article2ImageHeight = audit.article2_image.data.attributes.height
   const article2ImageObj = {
@@ -61,7 +65,8 @@ export default async function Main() {
   }
 
   const article2TagImage =
-    process.env.STRAPI_URL + audit.article2_number.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    audit.article2_number.data.attributes.url
   const article2TagImageWidth = audit.article2_number.data.attributes.width
   const article2TagImageHeight = audit.article2_number.data.attributes.height
   const article2TagImageObj = {
@@ -78,32 +83,37 @@ export default async function Main() {
   const service5 = audit.service5
 
   const service1Image =
-    process.env.STRAPI_URL + audit.service1_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    audit.service1_image.data.attributes.url
   const service1ImageWidth = audit.service1_image.data.attributes.width
   const service1ImageHeight = audit.service1_image.data.attributes.height
 
   const service2Image =
-    process.env.STRAPI_URL + audit.service2_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    audit.service2_image.data.attributes.url
   const service2ImageWidth = audit.service2_image.data.attributes.width
   const service2ImageHeight = audit.service2_image.data.attributes.height
 
   const service3Image =
-    process.env.STRAPI_URL + audit.service3_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    audit.service3_image.data.attributes.url
   const service3ImageWidth = audit.service3_image.data.attributes.width
   const service3ImageHeight = audit.service3_image.data.attributes.height
 
   const service4Image =
-    process.env.STRAPI_URL + audit.service4_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    audit.service4_image.data.attributes.url
   const service4ImageWidth = audit.service4_image.data.attributes.width
   const service4ImageHeight = audit.service4_image.data.attributes.height
 
   const service5Image =
-    process.env.STRAPI_URL + audit.service5_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    audit.service5_image.data.attributes.url
   const service5ImageWidth = audit.service5_image.data.attributes.width
   const service5ImageHeight = audit.service5_image.data.attributes.height
 
   const tableImage =
-    process.env.STRAPI_URL + audit.audit_diagram.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + audit.audit_diagram.data.attributes.url
   const tableImageWidth = audit.audit_diagram.data.attributes.width
   const tableImageHeight = audit.audit_diagram.data.attributes.height
 

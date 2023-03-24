@@ -14,7 +14,7 @@ export default async function Main() {
   const ngo = await fetchSingle('ngo')
 
   const incorporation =
-    process.env.STRAPI_URL + ngo.incorporation.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + ngo.incorporation.data.attributes.url
   const incorporationWidth = ngo.incorporation.data.attributes.width
   const incorporationHeight = ngo.incorporation.data.attributes.height
   const tagObj = {
@@ -30,7 +30,7 @@ export default async function Main() {
     text: aboutContent,
   }
   const aboutImage =
-    process.env.STRAPI_URL + ngo.about_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + ngo.about_image.data.attributes.url
   const aboutImageWidth = ngo.about_image.data.attributes.width
   const aboutImageHeight = ngo.about_image.data.attributes.height
   const aboutImageObj = {
@@ -44,15 +44,15 @@ export default async function Main() {
   const purpose2 = ngo.purpose2
   const purpose3 = ngo.purpose3
   const purpose1Image =
-    process.env.STRAPI_URL + ngo.purpose1_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + ngo.purpose1_image.data.attributes.url
   const purpose1ImageWidth = ngo.purpose1_image.data.attributes.width
   const purpose1ImageHeight = ngo.purpose1_image.data.attributes.height
   const purpose2Image =
-    process.env.STRAPI_URL + ngo.purpose2_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + ngo.purpose2_image.data.attributes.url
   const purpose2ImageWidth = ngo.purpose2_image.data.attributes.width
   const purpose2ImageHeight = ngo.purpose2_image.data.attributes.height
   const purpose3Image =
-    process.env.STRAPI_URL + ngo.purpose3_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + ngo.purpose3_image.data.attributes.url
   const purpose3ImageWidth = ngo.purpose3_image.data.attributes.width
   const purpose3ImageHeight = ngo.purpose3_image.data.attributes.height
 
@@ -74,32 +74,32 @@ export default async function Main() {
   const service6 = ngo.service6
 
   const service1Image =
-    process.env.STRAPI_URL + ngo.service1_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + ngo.service1_image.data.attributes.url
   const service1ImageWidth = ngo.service1_image.data.attributes.width
   const service1ImageHeight = ngo.service1_image.data.attributes.height
 
   const service2Image =
-    process.env.STRAPI_URL + ngo.service2_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + ngo.service2_image.data.attributes.url
   const service2ImageWidth = ngo.service2_image.data.attributes.width
   const service2ImageHeight = ngo.service2_image.data.attributes.height
 
   const service3Image =
-    process.env.STRAPI_URL + ngo.service3_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + ngo.service3_image.data.attributes.url
   const service3ImageWidth = ngo.service3_image.data.attributes.width
   const service3ImageHeight = ngo.service3_image.data.attributes.height
 
   const service4Image =
-    process.env.STRAPI_URL + ngo.service4_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + ngo.service4_image.data.attributes.url
   const service4ImageWidth = ngo.service4_image.data.attributes.width
   const service4ImageHeight = ngo.service4_image.data.attributes.height
 
   const service5Image =
-    process.env.STRAPI_URL + ngo.service5_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + ngo.service5_image.data.attributes.url
   const service5ImageWidth = ngo.service5_image.data.attributes.width
   const service5ImageHeight = ngo.service5_image.data.attributes.height
 
   const service6Image =
-    process.env.STRAPI_URL + ngo.service6_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + ngo.service6_image.data.attributes.url
   const service6ImageWidth = ngo.service6_image.data.attributes.width
   const service6ImageHeight = ngo.service6_image.data.attributes.height
 

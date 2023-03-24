@@ -10,11 +10,12 @@ export default async function Main() {
   const dBiz = await fetchSingle('d-biz')
 
   const fundingAudit =
-    process.env.STRAPI_URL + dBiz.funding_audit.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + dBiz.funding_audit.data.attributes.url
   const fundingAuditWidth = dBiz.funding_audit.data.attributes.width
   const fundingAuditHeight = dBiz.funding_audit.data.attributes.height
 
-  const award = process.env.STRAPI_URL + dBiz.award.data.attributes.url
+  const award =
+    process.env.NEXT_PUBLIC_STRAPI_URL + dBiz.award.data.attributes.url
   const awardWidth = dBiz.award.data.attributes.width
   const awardHeight = dBiz.award.data.attributes.height
   const subsidyBold = dBiz.subsidy_bold
@@ -24,29 +25,37 @@ export default async function Main() {
   const capBold = dBiz.cap_bold
   const capText = dBiz.cap_text
 
-  const image1 = process.env.STRAPI_URL + dBiz.image1.data.attributes.url
+  const image1 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + dBiz.image1.data.attributes.url
   const image1Width = dBiz.image1.data.attributes.width
   const image1Height = dBiz.image1.data.attributes.height
-  const image2 = process.env.STRAPI_URL + dBiz.image2.data.attributes.url
+  const image2 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + dBiz.image2.data.attributes.url
   const image2Width = dBiz.image2.data.attributes.width
   const image2Height = dBiz.image2.data.attributes.height
-  const image3 = process.env.STRAPI_URL + dBiz.image3.data.attributes.url
+  const image3 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + dBiz.image3.data.attributes.url
   const image3Width = dBiz.image3.data.attributes.width
   const image3Height = dBiz.image3.data.attributes.height
-  const image4 = process.env.STRAPI_URL + dBiz.image4.data.attributes.url
+  const image4 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + dBiz.image4.data.attributes.url
   const image4Width = dBiz.image4.data.attributes.width
   const image4Height = dBiz.image4.data.attributes.height
 
-  const title1 = process.env.STRAPI_URL + dBiz.title1.data.attributes.url
+  const title1 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + dBiz.title1.data.attributes.url
   const title1Width = dBiz.title1.data.attributes.width
   const title1Height = dBiz.title1.data.attributes.height
-  const title2 = process.env.STRAPI_URL + dBiz.title2.data.attributes.url
+  const title2 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + dBiz.title2.data.attributes.url
   const title2Width = dBiz.title2.data.attributes.width
   const title2Height = dBiz.title2.data.attributes.height
-  const title3 = process.env.STRAPI_URL + dBiz.title3.data.attributes.url
+  const title3 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + dBiz.title3.data.attributes.url
   const title3Width = dBiz.title3.data.attributes.width
   const title3Height = dBiz.title3.data.attributes.height
-  const title4 = process.env.STRAPI_URL + dBiz.title4.data.attributes.url
+  const title4 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + dBiz.title4.data.attributes.url
   const title4Width = dBiz.title4.data.attributes.width
   const title4Height = dBiz.title4.data.attributes.height
 

@@ -12,35 +12,40 @@ export default async function Main() {
   const benefitTitle = singapore.benefit_title
 
   const incorporation =
-    process.env.STRAPI_URL + singapore.incorporation.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    singapore.incorporation.data.attributes.url
   const incorporationWidth = singapore.incorporation.data.attributes.width
   const incorporationHeight = singapore.incorporation.data.attributes.height
 
   const benefit1Title = singapore.benefit1_title
   const benefit1Content = singapore.benefit1_content
   const benefit1Image =
-    process.env.STRAPI_URL + singapore.benefit1_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    singapore.benefit1_image.data.attributes.url
   const benefit1ImageWidth = singapore.benefit1_image.data.attributes.width
   const benefit1ImageHeight = singapore.benefit1_image.data.attributes.height
 
   const benefit2Title = singapore.benefit2_title
   const benefit2Content = singapore.benefit2_content
   const benefit2Image =
-    process.env.STRAPI_URL + singapore.benefit2_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    singapore.benefit2_image.data.attributes.url
   const benefit2ImageWidth = singapore.benefit2_image.data.attributes.width
   const benefit2ImageHeight = singapore.benefit2_image.data.attributes.height
 
   const benefit3Title = singapore.benefit3_title
   const benefit3Content = singapore.benefit3_content
   const benefit3Image =
-    process.env.STRAPI_URL + singapore.benefit3_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    singapore.benefit3_image.data.attributes.url
   const benefit3ImageWidth = singapore.benefit3_image.data.attributes.width
   const benefit3ImageHeight = singapore.benefit3_image.data.attributes.height
 
   const benefit4Title = singapore.benefit4_title
   const benefit4Content = singapore.benefit4_content
   const benefit4Image =
-    process.env.STRAPI_URL + singapore.benefit4_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    singapore.benefit4_image.data.attributes.url
   const benefit4ImageWidth = singapore.benefit4_image.data.attributes.width
   const benefit4ImageHeight = singapore.benefit4_image.data.attributes.height
 

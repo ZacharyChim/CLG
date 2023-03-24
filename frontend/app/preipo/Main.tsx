@@ -7,34 +7,41 @@ import { fetchSingle, richTextReducer, trimTitle } from '../../lib/utils'
 export default async function Main() {
   const preipo = await fetchSingle('pre-ipo')
 
-  const advisory = process.env.STRAPI_URL + preipo.advisory.data.attributes.url
+  const advisory =
+    process.env.NEXT_PUBLIC_STRAPI_URL + preipo.advisory.data.attributes.url
   const advisoryWidth = preipo.advisory.data.attributes.width
   const advisoryHeight = preipo.advisory.data.attributes.height
 
   const aboutImage =
-    process.env.STRAPI_URL + preipo.about_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + preipo.about_image.data.attributes.url
   const aboutWidth = preipo.about_image.data.attributes.width
   const aboutHeight = preipo.about_image.data.attributes.height
 
-  const image1 = process.env.STRAPI_URL + preipo.image1.data.attributes.url
+  const image1 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + preipo.image1.data.attributes.url
   const image1Width = preipo.image1.data.attributes.width
   const image1Height = preipo.image1.data.attributes.height
 
-  const image2 = process.env.STRAPI_URL + preipo.image2.data.attributes.url
+  const image2 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + preipo.image2.data.attributes.url
   const image2Width = preipo.image2.data.attributes.width
   const image2Height = preipo.image2.data.attributes.height
 
-  const image3 = process.env.STRAPI_URL + preipo.image3.data.attributes.url
+  const image3 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + preipo.image3.data.attributes.url
   const image3Width = preipo.image3.data.attributes.width
   const image3Height = preipo.image3.data.attributes.height
 
-  const number1 = process.env.STRAPI_URL + preipo.number1.data.attributes.url
+  const number1 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + preipo.number1.data.attributes.url
   const number1Width = preipo.number1.data.attributes.width
   const number1Height = preipo.number1.data.attributes.height
-  const number2 = process.env.STRAPI_URL + preipo.number2.data.attributes.url
+  const number2 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + preipo.number2.data.attributes.url
   const number2Width = preipo.number2.data.attributes.width
   const number2Height = preipo.number2.data.attributes.height
-  const number3 = process.env.STRAPI_URL + preipo.number3.data.attributes.url
+  const number3 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + preipo.number3.data.attributes.url
   const number3Width = preipo.number3.data.attributes.width
   const number3Height = preipo.number3.data.attributes.height
 

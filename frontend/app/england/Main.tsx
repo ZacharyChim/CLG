@@ -12,42 +12,48 @@ export default async function Main() {
   const benefitTitle = england.benefit_title
 
   const incorporation =
-    process.env.STRAPI_URL + england.incorporation.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    england.incorporation.data.attributes.url
   const incorporationWidth = england.incorporation.data.attributes.width
   const incorporationHeight = england.incorporation.data.attributes.height
 
   const benefit1Title = england.benefit1_title
   const benefit1Content = england.benefit1_content
   const benefit1Image =
-    process.env.STRAPI_URL + england.benefit1_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    england.benefit1_image.data.attributes.url
   const benefit1ImageWidth = england.benefit1_image.data.attributes.width
   const benefit1ImageHeight = england.benefit1_image.data.attributes.height
 
   const benefit2Title = england.benefit2_title
   const benefit2Content = england.benefit2_content
   const benefit2Image =
-    process.env.STRAPI_URL + england.benefit2_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    england.benefit2_image.data.attributes.url
   const benefit2ImageWidth = england.benefit2_image.data.attributes.width
   const benefit2ImageHeight = england.benefit2_image.data.attributes.height
 
   const benefit3Title = england.benefit3_title
   const benefit3Content = england.benefit3_content
   const benefit3Image =
-    process.env.STRAPI_URL + england.benefit3_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    england.benefit3_image.data.attributes.url
   const benefit3ImageWidth = england.benefit3_image.data.attributes.width
   const benefit3ImageHeight = england.benefit3_image.data.attributes.height
 
   const benefit4Title = england.benefit4_title
   const benefit4Content = england.benefit4_content
   const benefit4Image =
-    process.env.STRAPI_URL + england.benefit4_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    england.benefit4_image.data.attributes.url
   const benefit4ImageWidth = england.benefit4_image.data.attributes.width
   const benefit4ImageHeight = england.benefit4_image.data.attributes.height
 
   const benefit5Title = england.benefit5_title
   const benefit5Content = england.benefit5_content
   const benefit5Image =
-    process.env.STRAPI_URL + england.benefit5_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    england.benefit5_image.data.attributes.url
   const benefit5ImageWidth = england.benefit5_image.data.attributes.width
   const benefit5ImageHeight = england.benefit5_image.data.attributes.height
 

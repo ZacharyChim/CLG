@@ -5,7 +5,9 @@ import Link from 'next/link'
 import Navigation from './Navigation'
 
 const fetchMenu = async () => {
-  const res = await fetch(`${process.env.STRAPI_API_URL}/navigation/render/2`)
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/navigation/render/2`
+  )
 
   const menu = await res.json()
 
@@ -14,7 +16,7 @@ const fetchMenu = async () => {
 
 const fetchLogo = async () => {
   const logo = await fetch(
-    `${process.env.STRAPI_API_URL}/top-menu?populate=%2A`
+    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/top-menu?populate=%2A`
   )
   const logoJSON = await logo.json()
 
@@ -29,7 +31,7 @@ async function Header() {
   const menu = await fetchMenu()
   const parentMenu = menu.filter((item) => item.parent === null)
   const logo = await fetchLogo()
-  const logoURL = process.env.STRAPI_URL + logo
+  const logoURL = process.env.NEXT_PUBLIC_STRAPI_URL + logo
   return (
     <>
       <header>

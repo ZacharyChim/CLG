@@ -6,7 +6,9 @@ import footerCurve from '../public/footer-curve.png'
 import BackToTop from './BackToTop'
 
 const fetchFooter = async () => {
-  const res = await fetch(`${process.env.STRAPI_API_URL}/footer?populate=%2A`)
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/footer?populate=%2A`
+  )
 
   const footer = await res.json()
   return footer.data.attributes
@@ -14,7 +16,7 @@ const fetchFooter = async () => {
 
 const fetchSocial = async () => {
   const res = await fetch(
-    `${process.env.STRAPI_API_URL}/footer?populate[0]=SocialIcons&populate[1]=SocialIcons.Icon&populate[2]=seoData.Icon.media`
+    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/footer?populate[0]=SocialIcons&populate[1]=SocialIcons.Icon&populate[2]=seoData.Icon.media`
   )
 
   const social = await res.json()
@@ -22,7 +24,9 @@ const fetchSocial = async () => {
 }
 
 const fetchLinks = async () => {
-  const res = await fetch(`${process.env.STRAPI_API_URL}/navigation/render/1`)
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/navigation/render/1`
+  )
 
   const links = await res.json()
   return links
@@ -41,7 +45,8 @@ async function Footer() {
     (item) => item.parent.id === 19
   )
   const linkCloud = linkWithParent.filter((item) => item.parent.id === 20)
-  const logoURL = process.env.STRAPI_URL + footer.LogoWhite.data.attributes.url
+  const logoURL =
+    process.env.NEXT_PUBLIC_STRAPI_URL + footer.LogoWhite.data.attributes.url
   const logoWidth = footer.LogoWhite.data.attributes.width
   const logoHeight = footer.LogoWhite.data.attributes.height
   const social = await fetchSocial()
@@ -78,7 +83,7 @@ async function Footer() {
                   >
                     <span className='w-1/12'>
                       <Image
-                        src={`${process.env.STRAPI_URL}${icon.iconURL}`}
+                        src={`${process.env.NEXT_PUBLIC_STRAPI_URL}${icon.iconURL}`}
                         alt=''
                         width={28}
                         height={28}

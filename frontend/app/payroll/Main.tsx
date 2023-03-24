@@ -15,7 +15,8 @@ export default async function Main() {
   const payroll = await fetchSingle('payroll')
 
   const payrollTag =
-    process.env.STRAPI_URL + payroll.cloud_solutions.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    payroll.cloud_solutions.data.attributes.url
   const payrollTagWidth = payroll.cloud_solutions.data.attributes.width
   const payrollTagHeight = payroll.cloud_solutions.data.attributes.height
 
@@ -29,7 +30,8 @@ export default async function Main() {
   }
 
   const article1Image =
-    process.env.STRAPI_URL + payroll.article1_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    payroll.article1_image.data.attributes.url
   const article1ImageWidth = payroll.article1_image.data.attributes.width
   const article1ImageHeight = payroll.article1_image.data.attributes.height
   const article1ImageObj = {
@@ -39,7 +41,8 @@ export default async function Main() {
   }
 
   const article1TagImage =
-    process.env.STRAPI_URL + payroll.article1_number.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    payroll.article1_number.data.attributes.url
   const article1TagImageWidth = payroll.article1_number.data.attributes.width
   const article1TagImageHeight = payroll.article1_number.data.attributes.height
   const article1TagImageObj = {
@@ -56,7 +59,8 @@ export default async function Main() {
   }
 
   const article2Image =
-    process.env.STRAPI_URL + payroll.article2_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    payroll.article2_image.data.attributes.url
   const article2ImageWidth = payroll.article2_image.data.attributes.width
   const article2ImageHeight = payroll.article2_image.data.attributes.height
   const article2ImageObj = {
@@ -66,7 +70,8 @@ export default async function Main() {
   }
 
   const article2TagImage =
-    process.env.STRAPI_URL + payroll.article2_number.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    payroll.article2_number.data.attributes.url
   const article2TagImageWidth = payroll.article2_number.data.attributes.width
   const article2TagImageHeight = payroll.article2_number.data.attributes.height
   const article2TagImageObj = {
@@ -83,7 +88,8 @@ export default async function Main() {
   }
 
   const article3Image =
-    process.env.STRAPI_URL + payroll.article3_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    payroll.article3_image.data.attributes.url
   const article3ImageWidth = payroll.article3_image.data.attributes.width
   const article3ImageHeight = payroll.article3_image.data.attributes.height
   const article3ImageObj = {
@@ -93,7 +99,8 @@ export default async function Main() {
   }
 
   const article3TagImage =
-    process.env.STRAPI_URL + payroll.article3_number.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    payroll.article3_number.data.attributes.url
   const article3TagImageWidth = payroll.article3_number.data.attributes.width
   const article3TagImageHeight = payroll.article3_number.data.attributes.height
   const article3TagImageObj = {
@@ -110,7 +117,8 @@ export default async function Main() {
   }
 
   const article4Image =
-    process.env.STRAPI_URL + payroll.article4_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    payroll.article4_image.data.attributes.url
   const article4ImageWidth = payroll.article4_image.data.attributes.width
   const article4ImageHeight = payroll.article4_image.data.attributes.height
   const article4ImageObj = {
@@ -120,7 +128,8 @@ export default async function Main() {
   }
 
   const article4TagImage =
-    process.env.STRAPI_URL + payroll.article4_number.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    payroll.article4_number.data.attributes.url
   const article4TagImageWidth = payroll.article4_number.data.attributes.width
   const article4TagImageHeight = payroll.article4_number.data.attributes.height
   const article4TagImageObj = {
@@ -137,7 +146,8 @@ export default async function Main() {
   }
 
   const article5Image =
-    process.env.STRAPI_URL + payroll.article5_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    payroll.article5_image.data.attributes.url
   const article5ImageWidth = payroll.article5_image.data.attributes.width
   const article5ImageHeight = payroll.article1_image.data.attributes.height
   const article5ImageObj = {
@@ -147,7 +157,8 @@ export default async function Main() {
   }
 
   const article5TagImage =
-    process.env.STRAPI_URL + payroll.article5_number.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    payroll.article5_number.data.attributes.url
   const article5TagImageWidth = payroll.article5_number.data.attributes.width
   const article5TagImageHeight = payroll.article5_number.data.attributes.height
   const article5TagImageObj = {
@@ -163,27 +174,31 @@ export default async function Main() {
   const service4 = payroll.service4
 
   const service1Image =
-    process.env.STRAPI_URL + payroll.service1_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    payroll.service1_image.data.attributes.url
   const service1ImageWidth = payroll.service1_image.data.attributes.width
   const service1ImageHeight = payroll.service1_image.data.attributes.height
 
   const service2Image =
-    process.env.STRAPI_URL + payroll.service2_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    payroll.service2_image.data.attributes.url
   const service2ImageWidth = payroll.service2_image.data.attributes.width
   const service2ImageHeight = payroll.service2_image.data.attributes.height
 
   const service3Image =
-    process.env.STRAPI_URL + payroll.service3_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    payroll.service3_image.data.attributes.url
   const service3ImageWidth = payroll.service3_image.data.attributes.width
   const service3ImageHeight = payroll.service3_image.data.attributes.height
 
   const service4Image =
-    process.env.STRAPI_URL + payroll.service4_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    payroll.service4_image.data.attributes.url
   const service4ImageWidth = payroll.service4_image.data.attributes.width
   const service4ImageHeight = payroll.service4_image.data.attributes.height
 
   const tableImage =
-    process.env.STRAPI_URL + payroll.table_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + payroll.table_image.data.attributes.url
   const tableImageWidth = payroll.table_image.data.attributes.width
   const tableImageHeight = payroll.table_image.data.attributes.height
 

@@ -17,7 +17,7 @@ export default async function Main() {
     text: aboutText,
   }
   const aboutImage =
-    process.env.STRAPI_URL + bud.about_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + bud.about_image.data.attributes.url
   const aboutImageWidth = bud.about_image.data.attributes.width
   const aboutImageHeight = bud.about_image.data.attributes.height
   const aboutImageObj = {
@@ -27,7 +27,7 @@ export default async function Main() {
   }
 
   const aboutTagImage =
-    process.env.STRAPI_URL + bud.funding_audit.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + bud.funding_audit.data.attributes.url
   const aboutTagImageWidth = bud.funding_audit.data.attributes.width
   const aboutTagImageHeight = bud.funding_audit.data.attributes.height
   const aboutTagImageObj = {
@@ -53,7 +53,7 @@ export default async function Main() {
   }
 
   const article1Image =
-    process.env.STRAPI_URL + bud.article1_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + bud.article1_image.data.attributes.url
   const article1ImageWidth = bud.article1_image.data.attributes.width
   const article1ImageHeight = bud.article1_image.data.attributes.height
   const article1ImageObj = {
@@ -63,7 +63,7 @@ export default async function Main() {
   }
 
   const article1TagImage =
-    process.env.STRAPI_URL + bud.article1_number.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + bud.article1_number.data.attributes.url
   const article1TagImageWidth = bud.article1_number.data.attributes.width
   const article1TagImageHeight = bud.article1_number.data.attributes.height
   const article1TagImageObj = {
@@ -80,7 +80,7 @@ export default async function Main() {
   }
 
   const article2Image =
-    process.env.STRAPI_URL + bud.article2_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + bud.article2_image.data.attributes.url
   const article2ImageWidth = bud.article2_image.data.attributes.width
   const article2ImageHeight = bud.article2_image.data.attributes.height
   const article2ImageObj = {
@@ -90,7 +90,7 @@ export default async function Main() {
   }
 
   const article2TagImage =
-    process.env.STRAPI_URL + bud.article2_number.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + bud.article2_number.data.attributes.url
   const article2TagImageWidth = bud.article2_number.data.attributes.width
   const article2TagImageHeight = bud.article2_number.data.attributes.height
   const article2TagImageObj = {

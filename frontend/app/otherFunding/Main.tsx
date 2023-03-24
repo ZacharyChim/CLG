@@ -7,30 +7,33 @@ import { fetchSingle, richTextReducer, trimTitle } from '../../lib/utils'
 export default async function Main() {
   const otherFunding = await fetchSingle('other-funding')
   const image1 =
-    process.env.STRAPI_URL + otherFunding.image1.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + otherFunding.image1.data.attributes.url
   const image1Width = otherFunding.image1.data.attributes.width
   const image1Height = otherFunding.image1.data.attributes.height
 
   const image2 =
-    process.env.STRAPI_URL + otherFunding.image2.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + otherFunding.image2.data.attributes.url
   const image2Width = otherFunding.image2.data.attributes.width
   const image2Height = otherFunding.image2.data.attributes.height
 
   const image3 =
-    process.env.STRAPI_URL + otherFunding.image3.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + otherFunding.image3.data.attributes.url
   const image3Width = otherFunding.image3.data.attributes.width
   const image3Height = otherFunding.image3.data.attributes.height
 
   const number1 =
-    process.env.STRAPI_URL + otherFunding.number1.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    otherFunding.number1.data.attributes.url
   const number1Width = otherFunding.number1.data.attributes.width
   const number1Height = otherFunding.number1.data.attributes.height
   const number2 =
-    process.env.STRAPI_URL + otherFunding.number2.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    otherFunding.number2.data.attributes.url
   const number2Width = otherFunding.number2.data.attributes.width
   const number2Height = otherFunding.number2.data.attributes.height
   const number3 =
-    process.env.STRAPI_URL + otherFunding.number3.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    otherFunding.number3.data.attributes.url
   const number3Width = otherFunding.number3.data.attributes.width
   const number3Height = otherFunding.number3.data.attributes.height
 

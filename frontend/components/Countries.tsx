@@ -3,7 +3,9 @@ import earth from '../public/earth.png'
 import { v4 } from 'uuid'
 
 const fetchLinks = async () => {
-  const res = await fetch(`${process.env.STRAPI_API_URL}/navigation/render/3`)
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/navigation/render/3`
+  )
 
   const links = await res.json()
   return links

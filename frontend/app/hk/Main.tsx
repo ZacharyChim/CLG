@@ -19,22 +19,22 @@ export default async function Main() {
   const service4 = hk.service4_title
 
   const service1Image =
-    process.env.STRAPI_URL + hk.service1_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + hk.service1_image.data.attributes.url
   const service1ImageWidth = hk.service1_image.data.attributes.width
   const service1ImageHeight = hk.service1_image.data.attributes.height
 
   const service2Image =
-    process.env.STRAPI_URL + hk.service2_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + hk.service2_image.data.attributes.url
   const service2ImageWidth = hk.service2_image.data.attributes.width
   const service2ImageHeight = hk.service2_image.data.attributes.height
 
   const service3Image =
-    process.env.STRAPI_URL + hk.service3_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + hk.service3_image.data.attributes.url
   const service3ImageWidth = hk.service3_image.data.attributes.width
   const service3ImageHeight = hk.service3_image.data.attributes.height
 
   const service4Image =
-    process.env.STRAPI_URL + hk.service4_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + hk.service4_image.data.attributes.url
   const service4ImageWidth = hk.service4_image.data.attributes.width
   const service4ImageHeight = hk.service4_image.data.attributes.height
 

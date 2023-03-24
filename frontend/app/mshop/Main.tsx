@@ -10,32 +10,37 @@ export default async function Main() {
   const mshop = await fetchSingle('mshop')
 
   const cloudSolutions =
-    process.env.STRAPI_URL + mshop.cloud_solutions.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    mshop.cloud_solutions.data.attributes.url
   const cloudSolutionsWidth = mshop.cloud_solutions.data.attributes.width
   const cloudSolutionsHeight = mshop.cloud_solutions.data.attributes.height
   const aboutTitle = mshop.about_title
   const aboutText = richTextReducer(mshop.about_text)
   const aboutImage =
-    process.env.STRAPI_URL + mshop.about_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + mshop.about_image.data.attributes.url
   const aboutWidth = mshop.about_image.data.attributes.width
   const aboutHeight = mshop.about_image.data.attributes.height
 
   const services = mshop.services
 
   const image1 =
-    process.env.STRAPI_URL + mshop.service1_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    mshop.service1_image.data.attributes.url
   const image1Width = mshop.service1_image.data.attributes.width
   const image1Height = mshop.service1_image.data.attributes.height
   const image2 =
-    process.env.STRAPI_URL + mshop.service2_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    mshop.service2_image.data.attributes.url
   const image2Width = mshop.service2_image.data.attributes.width
   const image2Height = mshop.service2_image.data.attributes.height
   const image3 =
-    process.env.STRAPI_URL + mshop.service3_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    mshop.service3_image.data.attributes.url
   const image3Width = mshop.service3_image.data.attributes.width
   const image3Height = mshop.service3_image.data.attributes.height
   const image4 =
-    process.env.STRAPI_URL + mshop.service4_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    mshop.service4_image.data.attributes.url
   const image4Width = mshop.service4_image.data.attributes.width
   const image4Height = mshop.service4_image.data.attributes.height
 
@@ -51,7 +56,7 @@ export default async function Main() {
 
   const features = mshop.features
   const featureImage =
-    process.env.STRAPI_URL + mshop.feature_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + mshop.feature_image.data.attributes.url
   const featureImageWidth = mshop.feature_image.data.attributes.width
   const featureImageHeight = mshop.feature_image.data.attributes.height
 

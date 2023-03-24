@@ -9,31 +9,33 @@ export default async function Main() {
   const receipt = await fetchSingle('receipt')
 
   const cloudSolutions =
-    process.env.STRAPI_URL + receipt.cloud_solutions.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    receipt.cloud_solutions.data.attributes.url
   const cloudSolutionsWidth = receipt.cloud_solutions.data.attributes.width
   const cloudSolutionsHeight = receipt.cloud_solutions.data.attributes.height
   const aboutTitle = receipt.about_title
   const aboutText = richTextReducer(receipt.about_text)
   const aboutImage =
-    process.env.STRAPI_URL + receipt.about_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + receipt.about_image.data.attributes.url
   const aboutWidth = receipt.about_image.data.attributes.width
   const aboutHeight = receipt.about_image.data.attributes.height
 
   const steps = receipt.steps
 
   const image1 =
-    process.env.STRAPI_URL + receipt.step_image1.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + receipt.step_image1.data.attributes.url
   const image1Width = receipt.step_image1.data.attributes.width
   const image1Height = receipt.step_image1.data.attributes.height
   const image2 =
-    process.env.STRAPI_URL + receipt.step_image2.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + receipt.step_image2.data.attributes.url
   const image2Width = receipt.step_image2.data.attributes.width
   const image2Height = receipt.step_image2.data.attributes.height
   const image3 =
-    process.env.STRAPI_URL + receipt.step_image3.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + receipt.step_image3.data.attributes.url
   const image3Width = receipt.step_image3.data.attributes.width
   const image3Height = receipt.step_image3.data.attributes.height
-  const arrow = process.env.STRAPI_URL + receipt.step_arrow.data.attributes.url
+  const arrow =
+    process.env.NEXT_PUBLIC_STRAPI_URL + receipt.step_arrow.data.attributes.url
   const arrowWidth = receipt.step_arrow.data.attributes.width
   const arrowHeight = receipt.step_arrow.data.attributes.height
 
@@ -44,23 +46,28 @@ export default async function Main() {
   const features = receipt.title
 
   const featureImage1 =
-    process.env.STRAPI_URL + receipt.feature_image1.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    receipt.feature_image1.data.attributes.url
   const featureImage1Width = receipt.feature_image1.data.attributes.width
   const featureImage1Height = receipt.feature_image1.data.attributes.height
   const featureImage2 =
-    process.env.STRAPI_URL + receipt.feature_image2.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    receipt.feature_image2.data.attributes.url
   const featureImage2Width = receipt.feature_image2.data.attributes.width
   const featureImage2Height = receipt.feature_image2.data.attributes.height
   const featureImage3 =
-    process.env.STRAPI_URL + receipt.feature_image3.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    receipt.feature_image3.data.attributes.url
   const featureImage3Width = receipt.feature_image3.data.attributes.width
   const featureImage3Height = receipt.feature_image3.data.attributes.height
   const featureImage4 =
-    process.env.STRAPI_URL + receipt.feature_image4.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    receipt.feature_image4.data.attributes.url
   const featureImage4Width = receipt.feature_image4.data.attributes.width
   const featureImage4Height = receipt.feature_image4.data.attributes.height
   const featureImage5 =
-    process.env.STRAPI_URL + receipt.feature_image5.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    receipt.feature_image5.data.attributes.url
   const featureImage5Width = receipt.feature_image5.data.attributes.width
   const featureImage5Height = receipt.feature_image5.data.attributes.height
 

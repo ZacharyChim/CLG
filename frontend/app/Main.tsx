@@ -12,7 +12,7 @@ import Contact from '../components/Contact'
 
 const fetchData = async () => {
   const res = await fetch(
-    `${process.env.STRAPI_API_URL}/home-page?populate=%2A`
+    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/home-page?populate=%2A`
   )
 
   const resData = await res.json()
@@ -21,7 +21,7 @@ const fetchData = async () => {
 
 const fetchDesc = async () => {
   const res = await fetch(
-    `${process.env.STRAPI_API_URL}/home-page?populate[0]=ImageDescLeft&populate[1]=ImageDescLeft.Image&populate[2]=ImageDescRight&populate[3]=ImageDescRight.Image&populate[4]=ImageDescLeft.ImageTitle&populate[5]=ImageDescRight.ImageTitle`
+    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/home-page?populate[0]=ImageDescLeft&populate[1]=ImageDescLeft.Image&populate[2]=ImageDescRight&populate[3]=ImageDescRight.Image&populate[4]=ImageDescLeft.ImageTitle&populate[5]=ImageDescRight.ImageTitle`
   )
 
   const resData = await res.json()
@@ -34,11 +34,12 @@ export default async function Main() {
   const allCases = await fetchCollection('cases')
   const newCases = allCases.filter((item) => item.id < 4)
 
-  const commaURL = process.env.STRAPI_URL + data.comma.data.attributes.url
+  const commaURL =
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.comma.data.attributes.url
 
   const desc = await fetchDesc()
   const descLeftURL =
-    process.env.STRAPI_URL +
+    process.env.NEXT_PUBLIC_STRAPI_URL +
     desc.data.attributes.ImageDescLeft.Image.data.attributes.url
   const descLeftWidth =
     desc.data.attributes.ImageDescLeft.Image.data.attributes.width
@@ -46,7 +47,7 @@ export default async function Main() {
     desc.data.attributes.ImageDescLeft.Image.data.attributes.height
 
   const descLeftTitleURL =
-    process.env.STRAPI_URL +
+    process.env.NEXT_PUBLIC_STRAPI_URL +
     desc.data.attributes.ImageDescLeft.ImageTitle.data.attributes.url
   const descLeftTitleWidth =
     desc.data.attributes.ImageDescLeft.ImageTitle.data.attributes.width
@@ -54,7 +55,7 @@ export default async function Main() {
     desc.data.attributes.ImageDescLeft.ImageTitle.data.attributes.height
 
   const descRightTitleURL =
-    process.env.STRAPI_URL +
+    process.env.NEXT_PUBLIC_STRAPI_URL +
     desc.data.attributes.ImageDescRight.ImageTitle.data.attributes.url
   const descRightTitleWidth =
     desc.data.attributes.ImageDescRight.ImageTitle.data.attributes.width
@@ -62,28 +63,31 @@ export default async function Main() {
     desc.data.attributes.ImageDescRight.ImageTitle.data.attributes.height
 
   const descRightURL =
-    process.env.STRAPI_URL +
+    process.env.NEXT_PUBLIC_STRAPI_URL +
     desc.data.attributes.ImageDescRight.Image.data.attributes.url
   const descRightWidth =
     desc.data.attributes.ImageDescRight.Image.data.attributes.width
   const descRightHeight =
     desc.data.attributes.ImageDescRight.Image.data.attributes.height
 
-  const expURL = process.env.STRAPI_URL + data.experience.data.attributes.url
+  const expURL =
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.experience.data.attributes.url
   const expWidth = data.experience.data.attributes.width
   const expHeight = data.experience.data.attributes.height
 
   const expNumber = data.experienceNumber
   const expText = data.experienceText
 
-  const clientURL = process.env.STRAPI_URL + data.client.data.attributes.url
+  const clientURL =
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.client.data.attributes.url
   const clientWidth = data.client.data.attributes.width
   const clientHeight = data.client.data.attributes.height
 
   const clientNumber = data.clientNumber
   const clientText = data.clientText
 
-  const awardURL = process.env.STRAPI_URL + data.award.data.attributes.url
+  const awardURL =
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.award.data.attributes.url
   const awardWidth = data.award.data.attributes.width
   const awardHeight = data.award.data.attributes.height
 
@@ -91,12 +95,13 @@ export default async function Main() {
   const awardText = data.awardText
   const awardDesc = data.awardDesc
 
-  const xeroURL = process.env.STRAPI_URL + data.xero.data.attributes.url
+  const xeroURL =
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.xero.data.attributes.url
   const xeroWidth = data.xero.data.attributes.width
   const xeroHeight = data.xero.data.attributes.height
 
   const xeroSilverURL =
-    process.env.STRAPI_URL + data.xeroSilver.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.xeroSilver.data.attributes.url
   const xeroSilverWidth = data.xeroSilver.data.attributes.width
   const xeroSilverHeight = data.xeroSilver.data.attributes.height
 
@@ -114,41 +119,44 @@ export default async function Main() {
   const solution = data.solution
 
   const incorporationURL =
-    process.env.STRAPI_URL + data.incorporationImage.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    data.incorporationImage.data.attributes.url
   const incorporationWidth = data.incorporationImage.data.attributes.width
   const incorporationHeight = data.incorporationImage.data.attributes.height
 
   const secretaryURL =
-    process.env.STRAPI_URL + data.secretaryImage.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.secretaryImage.data.attributes.url
   const secretaryWidth = data.secretaryImage.data.attributes.width
   const secretaryHeight = data.secretaryImage.data.attributes.height
 
   const accountingURL =
-    process.env.STRAPI_URL + data.accountingImage.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    data.accountingImage.data.attributes.url
   const accountingWidth = data.accountingImage.data.attributes.width
   const accountingHeight = data.accountingImage.data.attributes.height
 
   const taxationURL =
-    process.env.STRAPI_URL + data.taxationImage.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.taxationImage.data.attributes.url
   const taxationWidth = data.taxationImage.data.attributes.width
   const taxationHeight = data.taxationImage.data.attributes.height
 
   const auditingURL =
-    process.env.STRAPI_URL + data.auditingImage.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.auditingImage.data.attributes.url
   const auditingWidth = data.auditingImage.data.attributes.width
   const auditingHeight = data.auditingImage.data.attributes.height
 
   const fundingURL =
-    process.env.STRAPI_URL + data.fundingImage.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.fundingImage.data.attributes.url
   const fundingWidth = data.fundingImage.data.attributes.width
   const fundingHeight = data.fundingImage.data.attributes.height
 
-  const cloudURL = process.env.STRAPI_URL + data.cloudImage.data.attributes.url
+  const cloudURL =
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.cloudImage.data.attributes.url
   const cloudWidth = data.cloudImage.data.attributes.width
   const cloudHeight = data.cloudImage.data.attributes.height
 
   const solutionURL =
-    process.env.STRAPI_URL + data.solutionImage.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.solutionImage.data.attributes.url
   const solutionWidth = data.solutionImage.data.attributes.width
   const solutionHeight = data.solutionImage.data.attributes.height
 
@@ -156,63 +164,73 @@ export default async function Main() {
   const partnershipDesc = data.partnershipDesc
 
   const workstemURL =
-    process.env.STRAPI_URL + data.workstemLogo.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.workstemLogo.data.attributes.url
   const workstemWidth = data.workstemLogo.data.attributes.width
   const workstemHeight = data.workstemLogo.data.attributes.height
 
-  const hubdocURL = process.env.STRAPI_URL + data.hubdocLogo.data.attributes.url
+  const hubdocURL =
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.hubdocLogo.data.attributes.url
   const hubdocWidth = data.hubdocLogo.data.attributes.width
   const hubdocHeight = data.hubdocLogo.data.attributes.height
 
-  const xeroLogoURL = process.env.STRAPI_URL + data.xeroLogo.data.attributes.url
+  const xeroLogoURL =
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.xeroLogo.data.attributes.url
   const xeroLogoWidth = data.xeroLogo.data.attributes.width
   const xeroLogoHeight = data.xeroLogo.data.attributes.height
 
-  const mshopURL = process.env.STRAPI_URL + data.mshopLogo.data.attributes.url
+  const mshopURL =
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.mshopLogo.data.attributes.url
   const mshopWidth = data.mshopLogo.data.attributes.width
   const mshopHeight = data.mshopLogo.data.attributes.height
 
   const gingersoftURL =
-    process.env.STRAPI_URL + data.gingersoftLogo.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.gingersoftLogo.data.attributes.url
   const gingersoftWidth = data.gingersoftLogo.data.attributes.width
   const gingersoftHeight = data.gingersoftLogo.data.attributes.height
 
   const eats365URL =
-    process.env.STRAPI_URL + data.eats365Logo.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.eats365Logo.data.attributes.url
   const eats365Width = data.eats365Logo.data.attributes.width
   const eats365Height = data.eats365Logo.data.attributes.height
 
   const foodmarkethubURL =
-    process.env.STRAPI_URL + data.foodmarkethubLogo.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    data.foodmarkethubLogo.data.attributes.url
   const foodmarkethubWidth = data.foodmarkethubLogo.data.attributes.width
   const foodmarkethubHeight = data.foodmarkethubLogo.data.attributes.height
 
-  const yoovURL = process.env.STRAPI_URL + data.yoovLogo.data.attributes.url
+  const yoovURL =
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.yoovLogo.data.attributes.url
   const yoovWidth = data.yoovLogo.data.attributes.width
   const yoovHeight = data.yoovLogo.data.attributes.height
 
-  const dkdooURL = process.env.STRAPI_URL + data.dkdooLogo.data.attributes.url
+  const dkdooURL =
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.dkdooLogo.data.attributes.url
   const dkdooWidth = data.dkdooLogo.data.attributes.width
   const dkdooHeight = data.dkdooLogo.data.attributes.height
 
-  const kpayURL = process.env.STRAPI_URL + data.kpayLogo.data.attributes.url
+  const kpayURL =
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.kpayLogo.data.attributes.url
   const kpayWidth = data.kpayLogo.data.attributes.width
   const kpayHeight = data.kpayLogo.data.attributes.height
 
-  const eberURL = process.env.STRAPI_URL + data.eberLogo.data.attributes.url
+  const eberURL =
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.eberLogo.data.attributes.url
   const eberWidth = data.eberLogo.data.attributes.width
   const eberHeight = data.eberLogo.data.attributes.height
 
-  const hikeURL = process.env.STRAPI_URL + data.hikeLogo.data.attributes.url
+  const hikeURL =
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.hikeLogo.data.attributes.url
   const hikeWidth = data.hikeLogo.data.attributes.width
   const hikeHeight = data.hikeLogo.data.attributes.height
 
-  const boutirURL = process.env.STRAPI_URL + data.boutirLogo.data.attributes.url
+  const boutirURL =
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.boutirLogo.data.attributes.url
   const boutirWidth = data.boutirLogo.data.attributes.width
   const boutirHeight = data.boutirLogo.data.attributes.height
 
   const postifyURL =
-    process.env.STRAPI_URL + data.postifyLogo.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + data.postifyLogo.data.attributes.url
   const postifyWidth = data.postifyLogo.data.attributes.width
   const postifyHeight = data.postifyLogo.data.attributes.height
 
@@ -614,7 +632,7 @@ export default async function Main() {
                   <Image
                     alt={item.attributes.title}
                     src={
-                      process.env.STRAPI_URL +
+                      process.env.NEXT_PUBLIC_STRAPI_URL +
                       item.attributes.featuredImage.data.attributes.url
                     }
                     width={item.attributes.featuredImage.data.attributes.width}
@@ -627,7 +645,9 @@ export default async function Main() {
                   <div className='text-left p-4 sm:p-6'>
                     <Link
                       href={
-                        process.env.SITE_URL + '/cases/' + item.attributes.slug
+                        process.env.NEXT_PUBLIC_SITE_URL +
+                        '/cases/' +
+                        item.attributes.slug
                       }
                     >
                       <h3 className='text-md text-darkBrown'>
@@ -637,7 +657,9 @@ export default async function Main() {
 
                     <Link
                       href={
-                        process.env.SITE_URL + '/cases/' + item.attributes.slug
+                        process.env.NEXT_PUBLIC_SITE_URL +
+                        '/cases/' +
+                        item.attributes.slug
                       }
                       className='group mt-4 inline-flex gap-1 text-sm font-medium text-blue-600'
                     >

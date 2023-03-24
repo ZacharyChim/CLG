@@ -15,7 +15,7 @@ export default async function Main() {
     text: aboutText,
   }
   const aboutImage =
-    process.env.STRAPI_URL + tvp.about_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + tvp.about_image.data.attributes.url
   const aboutImageWidth = tvp.about_image.data.attributes.width
   const aboutImageHeight = tvp.about_image.data.attributes.height
   const aboutImageObj = {
@@ -25,7 +25,7 @@ export default async function Main() {
   }
 
   const aboutTagImage =
-    process.env.STRAPI_URL + tvp.funding_audit.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + tvp.funding_audit.data.attributes.url
   const aboutTagImageWidth = tvp.funding_audit.data.attributes.width
   const aboutTagImageHeight = tvp.funding_audit.data.attributes.height
   const aboutTagImageObj = {
@@ -51,7 +51,7 @@ export default async function Main() {
   }
 
   const article1Image =
-    process.env.STRAPI_URL + tvp.article1_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + tvp.article1_image.data.attributes.url
   const article1ImageWidth = tvp.article1_image.data.attributes.width
   const article1ImageHeight = tvp.article1_image.data.attributes.height
   const article1ImageObj = {
@@ -61,7 +61,7 @@ export default async function Main() {
   }
 
   const article1TagImage =
-    process.env.STRAPI_URL + tvp.article1_number.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + tvp.article1_number.data.attributes.url
   const article1TagImageWidth = tvp.article1_number.data.attributes.width
   const article1TagImageHeight = tvp.article1_number.data.attributes.height
   const article1TagImageObj = {
@@ -71,7 +71,8 @@ export default async function Main() {
   }
 
   const diagramTitle = tvp.diagram_title
-  const diagram = process.env.STRAPI_URL + tvp.diagram.data.attributes.url
+  const diagram =
+    process.env.NEXT_PUBLIC_STRAPI_URL + tvp.diagram.data.attributes.url
   const diagramWidth = tvp.diagram.data.attributes.width
   const diagramHeight = tvp.diagram.data.attributes.height
 

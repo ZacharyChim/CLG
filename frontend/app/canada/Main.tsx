@@ -12,28 +12,32 @@ export default async function Main() {
   const benefitTitle = canada.benefit_title
 
   const incorporation =
-    process.env.STRAPI_URL + canada.incorporation.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    canada.incorporation.data.attributes.url
   const incorporationWidth = canada.incorporation.data.attributes.width
   const incorporationHeight = canada.incorporation.data.attributes.height
 
   const benefit1Title = canada.benefit1_title
   const benefit1Content = canada.benefit1_content
   const benefit1Image =
-    process.env.STRAPI_URL + canada.benefit1_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    canada.benefit1_image.data.attributes.url
   const benefit1ImageWidth = canada.benefit1_image.data.attributes.width
   const benefit1ImageHeight = canada.benefit1_image.data.attributes.height
 
   const benefit2Title = canada.benefit2_title
   const benefit2Content = canada.benefit2_content
   const benefit2Image =
-    process.env.STRAPI_URL + canada.benefit2_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    canada.benefit2_image.data.attributes.url
   const benefit2ImageWidth = canada.benefit2_image.data.attributes.width
   const benefit2ImageHeight = canada.benefit2_image.data.attributes.height
 
   const benefit3Title = canada.benefit3_title
   const benefit3Content = canada.benefit3_content
   const benefit3Image =
-    process.env.STRAPI_URL + canada.benefit3_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    canada.benefit3_image.data.attributes.url
   const benefit3ImageWidth = canada.benefit3_image.data.attributes.width
   const benefit3ImageHeight = canada.benefit3_image.data.attributes.height
 

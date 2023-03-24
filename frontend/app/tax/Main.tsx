@@ -7,7 +7,8 @@ import Faqs from '../../components/Faqs'
 export default async function Main() {
   const tax = await fetchSingle('tax')
 
-  const audit = process.env.STRAPI_URL + tax.audit.data.attributes.url
+  const audit =
+    process.env.NEXT_PUBLIC_STRAPI_URL + tax.audit.data.attributes.url
   const auditWidth = tax.audit.data.attributes.width
   const auditHeight = tax.audit.data.attributes.height
   const auditObj = {
@@ -24,7 +25,7 @@ export default async function Main() {
   }
 
   const aboutImage =
-    process.env.STRAPI_URL + tax.about_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + tax.about_image.data.attributes.url
   const aboutWidth = tax.about_image.data.attributes.width
   const aboutHeight = tax.about_image.data.attributes.height
   const aboutImageObj = {
@@ -33,7 +34,8 @@ export default async function Main() {
     height: aboutHeight,
   }
 
-  const taxImage = process.env.STRAPI_URL + tax.tax_image.data.attributes.url
+  const taxImage =
+    process.env.NEXT_PUBLIC_STRAPI_URL + tax.tax_image.data.attributes.url
   const taxImageWidth = tax.tax_image.data.attributes.width
   const taxImageHeight = tax.tax_image.data.attributes.height
   const taxImageObj = {

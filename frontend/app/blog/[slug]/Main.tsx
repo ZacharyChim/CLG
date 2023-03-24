@@ -5,7 +5,9 @@ import { fetchCollection, richTextReducer, trimTitle } from '../../../lib/utils'
 import { v4 } from 'uuid'
 
 const fetchPost = async (slug: string) => {
-  const res = await fetch(`${process.env.STRAPI_API_URL}/posts/${slug}`)
+  const res = await fetch(
+    `${process.env.NEXT_PUBLIC_STRAPI_API_URL}/posts/${slug}`
+  )
 
   const resData = await res.json()
   return resData.data.attributes
@@ -91,7 +93,7 @@ export default async function Main(props: PageProps) {
                       <Image
                         alt={item.attributes.title}
                         src={
-                          process.env.STRAPI_URL +
+                          process.env.NEXT_PUBLIC_STRAPI_URL +
                           item.attributes.featuredImage.data.attributes.url
                         }
                         width={
@@ -106,7 +108,7 @@ export default async function Main(props: PageProps) {
                       <div className='text-left p-4 md:p-2'>
                         <Link
                           href={
-                            process.env.SITE_URL +
+                            process.env.NEXT_PUBLIC_SITE_URL +
                             '/blog/' +
                             item.attributes.slug
                           }
@@ -118,7 +120,7 @@ export default async function Main(props: PageProps) {
 
                         <Link
                           href={
-                            process.env.SITE_URL +
+                            process.env.NEXT_PUBLIC_SITE_URL +
                             '/blog/' +
                             item.attributes.slug
                           }

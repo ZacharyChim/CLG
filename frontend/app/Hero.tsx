@@ -5,12 +5,12 @@ import { fetchSingle } from '../lib/utils'
 export default async function Hero() {
   const data = await fetchSingle('home-page')
   const heroIcon = data.HeroIcon.data.attributes
-  const heroIconURL = process.env.STRAPI_URL + heroIcon.url
+  const heroIconURL = process.env.NEXT_PUBLIC_STRAPI_URL + heroIcon.url
   const heroIconWidth = heroIcon.width
   const heroIconHeight = heroIcon.width
 
   const homeHero = data.HomeHero.data.attributes
-  const homeHeroURL = process.env.STRAPI_URL + homeHero.url
+  const homeHeroURL = process.env.NEXT_PUBLIC_STRAPI_URL + homeHero.url
   const homeHeroWidth = homeHero.width
   const homeHeroHeight = homeHero.width
 

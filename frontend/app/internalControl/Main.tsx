@@ -8,46 +8,56 @@ export default async function Main() {
   const internalControl = await fetchSingle('internal-control')
 
   const advisory =
-    process.env.STRAPI_URL + internalControl.advisory.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    internalControl.advisory.data.attributes.url
   const advisoryWidth = internalControl.advisory.data.attributes.width
   const advisoryHeight = internalControl.advisory.data.attributes.height
 
   const aboutImage =
-    process.env.STRAPI_URL + internalControl.about_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    internalControl.about_image.data.attributes.url
   const aboutWidth = internalControl.about_image.data.attributes.width
   const aboutHeight = internalControl.about_image.data.attributes.height
 
   const image1 =
-    process.env.STRAPI_URL + internalControl.image1.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    internalControl.image1.data.attributes.url
   const image1Width = internalControl.image1.data.attributes.width
   const image1Height = internalControl.image1.data.attributes.height
   const image2 =
-    process.env.STRAPI_URL + internalControl.image2.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    internalControl.image2.data.attributes.url
   const image2Width = internalControl.image2.data.attributes.width
   const image2Height = internalControl.image2.data.attributes.height
   const image3 =
-    process.env.STRAPI_URL + internalControl.image3.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    internalControl.image3.data.attributes.url
   const image3Width = internalControl.image3.data.attributes.width
   const image3Height = internalControl.image3.data.attributes.height
   const image4 =
-    process.env.STRAPI_URL + internalControl.image4.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    internalControl.image4.data.attributes.url
   const image4Width = internalControl.image4.data.attributes.width
   const image4Height = internalControl.image4.data.attributes.height
 
   const number1 =
-    process.env.STRAPI_URL + internalControl.number1.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    internalControl.number1.data.attributes.url
   const number1Width = internalControl.number1.data.attributes.width
   const number1Height = internalControl.number1.data.attributes.height
   const number2 =
-    process.env.STRAPI_URL + internalControl.number2.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    internalControl.number2.data.attributes.url
   const number2Width = internalControl.number2.data.attributes.width
   const number2Height = internalControl.number2.data.attributes.height
   const number3 =
-    process.env.STRAPI_URL + internalControl.number3.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    internalControl.number3.data.attributes.url
   const number3Width = internalControl.number3.data.attributes.width
   const number3Height = internalControl.number3.data.attributes.height
   const number4 =
-    process.env.STRAPI_URL + internalControl.number4.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    internalControl.number4.data.attributes.url
   const number4Width = internalControl.number4.data.attributes.width
   const number4Height = internalControl.number4.data.attributes.height
 

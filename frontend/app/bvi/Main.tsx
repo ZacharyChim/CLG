@@ -12,42 +12,42 @@ export default async function Main() {
   const benefitTitle = bvi.benefit_title
 
   const incorporation =
-    process.env.STRAPI_URL + bvi.incorporation.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + bvi.incorporation.data.attributes.url
   const incorporationWidth = bvi.incorporation.data.attributes.width
   const incorporationHeight = bvi.incorporation.data.attributes.height
 
   const benefit1Title = bvi.benefit1_title
   const benefit1Content = bvi.benefit1_content
   const benefit1Image =
-    process.env.STRAPI_URL + bvi.benefit1_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + bvi.benefit1_image.data.attributes.url
   const benefit1ImageWidth = bvi.benefit1_image.data.attributes.width
   const benefit1ImageHeight = bvi.benefit1_image.data.attributes.height
 
   const benefit2Title = bvi.benefit2_title
   const benefit2Content = bvi.benefit2_content
   const benefit2Image =
-    process.env.STRAPI_URL + bvi.benefit2_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + bvi.benefit2_image.data.attributes.url
   const benefit2ImageWidth = bvi.benefit2_image.data.attributes.width
   const benefit2ImageHeight = bvi.benefit2_image.data.attributes.height
 
   const benefit3Title = bvi.benefit3_title
   const benefit3Content = bvi.benefit3_content
   const benefit3Image =
-    process.env.STRAPI_URL + bvi.benefit3_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + bvi.benefit3_image.data.attributes.url
   const benefit3ImageWidth = bvi.benefit3_image.data.attributes.width
   const benefit3ImageHeight = bvi.benefit3_image.data.attributes.height
 
   const benefit4Title = bvi.benefit4_title
   const benefit4Content = bvi.benefit4_content
   const benefit4Image =
-    process.env.STRAPI_URL + bvi.benefit4_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + bvi.benefit4_image.data.attributes.url
   const benefit4ImageWidth = bvi.benefit4_image.data.attributes.width
   const benefit4ImageHeight = bvi.benefit4_image.data.attributes.height
 
   const benefit5Title = bvi.benefit5_title
   const benefit5Content = bvi.benefit5_content
   const benefit5Image =
-    process.env.STRAPI_URL + bvi.benefit5_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + bvi.benefit5_image.data.attributes.url
   const benefit5ImageWidth = bvi.benefit5_image.data.attributes.width
   const benefit5ImageHeight = bvi.benefit5_image.data.attributes.height
 

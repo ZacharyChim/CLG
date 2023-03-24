@@ -12,42 +12,48 @@ export default async function Main() {
   const benefitTitle = seychelles.benefit_title
 
   const incorporation =
-    process.env.STRAPI_URL + seychelles.incorporation.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    seychelles.incorporation.data.attributes.url
   const incorporationWidth = seychelles.incorporation.data.attributes.width
   const incorporationHeight = seychelles.incorporation.data.attributes.height
 
   const benefit1Title = seychelles.benefit1_title
   const benefit1Content = seychelles.benefit1_content
   const benefit1Image =
-    process.env.STRAPI_URL + seychelles.benefit1_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    seychelles.benefit1_image.data.attributes.url
   const benefit1ImageWidth = seychelles.benefit1_image.data.attributes.width
   const benefit1ImageHeight = seychelles.benefit1_image.data.attributes.height
 
   const benefit2Title = seychelles.benefit2_title
   const benefit2Content = seychelles.benefit2_content
   const benefit2Image =
-    process.env.STRAPI_URL + seychelles.benefit2_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    seychelles.benefit2_image.data.attributes.url
   const benefit2ImageWidth = seychelles.benefit2_image.data.attributes.width
   const benefit2ImageHeight = seychelles.benefit2_image.data.attributes.height
 
   const benefit3Title = seychelles.benefit3_title
   const benefit3Content = seychelles.benefit3_content
   const benefit3Image =
-    process.env.STRAPI_URL + seychelles.benefit3_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    seychelles.benefit3_image.data.attributes.url
   const benefit3ImageWidth = seychelles.benefit3_image.data.attributes.width
   const benefit3ImageHeight = seychelles.benefit3_image.data.attributes.height
 
   const benefit4Title = seychelles.benefit4_title
   const benefit4Content = seychelles.benefit4_content
   const benefit4Image =
-    process.env.STRAPI_URL + seychelles.benefit4_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    seychelles.benefit4_image.data.attributes.url
   const benefit4ImageWidth = seychelles.benefit4_image.data.attributes.width
   const benefit4ImageHeight = seychelles.benefit4_image.data.attributes.height
 
   const benefit5Title = seychelles.benefit5_title
   const benefit5Content = seychelles.benefit5_content
   const benefit5Image =
-    process.env.STRAPI_URL + seychelles.benefit5_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    seychelles.benefit5_image.data.attributes.url
   const benefit5ImageWidth = seychelles.benefit5_image.data.attributes.width
   const benefit5ImageHeight = seychelles.benefit5_image.data.attributes.height
 

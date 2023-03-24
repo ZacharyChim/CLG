@@ -9,50 +9,60 @@ export default async function Main() {
   const fbPos = await fetchSingle('fb-pos')
 
   const cloudSolutions =
-    process.env.STRAPI_URL + fbPos.cloud_solutions.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    fbPos.cloud_solutions.data.attributes.url
   const cloudSolutionsWidth = fbPos.cloud_solutions.data.attributes.width
   const cloudSolutionsHeight = fbPos.cloud_solutions.data.attributes.height
   const aboutTitle = fbPos.about_title
   const aboutText = richTextReducer(fbPos.about_text)
   const aboutImage =
-    process.env.STRAPI_URL + fbPos.about_image.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + fbPos.about_image.data.attributes.url
   const aboutWidth = fbPos.about_image.data.attributes.width
   const aboutHeight = fbPos.about_image.data.attributes.height
 
-  const image1 = process.env.STRAPI_URL + fbPos.image1.data.attributes.url
+  const image1 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + fbPos.image1.data.attributes.url
   const image1Width = fbPos.image1.data.attributes.width
   const image1Height = fbPos.image1.data.attributes.height
-  const image2 = process.env.STRAPI_URL + fbPos.image2.data.attributes.url
+  const image2 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + fbPos.image2.data.attributes.url
   const image2Width = fbPos.image2.data.attributes.width
   const image2Height = fbPos.image2.data.attributes.height
-  const image3 = process.env.STRAPI_URL + fbPos.image3.data.attributes.url
+  const image3 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + fbPos.image3.data.attributes.url
   const image3Width = fbPos.image3.data.attributes.width
   const image3Height = fbPos.image3.data.attributes.height
 
   const customersTitle1 =
-    process.env.STRAPI_URL + fbPos.customers_title1.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    fbPos.customers_title1.data.attributes.url
   const customersTitle1Width = fbPos.customers_title1.data.attributes.width
   const customersTitle1Height = fbPos.customers_title1.data.attributes.height
   const customersTitle2 =
-    process.env.STRAPI_URL + fbPos.customers_title2.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    fbPos.customers_title2.data.attributes.url
   const customersTitle2Width = fbPos.customers_title2.data.attributes.width
   const customersTitle2Height = fbPos.customers_title2.data.attributes.height
   const restaurantTitle =
-    process.env.STRAPI_URL + fbPos.restaurant_title.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    fbPos.restaurant_title.data.attributes.url
   const restaurantTitleWidth = fbPos.restaurant_title.data.attributes.width
   const restaurantTitleHeight = fbPos.restaurant_title.data.attributes.height
   const managerTitle =
-    process.env.STRAPI_URL + fbPos.manager_title.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL + fbPos.manager_title.data.attributes.url
   const managerTitleWidth = fbPos.manager_title.data.attributes.width
   const managerTitleHeight = fbPos.manager_title.data.attributes.height
 
-  const number1 = process.env.STRAPI_URL + fbPos.number1.data.attributes.url
+  const number1 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + fbPos.number1.data.attributes.url
   const number1Width = fbPos.number1.data.attributes.width
   const number1Height = fbPos.number1.data.attributes.height
-  const number2 = process.env.STRAPI_URL + fbPos.number2.data.attributes.url
+  const number2 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + fbPos.number2.data.attributes.url
   const number2Width = fbPos.number2.data.attributes.width
   const number2Height = fbPos.number2.data.attributes.height
-  const number3 = process.env.STRAPI_URL + fbPos.number3.data.attributes.url
+  const number3 =
+    process.env.NEXT_PUBLIC_STRAPI_URL + fbPos.number3.data.attributes.url
   const number3Width = fbPos.number3.data.attributes.width
   const number3Height = fbPos.number3.data.attributes.height
 
@@ -65,35 +75,43 @@ export default async function Main() {
   const managerText = richTextReducer(fbPos.manager_text)
 
   const icon1 =
-    process.env.STRAPI_URL + fbPos.solutions_icon1.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    fbPos.solutions_icon1.data.attributes.url
   const icon1Width = fbPos.solutions_icon1.data.attributes.width
   const icon1Height = fbPos.solutions_icon1.data.attributes.height
   const icon2 =
-    process.env.STRAPI_URL + fbPos.solutions_icon2.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    fbPos.solutions_icon2.data.attributes.url
   const icon2Width = fbPos.solutions_icon2.data.attributes.width
   const icon2Height = fbPos.solutions_icon2.data.attributes.height
   const icon3 =
-    process.env.STRAPI_URL + fbPos.solutions_icon3.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    fbPos.solutions_icon3.data.attributes.url
   const icon3Width = fbPos.solutions_icon3.data.attributes.width
   const icon3Height = fbPos.solutions_icon3.data.attributes.height
   const icon4 =
-    process.env.STRAPI_URL + fbPos.solutions_icon4.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    fbPos.solutions_icon4.data.attributes.url
   const icon4Width = fbPos.solutions_icon4.data.attributes.width
   const icon4Height = fbPos.solutions_icon4.data.attributes.height
   const icon5 =
-    process.env.STRAPI_URL + fbPos.solutions_icon5.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    fbPos.solutions_icon5.data.attributes.url
   const icon5Width = fbPos.solutions_icon5.data.attributes.width
   const icon5Height = fbPos.solutions_icon5.data.attributes.height
   const icon6 =
-    process.env.STRAPI_URL + fbPos.solutions_icon6.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    fbPos.solutions_icon6.data.attributes.url
   const icon6Width = fbPos.solutions_icon6.data.attributes.width
   const icon6Height = fbPos.solutions_icon6.data.attributes.height
   const icon7 =
-    process.env.STRAPI_URL + fbPos.solutions_icon7.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    fbPos.solutions_icon7.data.attributes.url
   const icon7Width = fbPos.solutions_icon7.data.attributes.width
   const icon7Height = fbPos.solutions_icon7.data.attributes.height
   const icon8 =
-    process.env.STRAPI_URL + fbPos.solutions_icon8.data.attributes.url
+    process.env.NEXT_PUBLIC_STRAPI_URL +
+    fbPos.solutions_icon8.data.attributes.url
   const icon8Width = fbPos.solutions_icon8.data.attributes.width
   const icon8Height = fbPos.solutions_icon8.data.attributes.height
 
