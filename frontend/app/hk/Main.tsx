@@ -87,7 +87,7 @@ export default async function Main() {
       >
         <div className='max-w-5xl px-5 mx-auto text-left'>
           <div className='flex flex-col py-10 gap-2 text-center md:flex-row '>
-            <div className='flex flex-col items-center space-y-2 mt-10 md:w-1/3'>
+            <div className='flex flex-col items-center space-y-2 mt-10 md:w-1/4'>
               <Image
                 src={service1Image}
                 alt=''
@@ -100,7 +100,7 @@ export default async function Main() {
               </h5>
             </div>
 
-            <div className='flex flex-col items-center space-y-2 mt-10 md:w-1/3'>
+            <div className='flex flex-col items-center space-y-2 mt-10 md:w-1/4'>
               <Image
                 src={service2Image}
                 alt=''
@@ -113,7 +113,7 @@ export default async function Main() {
               </h5>
             </div>
 
-            <div className='flex flex-col items-center space-y-2 mt-10 md:w-1/3'>
+            <div className='flex flex-col items-center space-y-2 mt-10 md:w-1/4'>
               <Image
                 src={service3Image}
                 alt=''
@@ -126,7 +126,7 @@ export default async function Main() {
               </h5>
             </div>
 
-            <div className='flex flex-col items-center space-y-2 mt-10 md:w-1/3'>
+            <div className='flex flex-col items-center space-y-2 mt-10 md:w-1/4'>
               <Image
                 src={service4Image}
                 alt=''

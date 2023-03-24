@@ -1,0 +1,203 @@
+{
+  "kind": "singleType",
+  "collectionName": "ngos",
+  "info": {
+    "singularName": "ngo",
+    "pluralName": "ngos",
+    "displayName": "ngo",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "main_slogan": {
+      "type": "string"
+    },
+    "hero_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "incorporation": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "about_title": {
+      "type": "string"
+    },
+    "about_content": {
+      "type": "richtext"
+    },
+    "about_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "purpose1": {
+      "type": "string"
+    },
+    "purpose1_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "purpose2": {
+      "type": "string"
+    },
+    "purpose2_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "purpose3": {
+      "type": "string"
+    },
+    "purpose3_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "addition": {
+      "type": "string"
+    },
+    "benefit_title": {
+      "type": "string"
+    },
+    "benefit_content": {
+      "type": "richtext"
+    },
+    "left_small": {
+      "type": "string"
+    },
+    "left": {
+      "type": "string"
+    },
+    "right_small": {
+      "type": "string"
+    },
+    "right": {
+      "type": "string"
+    },
+    "service_title": {
+      "type": "string"
+    },
+    "service1": {
+      "type": "string"
+    },
+    "service2": {
+      "type": "string"
+    },
+    "service3": {
+      "type": "string"
+    },
+    "service4": {
+      "type": "string"
+    },
+    "service5": {
+      "type": "string"
+    },
+    "service6": {
+      "type": "string"
+    },
+    "service1_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "service2_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "service3_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "service4_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "service5_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "service6_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "contact_us": {
+      "type": "string"
+    }
+  }
+}
