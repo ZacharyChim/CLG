@@ -2,6 +2,8 @@ version: '3.8'
 services:
   backend:
     container_name: backend
+    networks:
+      - clg
     build:
       context: backend
       dockerfile: .docker/dev.dockerfile
@@ -15,21 +17,27 @@ services:
       - '1338:1338'
   frontend:
     container_name: frontend
+    networks:
+      - clg
     build:
       context: frontend
       dockerfile: .docker/dev.dockerfile
     image: frontend:latest
     # restart: unless-stopped
-    env_file: ./frontend/.env
+    # env_file: ./frontend/.env
     volumes:
       - node_modules_next:/usr/local/frontend/node_modules
       - next_folder:/usr/local/frontend
     ports:
       - '3000:3000'
     depends_on:
-      - 'backend'
+      backend:
+        condition: service_started
+
 volumes:
   node_modules_next:
   next_folder:
   strapi_data:
   strapi_upload:
+networks:
+  clg: {}
