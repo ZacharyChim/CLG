@@ -72,7 +72,7 @@ export default async function Main(props: PageProps) {
               <h2 className='text-3xl my-4 font-bold text-darkBlue'>
                 {caseObj.title}
               </h2>
-              <p className='text-darkBrown my-4 bg-textBg bg-no-repeat bg-left-bottom text-left'>
+              <p className='text-darkBrown my-4 half_background bg-no-repeat bg-left-bottom text-left'>
                 {month} {date}, {year}
               </p>
 
