@@ -37,7 +37,8 @@ export default async function Main(props: PageProps) {
     'DECEMBER',
   ]
   const year = publishedAt.getFullYear()
-  const month = monthNames[publishedAt.getMonth() - 1]
+  const month = monthNames[publishedAt.getMonth()]
+
   const date = publishedAt.getDate()
 
   const allPosts = await fetchCollection('posts')
@@ -60,11 +61,10 @@ export default async function Main(props: PageProps) {
                   fill='currentColor'
                   viewBox='0 0 16 16'
                 >
-                  {' '}
                   <path
-                    fill-rule='evenodd'
+                    fillRule='evenodd'
                     d='M12 8a.5.5 0 0 1-.5.5H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5a.5.5 0 0 1 .5.5z'
-                  />{' '}
+                  />
                 </svg>
                 Back
               </Link>
@@ -72,12 +72,12 @@ export default async function Main(props: PageProps) {
               <h2 className='text-3xl my-4 font-bold text-darkBlue'>
                 {post.title}
               </h2>
-              <p className='text-darkBrown my-4 half_background bg-no-repeat bg-left-bottom text-left'>
+              <p className='text-darkBrown half_background inline text-left'>
                 {month} {date}, {year}
               </p>
 
               <div
-                className='text-darkBrown'
+                className='text-darkBrown mt-4'
                 dangerouslySetInnerHTML={{ __html: content }}
               ></div>
             </div>
